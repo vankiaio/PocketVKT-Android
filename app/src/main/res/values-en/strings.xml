@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PocketEos</string>
+    <string name="app_name">PocketVKT</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -12,7 +12,7 @@
 
     <string name="no_data">Nothing here</string>
     <string name="hint">Slide to Burn Your Wallet Away</string>
-    <string name="wallect_intro">1.DO backup your wallet or export private keys for each account, and keep them safely. \n2. Your private keys are stored in local and be encrypted by your wallet password. \n3.If you don't want others find your by your wallet name, please active Privacy Protection. \n4.Your wallet MUST be burned away when you stop using this device.  </string>
+    <string name="wallect_intro">1.DO backup your wallet or export private keys for each account, and keep them safely. \n2. Your private keys are stored in local and be encrypted by your wallet password. \n3.If you don\'t want others find your by your wallet name, please active Privacy Protection. \n4.Your wallet MUST be burned away when you stop using this device.  </string>
     <string name="_35">+35%</string>
     <string name="_120_100">≈120,100</string>
     <string name="make_collections">Receive</string>
@@ -31,7 +31,7 @@
     <string name="vip230656469">VIP230656469</string>
     <string name="_120_000">120,000</string>
     <string name="recycle_coin_history">Tx History</string>
-    <string name="pocket_eos">Pocket EOS</string>
+    <string name="pocket_eos">Pocket VKT</string>
     <string name="transfer_account_to_him">Send to This Account</string>
     <string name="wallet_management">Wallet Management</string>
     <string name="transaction_history">Tx History</string>
@@ -171,7 +171,7 @@
     <string name="suggertion_history">Suggestion History</string>
     <string name="hint_suggestion_details">Please input your suggestion here，140 words for maximum，thank you！</string>
     <string name="setting_one">Term of Usage and Privacy Policy</string>
-    <string name="setting_two">About Pocket EOS</string>
+    <string name="setting_two">About Pocket VKT</string>
 
     <string name="setting_three">Clear Caches for News</string>
     <string name="version_intro">Version Info</string>
@@ -179,7 +179,7 @@
     <string name="no_new_version">Your PE is uptodate!</string>
     <string name="seach">Search account</string>
     <string name="seach_cancel">Cancel</string>
-    <string name="import_private_key_toast">Warning:\nPrivate key could be used for import account to any wallet;\nPrivate key means the total accessibility, and don't share it with anyone else.</string>
+    <string name="import_private_key_toast">Warning:\nPrivate key could be used for import account to any wallet;\nPrivate key means the total accessibility, and don\'t share it with anyone else.</string>
     <string name="dapp_choose_coin_toast">Warning: Use Dapps may cause blockchain transactions.</string>
     <string name="choose_account">Please choose an account</string>
     <string name="i_got_it">I understand what is Dapp</string>
@@ -198,7 +198,7 @@
     <string name="update_app">Please give PE the authority to update.</string>
     <string name="now_price"></string>
     <string name="no_change_name_toast">Please change the wallet name</string>
-    <string name="empty_list_toast">You don't have any friend，find someone now！</string>
+    <string name="empty_list_toast">You don\'t have any friend，find someone now！</string>
     <string name="pe_list">Rich List</string>
     <string name="company_list">Enterprise Account</string>
     <string name="xxxwallet">***‘s wallet</string>
@@ -217,7 +217,7 @@
     <string name="import_loading">Importing...</string>
     <string name="import_all_info">Please check the info you input</string>
     <string name="import_success">Imported! </string>
-    <string name="account_key_error">Account name and the private key doesn't match, please check it.</string>
+    <string name="account_key_error">Account name and the private key doesn\'t match, please check it.</string>
     <string name="commit_loading">Submitting...</string>
     <string name="bind">Binded!</string>
     <string name="delet_account_toast">Only one account in your wallet. block up it will burn away your wallet at the same time. Are you sure to continue?</string>
@@ -369,7 +369,7 @@
     <string name="ge">left</string>
     <string name="choose_node_vote_toast">Select the nodes you want to support</string>
     <string name="default_choose_toast">None selected. Select 30 or less nodes.  </string>
-    <string name="eos_zero_toast">No EOS avaliable, couldn't vote now.</string>
+    <string name="eos_zero_toast">No EOS avaliable, couldn\'t vote now.</string>
     <string name="photos">Album</string>
     <string name="wallet_password">Password</string>
     <string name="input_wallet_password">Input password</string>
@@ -395,7 +395,7 @@
     <string name="net">net BW</string>
     <string name="memory_quota">Quota</string>
     <string name="change_buy_number">Amount to buy</string>
-    <string name="can_stake">1:Amount below 1 EOS could't be unstaking for stable usage. \n2:Unstaking amount will be return in 3 days. </string>
+    <string name="can_stake">1:Amount below 1 EOS could\'t be unstaking for stable usage. \n2:Unstaking amount will be return in 3 days. </string>
     <string name="sure_change">Confirm</string>
     <string name="cant_change">Unavailable</string>
     <string name="change_stake_amount">Change staking:</string>
@@ -420,7 +420,7 @@
     <string name="change_seal_number_toast">How much to sell:</string>
     <string name="banlance_not_enough">Balance insufficient</string>
     <string name="dont_seal">Unavailable</string>
-    <string name="number_no_zero">Amount could'n be 0</string>
+    <string name="number_no_zero">Amount could\'n be 0</string>
     <string name="bug_success">Bought</string>
     <string name="buy_fail">Failed</string>
     <string name="seal_success">Sold</string>
@@ -430,6 +430,6 @@
     <string name="stake_success">Unstaked</string>
     <string name="stake_fail">Failed</string>
     <string name="stake_eos">Untake EOS</string>
-    <string name="unstake_info">Couldn't set amount to unstake now. 1 EOS and below couldn't be unstake for stable usage. </string>
+    <string name="unstake_info">Couldn\'t set amount to unstake now. 1 EOS and below couldn\'t be unstake for stable usage. </string>
     <string name="close">Close</string>
 </resources>

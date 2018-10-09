@@ -5,7 +5,7 @@
     <span style="font-size:16px;line-height:115%">&nbsp;</span>
 </p>
 <p>
-    <span style="font-size:16px;line-height:115%">2</span><span style="font-size:16px;line-height:115%;font-family:宋体">、每个</span><span style="font-size:16px;line-height:115%">EOS</span><span style="font-size:16px;line-height:115%;font-family:宋体">账号在首次投票之前，都需要在投票系统中进行注册。使用投票功能即代表您授权</span><span style="font-size:16px;line-height:115%">Pocket EOS</span><span style="font-size:16px;line-height:115%;font-family:宋体">为您完成注册流程。</span>
+    <span style="font-size:16px;line-height:115%">2</span><span style="font-size:16px;line-height:115%;font-family:宋体">、每个</span><span style="font-size:16px;line-height:115%">EOS</span><span style="font-size:16px;line-height:115%;font-family:宋体">账号在首次投票之前，都需要在投票系统中进行注册。使用投票功能即代表您授权</span><span style="font-size:16px;line-height:115%">Pocket VKT</span><span style="font-size:16px;line-height:115%;font-family:宋体">为您完成注册流程。</span>
 </p>
 <p>
     <span style="font-size:16px;line-height:115%">&nbsp;</span>

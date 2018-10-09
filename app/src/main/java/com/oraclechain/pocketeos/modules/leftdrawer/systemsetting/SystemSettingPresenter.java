@@ -23,7 +23,7 @@ public class SystemSettingPresenter extends BasePresent<SystemSettingView> {
         this.mContext = context;
     }
 
-    public void getSystemInfo(final String id) {//1：法律条款和隐私政策，2：关于Pocket EOS的内容
+    public void getSystemInfo(final String id) {//1：法律条款和隐私政策，2：关于Pocket VKT的内容
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("id", id);
         HttpUtils.postRequest(BaseUrl.HTTP_get_system_info, mContext, hashMap, new JsonCallback<ResponseBean<SystemInfoBean.DataBean>>() {

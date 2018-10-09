@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PocketEos</string>
+    <string name="app_name">PocketVKT</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -31,7 +31,7 @@
     <string name="vip230656469">VIP230656469</string>
     <string name="_120_000">120,000</string>
     <string name="recycle_coin_history">交易记录</string>
-    <string name="pocket_eos">Pocket EOS</string>
+    <string name="pocket_eos">Pocket VKT</string>
     <string name="transfer_account_to_him">转账给他</string>
     <string name="wallet_management"> \n钱包管理</string>
     <string name="transaction_history"> \n交易记录</string>
@@ -171,7 +171,7 @@
     <string name="suggertion_history">历史记录</string>
     <string name="hint_suggestion_details">想说的话填在这里(140字以内)</string>
     <string name="setting_one">法律条款与隐私政策</string>
-    <string name="setting_two">关于Pocket EOS</string>
+    <string name="setting_two">关于Pocket VKT</string>
 
     <string name="setting_three">清除新闻缓存</string>
     <string name="version_intro">版本介绍</string>

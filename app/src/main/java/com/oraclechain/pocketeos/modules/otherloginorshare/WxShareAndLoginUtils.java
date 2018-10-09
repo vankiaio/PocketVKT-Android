@@ -17,6 +17,7 @@ import com.tencent.mm.opensdk.modelmsg.WXTextObject;
 import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+import com.tencent.mm.opensdk.constants.Build;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
@@ -55,7 +56,7 @@ public class WxShareAndLoginUtils {
         if (!iwxapi.isWXAppInstalled()) {
             Toast.makeText(context, R.string.install_weixin, Toast.LENGTH_SHORT).show();
             return false;
-        } else if (!iwxapi.isWXAppSupportAPI()) {
+        } else if (iwxapi.getWXAppSupportAPI()< Build.PAY_SUPPORTED_SDK_INT){
             Toast.makeText(context, R.string.updata_weixin, Toast.LENGTH_SHORT).show();
             return false;
         }

@@ -4,7 +4,7 @@ apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId "com.oraclechain.pocketeos"
         minSdkVersion 19
