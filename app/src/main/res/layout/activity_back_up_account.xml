@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="?attr/color_bg_main"
-    tools:context="com.oraclechain.pocketeos.modules.account.backupaccount.activity.BackUpAccountActivity">
+    tools:context="com.oraclechain.pocketvkt.modules.account.backupaccount.activity.BackUpAccountActivity">
     <include layout="@layout/title_project"/>
 
     <android.support.design.widget.TabLayout

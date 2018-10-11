@@ -6,7 +6,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '28.0.2'
     defaultConfig {
-        applicationId "com.oraclechain.pocketeos"
+        applicationId "com.oraclechain.pocketvkt"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 131
@@ -35,7 +35,7 @@ android {
     greendao {
         //版本号，升级时可配置
         schemaVersion 1
-        daoPackage 'com.oraclechain.pocketeos.gen'
+        daoPackage 'com.oraclechain.pocketvkt.gen'
         targetGenDir 'src/main/java'
     }
 

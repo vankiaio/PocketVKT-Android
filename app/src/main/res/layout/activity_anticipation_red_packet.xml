@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketeos.modules.transaction.redpacket.anticipationredpacket.AnticipationRedPacketActivity">
+    tools:context="com.oraclechain.pocketvkt.modules.transaction.redpacket.anticipationredpacket.AnticipationRedPacketActivity">
 
     <RelativeLayout
         android:id="@+id/title"
@@ -41,14 +41,14 @@
         android:layout_width="match_parent"
         android:layout_height="100dp">
 
-        <com.oraclechain.pocketeos.view.ArcView
+        <com.oraclechain.pocketvkt.view.ArcView
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:scaleType="centerCrop"
             android:src="@color/red_packet_color"
             app:arcHeight="70dp"/>
 
-        <com.oraclechain.pocketeos.view.RoundImageView
+        <com.oraclechain.pocketvkt.view.RoundImageView
             android:id="@+id/user_img"
             android:layout_width="70dp"
             android:layout_height="70dp"

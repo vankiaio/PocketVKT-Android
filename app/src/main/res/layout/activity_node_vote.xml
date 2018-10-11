@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context="com.oraclechain.pocketeos.modules.nodevote.NodeVoteActivity">
+    tools:context="com.oraclechain.pocketvkt.modules.nodevote.NodeVoteActivity">
 
     <include
         android:id="@+id/title"

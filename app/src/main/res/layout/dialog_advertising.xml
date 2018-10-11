@@ -12,7 +12,7 @@
         android:background="@drawable/bg_dialog_confirm"
         android:orientation="vertical">
 
-        <com.oraclechain.pocketeos.view.OvalImageView
+        <com.oraclechain.pocketvkt.view.OvalImageView
             android:id="@+id/advertising_img"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimens_152"

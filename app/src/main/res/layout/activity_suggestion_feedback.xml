@@ -13,7 +13,7 @@
         style="?attr/line_style"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_1"/>
-    <com.oraclechain.pocketeos.view.ClearEditText
+    <com.oraclechain.pocketvkt.view.ClearEditText
         android:id="@+id/suggestion_details"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_160"

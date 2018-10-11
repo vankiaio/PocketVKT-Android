@@ -26,7 +26,7 @@
 
 #-------------------------------------------定制化区域----------------------------------------------
 #---------------------------------1.实体类---------------------------------
--keep class com.oraclechain.pocketeos.bean.** { *; }
+-keep class com.oraclechain.pocketvkt.bean.** { *; }
 #-------------------------------------------------------------------------
 
 #---------------------------------2.第三方包-------------------------------
@@ -124,7 +124,7 @@ public static java.lang.String TABLENAME;
 
 #---------------------------------3.与js互相调用的类------------------------
 
--keepclasseswithmembers class com.oraclechain.pocketeos.modules.dapp.paidanswer.questiondetails$JSInterface {
+-keepclasseswithmembers class com.oraclechain.pocketvkt.modules.dapp.paidanswer.questiondetails$JSInterface {
       <methods>;
 
 #-------------------------------------------------------------------------

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketeos.modules.resourcemanager.resourcehome.fragment.memory.MemoryFragment">
+    tools:context="com.oraclechain.pocketvkt.modules.resourcemanager.resourcehome.fragment.memory.MemoryFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

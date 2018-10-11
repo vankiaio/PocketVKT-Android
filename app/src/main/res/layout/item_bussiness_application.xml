@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <com.oraclechain.pocketeos.view.RoundImageView
+    <com.oraclechain.pocketvkt.view.RoundImageView
         android:id="@+id/bussiness_application_img"
         android:layout_width="@dimen/dimens_34"
         android:layout_height="@dimen/dimens_34"

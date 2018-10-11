@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="?attr/color_bg_main"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketeos.modules.account.mapaccount.MapAccountActivity">
+    tools:context="com.oraclechain.pocketvkt.modules.account.mapaccount.MapAccountActivity">
 
     <include layout="@layout/title_project"/>
 
@@ -42,7 +42,7 @@
             android:text="@string/private_key"
             android:textSize="@dimen/dimens_16"/>
 
-        <com.oraclechain.pocketeos.view.ClearEditText
+        <com.oraclechain.pocketvkt.view.ClearEditText
             android:id="@+id/owner_private_key"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimens_40"

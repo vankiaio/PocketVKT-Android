@@ -34,7 +34,7 @@
                     android:layout_marginTop="@dimen/dimens_15"
                     android:src="@mipmap/user_wallet_code"/>
 
-                <com.oraclechain.pocketeos.view.RoundImageView
+                <com.oraclechain.pocketvkt.view.RoundImageView
                     android:id="@+id/user_img"
                     android:layout_width="@dimen/dimens_60"
                     android:layout_height="@dimen/dimens_60"

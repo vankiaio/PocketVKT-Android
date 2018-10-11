@@ -61,7 +61,7 @@
 
 **DOWNLOAD & TRY/下载试用**
 
-&emsp;[PocketEOS](https://pocketeos.com/)
+&emsp;[PocketEOS](https://pocketvkt.com/)
 
 
 **DEPENDENCYS/依赖库:**

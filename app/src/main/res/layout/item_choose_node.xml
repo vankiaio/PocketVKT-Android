@@ -24,7 +24,7 @@
             android:checked="false"
             android:clickable="false"/>
 
-        <com.oraclechain.pocketeos.view.RoundImageView
+        <com.oraclechain.pocketvkt.view.RoundImageView
             android:id="@+id/node_img"
             android:layout_width="@dimen/dimens_40"
             android:layout_height="@dimen/dimens_40"

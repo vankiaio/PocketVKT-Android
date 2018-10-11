@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="?attr/color_bg_main"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketeos.modules.leftdrawer.systemsetting.LanguageActivity">
+    tools:context="com.oraclechain.pocketvkt.modules.leftdrawer.systemsetting.LanguageActivity">
 
     <include layout="@layout/title_project"/>
 

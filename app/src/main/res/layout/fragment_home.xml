@@ -92,7 +92,7 @@
                 android:src="@mipmap/home_scan"/>
         </RelativeLayout>
 
-        <com.oraclechain.pocketeos.view.ScrollText
+        <com.oraclechain.pocketvkt.view.ScrollText
             android:id="@+id/notice"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimens_30"
@@ -115,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.oraclechain.pocketeos.view.MyScrollview
+            <com.oraclechain.pocketvkt.view.MyScrollview
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -135,7 +135,7 @@
                         android:background="@mipmap/home_top">
 
 
-                        <com.oraclechain.pocketeos.view.RoundImageView
+                        <com.oraclechain.pocketvkt.view.RoundImageView
                             android:id="@+id/user_img"
                             android:layout_width="@dimen/dimens_46"
                             android:layout_height="@dimen/dimens_46"
@@ -338,7 +338,7 @@
                             android:textSize="@dimen/dimens_12"/>
                     </RelativeLayout>
                 </LinearLayout>
-            </com.oraclechain.pocketeos.view.MyScrollview>
+            </com.oraclechain.pocketvkt.view.MyScrollview>
         </com.liaoinstan.springview.widget.SpringView>
     </LinearLayout>
 
