@@ -1,8 +1,8 @@
 # About/关于
 
-**PocketEOS** is an open-source EOS wallet APP,which is developed by [OracleChain.io](https://oraclechain.io).
+**PocketVKT** is an open-source EOS wallet APP,which is developed by [OracleChain.io](https://oraclechain.io).
 
-**PocketEOS**是一个开源EOS钱包APP，由[OracleChain团队](https://oraclechain.io)研发。
+**PocketVKT**是一个开源EOS钱包APP，由[OracleChain团队](https://oraclechain.io)研发。
 
 -------------------------------
 
@@ -55,13 +55,13 @@
 &emsp;2. download our git repository.
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git` 
 
-&emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
+&emsp;3. import the project and change the configuration of backend server address according to your local PocketVKT-ShieldServer.
 
 &emsp;4. run
 
 **DOWNLOAD & TRY/下载试用**
 
-&emsp;[PocketEOS](https://pocketvkt.com/)
+&emsp;[PocketVKT](https://pocketvkt.com/)
 
 
 **DEPENDENCYS/依赖库:**
