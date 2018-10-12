@@ -1,8 +1,8 @@
 # About/关于
 
-**PocketVKT** is an open-source EOS wallet APP,which is developed by [OracleChain.io](https://oraclechain.io).
+**PocketVKT** is an open-source VKT wallet APP,which is developed by [OracleChain.io](https://oraclechain.io).
 
-**PocketVKT**是一个开源EOS钱包APP，由[OracleChain团队](https://oraclechain.io)研发。
+**PocketVKT**是一个开源VKT钱包APP，由[OracleChain团队](https://oraclechain.io)研发。
 
 -------------------------------
 
