@@ -29,7 +29,7 @@ import java.net.SocketTimeoutException;
 import okhttp3.Response;
 
 /**
- * Created by pocketEos on 2018/4/2.
+ * Created by pocketVkt on 2018/4/2.
  */
 public abstract class JsonCallback<T> extends AbsCallback<T> {
 

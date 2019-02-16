@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/1/11.
+ * Created by pocketVkt on 2018/1/11.
  */
 
 public class CoinBean {
@@ -12,7 +12,7 @@ public class CoinBean {
     /**
      * code : 0
      * message : ok
-     * data : [{"id":0,"assetName":"全部资产"},{"id":4,"assetName":"BTC"},{"id":2,"assetName":"EOS"},{"id":3,"assetName":"ETH"},{"id":1,"assetName":"OCT"}]
+     * data : [{"id":0,"assetName":"全部资产"},{"id":4,"assetName":"BTC"},{"id":2,"assetName":"VKT"},{"id":3,"assetName":"ETH"},{"id":1,"assetName":"OCT"}]
      */
 
     private String code;

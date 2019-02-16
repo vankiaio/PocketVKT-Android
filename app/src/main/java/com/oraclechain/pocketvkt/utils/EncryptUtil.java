@@ -19,7 +19,7 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * Created by pocketEos on 2018/5/26.
+ * Created by pocketVkt on 2018/5/26.
  * 加密工具类
  */
 public class EncryptUtil {

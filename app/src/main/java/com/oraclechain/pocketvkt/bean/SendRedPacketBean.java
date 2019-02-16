@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by pocketEos on 2018/4/12.
+ * Created by pocketVkt on 2018/4/12.
  */
 
 public class SendRedPacketBean {

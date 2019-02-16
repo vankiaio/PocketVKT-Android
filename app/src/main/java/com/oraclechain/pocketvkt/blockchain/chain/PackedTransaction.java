@@ -2,7 +2,7 @@ package com.oraclechain.pocketvkt.blockchain.chain;
 
 import com.google.gson.annotations.Expose;
 import com.oraclechain.pocketvkt.blockchain.cypto.util.HexUtils;
-import com.oraclechain.pocketvkt.blockchain.types.EosByteWriter;
+import com.oraclechain.pocketvkt.blockchain.types.VktByteWriter;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -41,7 +41,7 @@ public class PackedTransaction {
     }
 
     private byte[] packTransaction( Transaction transaction, CompressType compressType ) {
-        EosByteWriter byteWriter = new EosByteWriter(512);
+        VktByteWriter byteWriter = new VktByteWriter(512);
         transaction.pack(byteWriter);
 
         // pack -> compress
@@ -50,7 +50,7 @@ public class PackedTransaction {
 
 
     private byte[] packContextFreeData(  List<String> ctxFreeData, CompressType compressType ){
-        EosByteWriter byteWriter = new EosByteWriter(64);
+        VktByteWriter byteWriter = new VktByteWriter(64);
 
         int ctxFreeDataCount = ( ctxFreeData == null ) ? 0 : ctxFreeData.size();
         if ( ctxFreeDataCount == 0 ){

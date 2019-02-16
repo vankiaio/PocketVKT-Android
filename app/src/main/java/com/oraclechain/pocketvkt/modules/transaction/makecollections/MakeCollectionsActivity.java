@@ -124,7 +124,7 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
 
         mAccountInfoBeanList = JsonUtil.parseJsonToArrayList(MyApplication.getInstance().getUserBean().getAccount_info(), AccountInfoBean.class);
         mSwitchNumber.setText(getIntent().getStringExtra("account"));
-        mSwitchProperty.setText(getIntent().getStringExtra("coin"));//默认选择EOS
+        mSwitchProperty.setText(getIntent().getStringExtra("coin"));//默认选择VKT
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(MakeCollectionsActivity.this, LinearLayoutManager.VERTICAL, false);
         layoutManager.setSmoothScrollbarEnabled(true);
@@ -156,7 +156,7 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
 
     @Override
     protected void initData() {
-        mCoinList.add("EOS");
+        mCoinList.add("VKT");
         mCoinList.add("OCT");
 
         showProgress();
@@ -164,7 +164,7 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
         if (mSwitchProperty.getText().toString().equals("OCT")) {
             presenter.getCoinRateData("oraclechain");
         } else {
-            presenter.getCoinRateData("eos");
+            presenter.getCoinRateData("vkt");
         }
 
         mPostChainHistoryBean.setFrom(mSwitchNumber.getText().toString());
@@ -172,13 +172,13 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
         mPostChainHistoryBean.setPage(page);
         mPostChainHistoryBean.setPageSize(size);
         List<PostChainHistoryBean.SymbolsBean> symbolsBeans = new ArrayList<>();
-        PostChainHistoryBean.SymbolsBean symbolsBeanEos = new PostChainHistoryBean.SymbolsBean();
-        symbolsBeanEos.setSymbolName("EOS");
-        symbolsBeanEos.setContractName(com.oraclechain.pocketvkt.base.Constants.EOSCONTRACT);
+        PostChainHistoryBean.SymbolsBean symbolsBeanVkt = new PostChainHistoryBean.SymbolsBean();
+        symbolsBeanVkt.setSymbolName("VKT");
+        symbolsBeanVkt.setContractName(com.oraclechain.pocketvkt.base.Constants.VKTCONTRACT);
         PostChainHistoryBean.SymbolsBean symbolsBeanOCT = new PostChainHistoryBean.SymbolsBean();
         symbolsBeanOCT.setSymbolName("OCT");
         symbolsBeanOCT.setContractName(com.oraclechain.pocketvkt.base.Constants.OCTCONTRACT);
-        symbolsBeans.add(symbolsBeanEos);
+        symbolsBeans.add(symbolsBeanVkt);
         symbolsBeans.add(symbolsBeanOCT);
         mPostChainHistoryBean.setSymbols(symbolsBeans);
         presenter.getTransferHistoryData(mPostChainHistoryBean);
@@ -318,8 +318,8 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
 
                             if (mSwitchProperty.getText().toString().equals("OCT")) {
                                 presenter.getCoinRateData("oraclechain");
-                            } else if (mSwitchProperty.getText().toString().equals("EOS")) {
-                                presenter.getCoinRateData("eos");
+                            } else if (mSwitchProperty.getText().toString().equals("VKT")) {
+                                presenter.getCoinRateData("vkt");
                             }
                             if (isSHow1) {
                                 isSHow1 = false;
@@ -358,9 +358,9 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
                             Bundle params = new Bundle();
                             params.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_IMAGE);
                             params.putString(QQShare.SHARE_TO_QQ_IMAGE_LOCAL_URL, FilesUtils.savePhoto(bitmap, Environment
-                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/makeCollectionCode", String
+                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/makeCollectionCode", String
                                     .valueOf(System.currentTimeMillis())));
-                            params.putString(QQShare.SHARE_TO_QQ_APP_NAME, "pocketEos");
+                            params.putString(QQShare.SHARE_TO_QQ_APP_NAME, "pocketVkt");
                             params.putInt(QQShare.SHARE_TO_QQ_EXT_INT, QQShare.SHARE_TO_QQ_FLAG_QZONE_ITEM_HIDE);
                             MyApplication.getInstance().getTencent().shareToQQ(MakeCollectionsActivity.this, params, new BaseUIListener(MakeCollectionsActivity.this, true));
                         }
@@ -371,7 +371,7 @@ public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, M
                             params.putInt(QzonePublish.PUBLISH_TO_QZONE_KEY_TYPE, QzonePublish.PUBLISH_TO_QZONE_TYPE_PUBLISHMOOD);
                             ArrayList<String> imgUrlList = new ArrayList<>();
                             imgUrlList.add(FilesUtils.savePhoto(bitmap, Environment
-                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/makeCollectionCode", String
+                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/makeCollectionCode", String
                                     .valueOf(System.currentTimeMillis())));// 图片地址
                             params.putStringArrayList(QzonePublish.PUBLISH_TO_QZONE_IMAGE_URL,
                                     imgUrlList);// 图片地址ArrayList

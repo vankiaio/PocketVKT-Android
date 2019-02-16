@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.bean;
 
 /**
- * Created by pocketEos on 2018/4/8.
+ * Created by pocketVkt on 2018/4/8.
  */
 
 public class SparkLinesBean {
@@ -9,7 +9,7 @@ public class SparkLinesBean {
     /**
      * code : 0
      * message : ok
-     * data : {"sparkline_eos_png":"https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1765.png","sparkline_oct_png":"https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1838.png"}
+     * data : {"sparkline_vkt_png":"https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1765.png","sparkline_oct_png":"https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1838.png"}
      */
 
     private int code;
@@ -42,19 +42,19 @@ public class SparkLinesBean {
 
     public static class DataBean {
         /**
-         * sparkline_eos_png : https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1765.png
+         * sparkline_vkt_png : https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1765.png
          * sparkline_oct_png : https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1838.png
          */
 
-        private String sparkline_eos_png;
+        private String sparkline_vkt_png;
         private String sparkline_oct_png;
 
-        public String getSparkline_eos_png() {
-            return sparkline_eos_png == null ? "" : sparkline_eos_png;
+        public String getSparkline_vkt_png() {
+            return sparkline_vkt_png == null ? "" : sparkline_vkt_png;
         }
 
-        public void setSparkline_eos_png(String sparkline_eos_png) {
-            this.sparkline_eos_png = sparkline_eos_png;
+        public void setSparkline_vkt_png(String sparkline_vkt_png) {
+            this.sparkline_vkt_png = sparkline_vkt_png;
         }
 
         public String getSparkline_oct_png() {

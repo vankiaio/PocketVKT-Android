@@ -3,7 +3,7 @@ package com.oraclechain.pocketvkt.bean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/2/2.
+ * Created by pocketVkt on 2018/2/2.
  */
 
 public class PaidAnswerBean {

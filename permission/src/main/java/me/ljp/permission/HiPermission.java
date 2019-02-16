@@ -16,7 +16,7 @@ import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 /**
- * Created by pocketEos on 2017/5/10 0010.
+ * Created by pocketVkt on 2017/5/10 0010.
  */
 
 public class HiPermission {

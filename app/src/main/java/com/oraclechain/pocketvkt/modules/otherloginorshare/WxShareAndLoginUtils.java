@@ -26,7 +26,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- * Created by pocketEos on 2018/3/23.
+ * Created by pocketVkt on 2018/3/23.
  */
 
 public class WxShareAndLoginUtils {
@@ -141,8 +141,8 @@ public class WxShareAndLoginUtils {
         //第一版暂为applogo
 //        Bitmap bitmap = getBitmap(imgUrl);
         Bitmap bitmap;
-        if (title.equals(context.getString(R.string.eos_info_detail))) {
-            bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.eos);
+        if (title.equals(context.getString(R.string.vkt_info_detail))) {
+            bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.vkt);
         } else if (title.equals(context.getString(R.string.oct_info_detail))) {
             bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.oct);
         } else {

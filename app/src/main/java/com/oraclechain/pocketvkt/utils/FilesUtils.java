@@ -27,7 +27,7 @@ import java.io.InputStream;
 import java.io.RandomAccessFile;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 public class FilesUtils {
 

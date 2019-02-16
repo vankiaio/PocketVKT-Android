@@ -23,7 +23,7 @@
     &nbsp;
 </p>
 <p>
-    <span style="font-family:宋体">您可以使用社交模式下创建的钱包登录黑匣子模式。此时您的交易不会引起您在富豪榜上的位置变化。但如果其他用户关注了您的账户，他们依然能够通过</span>Pocket VKT<span style="font-family:宋体">看到您的这些交易。当您再次使用该钱包登录社交模式时，</span>Pocket VKT<span style="font-family:宋体">会重新统计您的账户资产，并计算您在富豪榜上的位置。如果您希望持久性地保持匿名，我们建议您创建专门的黑匣子钱包，并使用独立的</span>EOS<span style="font-family:宋体">账户。</span>
+    <span style="font-family:宋体">您可以使用社交模式下创建的钱包登录黑匣子模式。此时您的交易不会引起您在富豪榜上的位置变化。但如果其他用户关注了您的账户，他们依然能够通过</span>Pocket VKT<span style="font-family:宋体">看到您的这些交易。当您再次使用该钱包登录社交模式时，</span>Pocket VKT<span style="font-family:宋体">会重新统计您的账户资产，并计算您在富豪榜上的位置。如果您希望持久性地保持匿名，我们建议您创建专门的黑匣子钱包，并使用独立的</span>VKT<span style="font-family:宋体">账户。</span>
 </p>
 <p>
     <br/>

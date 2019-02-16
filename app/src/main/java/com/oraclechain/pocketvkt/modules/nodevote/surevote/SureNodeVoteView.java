@@ -6,7 +6,7 @@ import com.oraclechain.pocketvkt.bean.ResultTableRowBean;
 import com.oraclechain.pocketvkt.bean.ResultVoteWeightBean;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 public interface SureNodeVoteView extends BaseView {
 

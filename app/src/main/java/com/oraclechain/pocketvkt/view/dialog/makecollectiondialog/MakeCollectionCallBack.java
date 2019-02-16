@@ -3,7 +3,7 @@ package com.oraclechain.pocketvkt.view.dialog.makecollectiondialog;
 import android.graphics.Bitmap;
 
 /**
- * Created by pocketEos on 2017/12/5.
+ * Created by pocketVkt on 2017/12/5.
  */
 
 public interface MakeCollectionCallBack {

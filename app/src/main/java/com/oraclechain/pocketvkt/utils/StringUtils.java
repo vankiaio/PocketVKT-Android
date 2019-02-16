@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/12/5.
+ * Created by pocketVkt on 2017/12/5.
  */
 public class StringUtils {
     /**

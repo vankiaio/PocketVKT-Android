@@ -12,7 +12,7 @@ import java.util.Date;
  * Created by swapnibble on 2017-09-12.
  */
 
-public class EosChainInfo {
+public class VktChainInfo {
 
     @Expose
     private String server_version;
@@ -136,7 +136,7 @@ public class EosChainInfo {
 
     @Override
     public String toString() {
-        return "EosChainInfo{" +
+        return "VktChainInfo{" +
                 "server_version='" + server_version + '\'' +
                 ", head_block_num=" + head_block_num +
                 ", last_irreversible_block_num=" + last_irreversible_block_num +

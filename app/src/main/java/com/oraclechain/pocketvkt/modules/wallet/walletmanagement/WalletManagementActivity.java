@@ -181,7 +181,7 @@ public class WalletManagementActivity extends BaseAcitvity<WalletManagementView,
                     if (dialog == null) {
                         //创建本地备份生成文件
                         UserBackupPath = FilesUtils.saveTxtFile(jsonString, Environment
-                                .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/UserBackup", userBean + "的钱包");
+                                .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/UserBackup", userBean + "的钱包");
                         dialog = new BackUpNumberDialog(WalletManagementActivity.this, new BackUpNumberCallBack() {
                         });
                         dialog.setContent(userBean.getWallet_name() + "的钱包", UserBackupPath);

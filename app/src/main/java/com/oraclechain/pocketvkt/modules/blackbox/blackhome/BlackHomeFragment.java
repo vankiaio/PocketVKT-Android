@@ -351,13 +351,13 @@ public class BlackHomeFragment extends BaseFragment<BlackBoxHomeView, BlackBoxHo
                 break;
             case R.id.transfer_accounts:
                 bundle.putString("account", mChooseAccount.getText().toString().trim().toString());
-                bundle.putString("coin", "EOS");
+                bundle.putString("coin", "VKT");
                 bundle.putString("from", "home");
                 ActivityUtils.next(getActivity(), TransferAccountsActivity.class, bundle);
                 break;
             case R.id.make_collections:
                 bundle.putString("account", mChooseAccount.getText().toString().trim().toString());
-                bundle.putString("coin", "EOS");
+                bundle.putString("coin", "VKT");
                 ActivityUtils.next(getActivity(), MakeCollectionsActivity.class, bundle);
                 break;
         }
@@ -388,9 +388,9 @@ public class BlackHomeFragment extends BaseFragment<BlackBoxHomeView, BlackBoxHo
                 mAccountWithCoinBeen.add(accountWithCoinBean);
             }
             mCoinAdapter.notifyDataSetChanged();
-            BigDecimal eosToCny = BigDecimal.valueOf(Double.parseDouble(mAccountWithCoinBeen.get(0).getCoinForCny()));
+            BigDecimal vktToCny = BigDecimal.valueOf(Double.parseDouble(mAccountWithCoinBeen.get(0).getCoinForCny()));
             BigDecimal octToCny = BigDecimal.valueOf(Double.parseDouble(mAccountWithCoinBeen.get(1).getCoinForCny()));
-            openMoney = "≈" + StringUtils.addComma((BigDecimalUtil.add(eosToCny, octToCny) + ""));
+            openMoney = "≈" + StringUtils.addComma((BigDecimalUtil.add(vktToCny, octToCny) + ""));
             isOpen = Utils.getSpUtils().getBoolean("isOpenMoney");
             if (!isOpen) {
                 mUserAllProperty.setText("******");

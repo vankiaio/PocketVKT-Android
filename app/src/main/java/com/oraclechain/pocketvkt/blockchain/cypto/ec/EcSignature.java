@@ -57,7 +57,7 @@ public class EcSignature {
     }
 
     public EcSignature( String base58Str ){
-        String[] parts = EosEcUtil.safeSplitEosCryptoString( base58Str );
+        String[] parts = VktEcUtil.safeSplitVktCryptoString( base58Str );
         if ( parts.length < 3 ) {
             throw new IllegalArgumentException("Invalid private key format: " + base58Str);
         }
@@ -70,8 +70,8 @@ public class EcSignature {
             throw new IllegalArgumentException("Signature has no data: " + base58Str);
         }
 
-        this.curveParam = EosEcUtil.getCurveParamFrom( parts[1]);
-        byte[] rawBytes = EosEcUtil.getBytesIfMatchedRipemd160( parts[2], parts[1], null);
+        this.curveParam = VktEcUtil.getCurveParamFrom( parts[1]);
+        byte[] rawBytes = VktEcUtil.getBytesIfMatchedRipemd160( parts[2], parts[1], null);
 
         if ( null == rawBytes ) {
             // TODO handle error!
@@ -134,7 +134,7 @@ public class EcSignature {
     }
 
 
-    public String eosEncodingHex( boolean compressed ) {
+    public String vktEncodingHex( boolean compressed ) {
         if ( recId < 0 || recId > 3) {
             throw new IllegalStateException("signature has invalid recid.");
         }
@@ -145,7 +145,7 @@ public class EcSignature {
         System.arraycopy(EcTools.integerToBytes( this.r, 32), 0, sigData, 1, 32);
         System.arraycopy(EcTools.integerToBytes( this.s, 32), 0, sigData, 33, 32);
 
-        return EosEcUtil.encodeEosCrypto( PREFIX, curveParam , sigData);
+        return VktEcUtil.encodeVktCrypto( PREFIX, curveParam , sigData);
     }
 
     @Override
@@ -154,6 +154,6 @@ public class EcSignature {
             return "no recovery sig: "+ HexUtils.toHex(this.r.toByteArray()) + HexUtils.toHex(this.s.toByteArray());
         }
 
-        return eosEncodingHex( true );
+        return vktEncodingHex( true );
     }
 }

@@ -10,7 +10,7 @@ import com.oraclechain.pocketvkt.adapter.baseadapter.utils.WrapperUtils;
 
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 public class EmptyWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 {

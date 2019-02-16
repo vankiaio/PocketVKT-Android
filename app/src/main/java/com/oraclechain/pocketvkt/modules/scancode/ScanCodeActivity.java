@@ -201,7 +201,7 @@ public class ScanCodeActivity extends BaseAcitvity<NormalView, NormalPresenter> 
             } else {
                 QrCodeMakeCollectionBean qrCodeMakeCollectionBean = (QrCodeMakeCollectionBean) JsonUtil.parseStringToBean(data.toString(), QrCodeMakeCollectionBean.class);
                 bundle.putString("account", MyApplication.getInstance().getUserBean().getWallet_main_account());
-                bundle.putString("coin", "EOS");
+                bundle.putString("coin", "VKT");
                 bundle.putParcelable("info", qrCodeMakeCollectionBean);
                 bundle.putString("from", "qrcode");
                 ActivityUtils.next(ScanCodeActivity.this, TransferAccountsActivity.class, bundle, true);

@@ -19,7 +19,7 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * 备份eos账号
+ * 备份vkt账号
  */
 public class BackUpAccountActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
 

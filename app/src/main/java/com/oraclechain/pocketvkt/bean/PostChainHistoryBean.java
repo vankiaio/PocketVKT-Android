@@ -3,14 +3,14 @@ package com.oraclechain.pocketvkt.bean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/2/1.
+ * Created by pocketVkt on 2018/2/1.
  * 获取json序列化 发送的json实体类
  */
 public class PostChainHistoryBean {
 
 
     /**
-     * symbols : [{"symbolName":"EOS","contractName":"eosio.token"},{"symbolName":"AAA","contractName":"helloworldgo"}]
+     * symbols : [{"symbolName":"VKT","contractName":"vktio.token"},{"symbolName":"AAA","contractName":"helloworldgo"}]
      * from : oraclechain4
      * to : oraclechain4
      * page : 0
@@ -65,8 +65,8 @@ public class PostChainHistoryBean {
 
     public static class SymbolsBean {
         /**
-         * symbolName : EOS
-         * contractName : eosio.token
+         * symbolName : VKT
+         * contractName : vktio.token
          */
 
         private String symbolName;

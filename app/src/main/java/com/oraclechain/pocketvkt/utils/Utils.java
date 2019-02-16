@@ -13,7 +13,7 @@ import me.ljp.permission.PermissionCallback;
 import me.ljp.permission.PermissionItem;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  * Utils初始化相关
  */
 public final class Utils {

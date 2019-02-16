@@ -6,7 +6,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.Map;
 
 /**
- * Created by pocketEos on 2018/4/2.
+ * Created by pocketVkt on 2018/4/2.
  * app网络请求管理类
  */
 public class HttpUtils {

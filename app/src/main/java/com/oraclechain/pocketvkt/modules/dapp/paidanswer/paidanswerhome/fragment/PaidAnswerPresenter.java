@@ -12,7 +12,7 @@ import com.oraclechain.pocketvkt.net.HttpUtils;
 import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class PaidAnswerPresenter extends BasePresent<PaidAnswerView> {

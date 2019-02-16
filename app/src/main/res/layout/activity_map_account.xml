@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:padding="@dimen/dimens_20"
-        android:text="输入映射的EOS私钥"
+        android:text="输入映射的VKT私钥"
         android:textColor="@color/gray_color"
         android:textSize="@dimen/dimens_13"/>
 

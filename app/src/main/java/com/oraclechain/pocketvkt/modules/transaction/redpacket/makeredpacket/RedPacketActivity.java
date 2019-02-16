@@ -25,8 +25,8 @@ import com.oraclechain.pocketvkt.bean.AccountInfoBean;
 import com.oraclechain.pocketvkt.bean.CoinRateBean;
 import com.oraclechain.pocketvkt.bean.RedPacketHistoryBean;
 import com.oraclechain.pocketvkt.bean.SendRedPacketBean;
-import com.oraclechain.pocketvkt.bean.TransferEosMessageBean;
-import com.oraclechain.pocketvkt.blockchain.EosDataManger;
+import com.oraclechain.pocketvkt.bean.TransferVktMessageBean;
+import com.oraclechain.pocketvkt.blockchain.VktDataManger;
 import com.oraclechain.pocketvkt.utils.AndroidBug5497Workaround;
 import com.oraclechain.pocketvkt.utils.BigDecimalUtil;
 import com.oraclechain.pocketvkt.utils.JsonUtil;
@@ -109,7 +109,7 @@ public class RedPacketActivity extends BaseAcitvity<RedPacketView, RedPacketPres
 
         mAccountInfoBeanList = JsonUtil.parseJsonToArrayList(MyApplication.getInstance().getUserBean().getAccount_info(), AccountInfoBean.class);
         mSwitchNumber.setText(getIntent().getStringExtra("account"));
-        mSwitchProperty.setText(getIntent().getStringExtra("coin"));//默认选择EOS
+        mSwitchProperty.setText(getIntent().getStringExtra("coin"));//默认选择VKT
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(RedPacketActivity.this, LinearLayoutManager.VERTICAL, false);
@@ -139,14 +139,14 @@ public class RedPacketActivity extends BaseAcitvity<RedPacketView, RedPacketPres
 
     @Override
     protected void initData() {
-        mCoinList.add("EOS");
+        mCoinList.add("VKT");
         mCoinList.add("OCT");
         showProgress();
 
         if (mSwitchProperty.getText().toString().equals("OCT")) {
             presenter.getCoinRateData("oraclechain");
         } else {
-            presenter.getCoinRateData("eos");
+            presenter.getCoinRateData("vkt");
         }
 
 
@@ -193,18 +193,18 @@ public class RedPacketActivity extends BaseAcitvity<RedPacketView, RedPacketPres
     @Override
     public void sendRedPacketDataHttp(SendRedPacketBean.DataBean sendRedPacketBean) {
 
-        if (mSwitchProperty.getText().toString().equals("EOS")) {
-            new EosDataManger(RedPacketActivity.this, userPassword).setCoinRate(coinRate).setRedpacketInfo(sendRedPacketBean, mRedPacketNumber.getText().toString().trim())
+        if (mSwitchProperty.getText().toString().equals("VKT")) {
+            new VktDataManger(RedPacketActivity.this, userPassword).setCoinRate(coinRate).setRedpacketInfo(sendRedPacketBean, mRedPacketNumber.getText().toString().trim())
                     .sendRedPacket(
-                            new Gson().toJson(new TransferEosMessageBean(mLeaveMessage.getText().toString().trim()
+                            new Gson().toJson(new TransferVktMessageBean(mLeaveMessage.getText().toString().trim()
                                     , "oc.redpacket",
                                     StringUtils.addZero(mRedPacketMoney.getText().toString().trim()) + " " + mSwitchProperty.getText().toString().trim(),
                                     mSwitchNumber.getText().toString().trim())),
                             mSwitchNumber.getText().toString().trim());
         } else {
-            new EosDataManger(RedPacketActivity.this, userPassword).setRedpacketInfo(sendRedPacketBean, mRedPacketNumber.getText().toString().trim())
+            new VktDataManger(RedPacketActivity.this, userPassword).setRedpacketInfo(sendRedPacketBean, mRedPacketNumber.getText().toString().trim())
                     .sendRedPacket(
-                            new Gson().toJson(new TransferEosMessageBean(mLeaveMessage.getText().toString().trim()
+                            new Gson().toJson(new TransferVktMessageBean(mLeaveMessage.getText().toString().trim()
                                     , "oc.redpacket",
                                     StringUtils.addZero(mRedPacketMoney.getText().toString().trim()) + " " + mSwitchProperty.getText().toString().trim(),
                                     mSwitchNumber.getText().toString().trim())),
@@ -282,8 +282,8 @@ public class RedPacketActivity extends BaseAcitvity<RedPacketView, RedPacketPres
                             mSwitchProperty.setText(mCoinList.get(position));
                             if (mSwitchProperty.getText().toString().equals("OCT")) {
                                 presenter.getCoinRateData("oraclechain");
-                            } else if (mSwitchProperty.getText().toString().equals("EOS")) {
-                                presenter.getCoinRateData("eos");
+                            } else if (mSwitchProperty.getText().toString().equals("VKT")) {
+                                presenter.getCoinRateData("vkt");
                             }
                             mDataBeanList.clear();
                             presenter.getRedPacketHistoryData(mSwitchNumber.getText().toString().trim(), mSwitchProperty.getText().toString().trim());

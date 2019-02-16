@@ -31,9 +31,9 @@ import com.oraclechain.pocketvkt.bean.AccountWithCoinBean;
 import com.oraclechain.pocketvkt.bean.CoinRateBean;
 import com.oraclechain.pocketvkt.bean.PostChainHistoryBean;
 import com.oraclechain.pocketvkt.bean.QrCodeMakeCollectionBean;
-import com.oraclechain.pocketvkt.bean.TransferEosMessageBean;
+import com.oraclechain.pocketvkt.bean.TransferVktMessageBean;
 import com.oraclechain.pocketvkt.bean.TransferHistoryBean;
-import com.oraclechain.pocketvkt.blockchain.EosDataManger;
+import com.oraclechain.pocketvkt.blockchain.VktDataManger;
 import com.oraclechain.pocketvkt.modules.scancode.ScanCodeActivity;
 import com.oraclechain.pocketvkt.modules.transaction.transferaccounts.switchfriend.SwitchFriendActivity;
 import com.oraclechain.pocketvkt.utils.AndroidBug5497Workaround;
@@ -114,7 +114,7 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
     private PostChainHistoryBean mPostChainHistoryBean = new PostChainHistoryBean();
 
 
-    private AccountWithCoinBean eos, oct;//选择账号之后重新获取最新数据信息
+    private AccountWithCoinBean vkt, oct;//选择账号之后重新获取最新数据信息
     private BigDecimal coinRate;//资产汇率
     private String userPassword = null;
 
@@ -186,7 +186,7 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
 
     @Override
     protected void initData() {
-        mCoinList.add("EOS");
+        mCoinList.add("VKT");
         mCoinList.add("OCT");
         showProgress();
         mAccountInfoBeanList = JsonUtil.parseJsonToArrayList(MyApplication.getInstance().getUserBean().getAccount_info(), AccountInfoBean.class);
@@ -196,7 +196,7 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
         if (mSwitchProperty.getText().toString().equals("OCT")) {
             presenter.getCoinRateData("oraclechain");
         } else {
-            presenter.getCoinRateData("eos");
+            presenter.getCoinRateData("vkt");
         }
 
 
@@ -205,13 +205,13 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
         mPostChainHistoryBean.setPage(page);
         mPostChainHistoryBean.setPageSize(size);
         List<PostChainHistoryBean.SymbolsBean> symbolsBeans = new ArrayList<>();
-        PostChainHistoryBean.SymbolsBean symbolsBeanEos = new PostChainHistoryBean.SymbolsBean();
-        symbolsBeanEos.setSymbolName("EOS");
-        symbolsBeanEos.setContractName(com.oraclechain.pocketvkt.base.Constants.EOSCONTRACT);
+        PostChainHistoryBean.SymbolsBean symbolsBeanVkt = new PostChainHistoryBean.SymbolsBean();
+        symbolsBeanVkt.setSymbolName("VKT");
+        symbolsBeanVkt.setContractName(com.oraclechain.pocketvkt.base.Constants.VKTCONTRACT);
         PostChainHistoryBean.SymbolsBean symbolsBeanOCT = new PostChainHistoryBean.SymbolsBean();
         symbolsBeanOCT.setSymbolName("OCT");
         symbolsBeanOCT.setContractName(com.oraclechain.pocketvkt.base.Constants.OCTCONTRACT);
-        symbolsBeans.add(symbolsBeanEos);
+        symbolsBeans.add(symbolsBeanVkt);
         symbolsBeans.add(symbolsBeanOCT);
         mPostChainHistoryBean.setSymbols(symbolsBeans);
         presenter.getTransferHistoryData(mPostChainHistoryBean);
@@ -255,18 +255,18 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
             mCanUseProperty.setText(StringUtils.addComma(accountDetailsBean.getOct_balance()) + " OCT");
             mRmbProperty.setText("≈" + StringUtils.addComma(accountDetailsBean.getOct_balance_cny()) + " CNY");
         } else {
-            mCanUseProperty.setText(StringUtils.addComma(accountDetailsBean.getEos_balance()) + " EOS");
-            mRmbProperty.setText("≈" + StringUtils.addComma(accountDetailsBean.getEos_balance_cny()) + " CNY");
+            mCanUseProperty.setText(StringUtils.addComma(accountDetailsBean.getVkt_balance()) + " VKT");
+            mRmbProperty.setText("≈" + StringUtils.addComma(accountDetailsBean.getVkt_balance_cny()) + " CNY");
         }
-        eos = new AccountWithCoinBean();
-        eos.setCoinName("EOS");
-        eos.setCoinForCny(StringUtils.addComma(accountDetailsBean.getEos_balance_cny()) + " CNY");
-        eos.setCoinNumber(StringUtils.addComma(accountDetailsBean.getEos_balance()) + " EOS");
-        eos.setCoinImg(accountDetailsBean.getAccount_icon());
-        if (accountDetailsBean.getEos_price_change_in_24h().contains("-")) {
-            eos.setCoinUpsAndDowns(accountDetailsBean.getEos_price_change_in_24h() + "%");
+        vkt = new AccountWithCoinBean();
+        vkt.setCoinName("VKT");
+        vkt.setCoinForCny(StringUtils.addComma(accountDetailsBean.getVkt_balance_cny()) + " CNY");
+        vkt.setCoinNumber(StringUtils.addComma(accountDetailsBean.getVkt_balance()) + " VKT");
+        vkt.setCoinImg(accountDetailsBean.getAccount_icon());
+        if (accountDetailsBean.getVkt_price_change_in_24h().contains("-")) {
+            vkt.setCoinUpsAndDowns(accountDetailsBean.getVkt_price_change_in_24h() + "%");
         } else {
-            eos.setCoinUpsAndDowns("+" + accountDetailsBean.getEos_price_change_in_24h() + "%");
+            vkt.setCoinUpsAndDowns("+" + accountDetailsBean.getVkt_price_change_in_24h() + "%");
         }
 
         oct = new AccountWithCoinBean();
@@ -401,10 +401,10 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
                                 mCanUseProperty.setText(oct.getCoinNumber());
                                 mRmbProperty.setText("≈" + oct.getCoinForCny());
                                 presenter.getCoinRateData("oraclechain");
-                            } else if (mSwitchProperty.getText().toString().equals("EOS")) {
-                                mCanUseProperty.setText(eos.getCoinNumber());
-                                mRmbProperty.setText("≈" + eos.getCoinForCny());
-                                presenter.getCoinRateData("eos");
+                            } else if (mSwitchProperty.getText().toString().equals("VKT")) {
+                                mCanUseProperty.setText(vkt.getCoinNumber());
+                                mRmbProperty.setText("≈" + vkt.getCoinForCny());
+                                presenter.getCoinRateData("vkt");
                             }
                             isSHow1 = !isSHow1;
                             RotateUtils.rotateArrow(mLookProperty, isSHow1);
@@ -430,17 +430,17 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
                             if (MyApplication.getInstance().getUserBean().getWallet_shapwd().equals(PasswordToKeyUtils.shaCheck(password))) {
                                 userPassword = password;
                                 showProgress();
-                                if (mSwitchProperty.getText().toString().equals("EOS")) {
-                                    new EosDataManger(TransferAccountsActivity.this, userPassword).setCoinRate(coinRate).pushAction(
-                                            new Gson().toJson(new TransferEosMessageBean(mLeaveMessage.getText().toString().trim()
+                                if (mSwitchProperty.getText().toString().equals("VKT")) {
+                                    new VktDataManger(TransferAccountsActivity.this, userPassword).setCoinRate(coinRate).pushAction(
+                                            new Gson().toJson(new TransferVktMessageBean(mLeaveMessage.getText().toString().trim()
                                                     , mPropertyPerson.getText().toString().trim(),
                                                     StringUtils.addZero(mTakePropertyNumber.getText().toString().trim()) + " " + mSwitchProperty.getText().toString().trim(),
                                                     mSwitchNumber.getText().toString().trim())),
                                             mSwitchNumber.getText().toString().trim());
 
                                 } else {
-                                    new EosDataManger(TransferAccountsActivity.this, userPassword).setCoinRate(coinRate).pushAction(
-                                            new Gson().toJson(new TransferEosMessageBean(mLeaveMessage.getText().toString().trim()
+                                    new VktDataManger(TransferAccountsActivity.this, userPassword).setCoinRate(coinRate).pushAction(
+                                            new Gson().toJson(new TransferVktMessageBean(mLeaveMessage.getText().toString().trim()
                                                     , mPropertyPerson.getText().toString().trim(),
                                                     StringUtils.addZero(mTakePropertyNumber.getText().toString().trim()) + " " + mSwitchProperty.getText().toString().trim(),
                                                     mSwitchNumber.getText().toString().trim())),
@@ -481,10 +481,10 @@ public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView,
             mTakePropertyNumber.setText(data.getStringExtra("money"));
             mSwitchProperty.setText(data.getStringExtra("coin"));
 
-            if (data.getStringExtra("coin").equals("EOS")) {
-                mCanUseProperty.setText(eos.getCoinNumber());
-                mRmbProperty.setText("≈" + eos.getCoinForCny());
-                presenter.getCoinRateData("eos");
+            if (data.getStringExtra("coin").equals("VKT")) {
+                mCanUseProperty.setText(vkt.getCoinNumber());
+                mRmbProperty.setText("≈" + vkt.getCoinForCny());
+                presenter.getCoinRateData("vkt");
             } else {
                 mCanUseProperty.setText(oct.getCoinNumber());
                 mRmbProperty.setText("≈" + oct.getCoinForCny());

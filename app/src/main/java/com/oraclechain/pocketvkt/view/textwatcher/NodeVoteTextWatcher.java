@@ -9,21 +9,21 @@ import com.oraclechain.pocketvkt.utils.BigDecimalUtil;
 import com.oraclechain.pocketvkt.utils.ToastUtils;
 
 /**
- * Created by pocketEos on 2018/2/27.
+ * Created by pocketVkt on 2018/2/27.
  */
 
 public class NodeVoteTextWatcher implements TextWatcher {
     private EditText editText;
     private SeekBar mSeekBar;
-    private String eosToatalAmount;
+    private String vktToatalAmount;
 
 
-    public NodeVoteTextWatcher(EditText et, SeekBar seekBar, String eosToatalAmount) {
+    public NodeVoteTextWatcher(EditText et, SeekBar seekBar, String vktToatalAmount) {
         editText = et;
         mSeekBar = seekBar;
         mSeekBar.setFocusable(true);
         mSeekBar.setFocusableInTouchMode(true);
-        this.eosToatalAmount = eosToatalAmount;
+        this.vktToatalAmount = vktToatalAmount;
     }
 
     @Override
@@ -34,10 +34,10 @@ public class NodeVoteTextWatcher implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-        if (BigDecimalUtil.greaterThan(BigDecimalUtil.toBigDecimal(s.toString()), BigDecimalUtil.toBigDecimal(eosToatalAmount))) {
-            ToastUtils.showLongToast("您最多可输入" + eosToatalAmount + "EOS");
-            editText.setText(eosToatalAmount);
-            editText.setSelection(eosToatalAmount.length()); //光标移到最后
+        if (BigDecimalUtil.greaterThan(BigDecimalUtil.toBigDecimal(s.toString()), BigDecimalUtil.toBigDecimal(vktToatalAmount))) {
+            ToastUtils.showLongToast("您最多可输入" + vktToatalAmount + "VKT");
+            editText.setText(vktToatalAmount);
+            editText.setSelection(vktToatalAmount.length()); //光标移到最后
         }
     }
 

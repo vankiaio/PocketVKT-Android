@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 /**
- * Created by pocketEos on 2018/2/3.
+ * Created by pocketVkt on 2018/2/3.
  * 监听edittext文本框是否为空
  * 1.首位输入.的时候,补全为0.
  * <p>

@@ -19,7 +19,7 @@ import com.oraclechain.pocketvkt.utils.RotateUtils;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/12/4.
+ * Created by pocketVkt on 2017/12/4.
  */
 
 public class BasePopupWindow extends PopupWindow {

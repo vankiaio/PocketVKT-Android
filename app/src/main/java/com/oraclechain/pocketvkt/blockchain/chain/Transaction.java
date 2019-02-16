@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.blockchain.chain;
 
 import com.google.gson.annotations.Expose;
-import com.oraclechain.pocketvkt.blockchain.types.EosType;
+import com.oraclechain.pocketvkt.blockchain.types.VktType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +65,7 @@ public class Transaction extends TransactionHeader {
     }
 
     @Override
-    public void pack(EosType.Writer writer) {
+    public void pack(VktType.Writer writer) {
         super.pack(writer);
 
         writer.putCollection(context_free_actions);

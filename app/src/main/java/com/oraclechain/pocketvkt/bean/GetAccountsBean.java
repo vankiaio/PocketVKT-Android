@@ -3,7 +3,7 @@ package com.oraclechain.pocketvkt.bean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/6/13.
+ * Created by pocketVkt on 2018/6/13.
  */
 
 public class GetAccountsBean {

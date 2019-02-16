@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/1/19.
+ * Created by pocketVkt on 2018/1/19.
  */
 
-public class EosRegisterBean {
+public class VktRegisterBean {
 
 
     /**
      * code : 0
      * message : ok
-     * data : {"transaction_id":"b62dcc54263220d29cc9eccdba19f0a3ac4707f74497e907aee361f9bd0e9357","processed":{"output":[{"deferred_trxs":[],"notify":[]}],"ref_block_prefix":2555203186,"scope":["eos","inita"],"messages":[{"authorization":[{"permission":"active","account":"inita"}],"hex_data":"000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000","code":"eos","data":{"owner":{"keys":[{"weight":1,"key":"EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 EOS","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}},"type":"newaccount"}],"expiration":"2018-03-13T05:23:08","ref_block_num":64052,"signatures":["203ca8360aaf4e8d8ccaa342e6525f6873edc9017c8c446ef4669affca3bc8799e7c4176dd7c9832c2907fbcb129bd05b213a917b84fd2dc93f2c7c21cfcd1885f"]}}
+     * data : {"transaction_id":"b62dcc54263220d29cc9eccdba19f0a3ac4707f74497e907aee361f9bd0e9357","processed":{"output":[{"deferred_trxs":[],"notify":[]}],"ref_block_prefix":2555203186,"scope":["vkt","inita"],"messages":[{"authorization":[{"permission":"active","account":"inita"}],"hex_data":"000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000","code":"vkt","data":{"owner":{"keys":[{"weight":1,"key":"VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 VKT","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}},"type":"newaccount"}],"expiration":"2018-03-13T05:23:08","ref_block_num":64052,"signatures":["203ca8360aaf4e8d8ccaa342e6525f6873edc9017c8c446ef4669affca3bc8799e7c4176dd7c9832c2907fbcb129bd05b213a917b84fd2dc93f2c7c21cfcd1885f"]}}
      */
 
     private int code;
@@ -47,7 +47,7 @@ public class EosRegisterBean {
     public static class DataBeanX {
         /**
          * transaction_id : b62dcc54263220d29cc9eccdba19f0a3ac4707f74497e907aee361f9bd0e9357
-         * processed : {"output":[{"deferred_trxs":[],"notify":[]}],"ref_block_prefix":2555203186,"scope":["eos","inita"],"messages":[{"authorization":[{"permission":"active","account":"inita"}],"hex_data":"000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000","code":"eos","data":{"owner":{"keys":[{"weight":1,"key":"EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 EOS","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}},"type":"newaccount"}],"expiration":"2018-03-13T05:23:08","ref_block_num":64052,"signatures":["203ca8360aaf4e8d8ccaa342e6525f6873edc9017c8c446ef4669affca3bc8799e7c4176dd7c9832c2907fbcb129bd05b213a917b84fd2dc93f2c7c21cfcd1885f"]}
+         * processed : {"output":[{"deferred_trxs":[],"notify":[]}],"ref_block_prefix":2555203186,"scope":["vkt","inita"],"messages":[{"authorization":[{"permission":"active","account":"inita"}],"hex_data":"000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000","code":"vkt","data":{"owner":{"keys":[{"weight":1,"key":"VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 VKT","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}},"type":"newaccount"}],"expiration":"2018-03-13T05:23:08","ref_block_num":64052,"signatures":["203ca8360aaf4e8d8ccaa342e6525f6873edc9017c8c446ef4669affca3bc8799e7c4176dd7c9832c2907fbcb129bd05b213a917b84fd2dc93f2c7c21cfcd1885f"]}
          */
 
         private String transaction_id;
@@ -73,8 +73,8 @@ public class EosRegisterBean {
             /**
              * output : [{"deferred_trxs":[],"notify":[]}]
              * ref_block_prefix : 2555203186
-             * scope : ["eos","inita"]
-             * messages : [{"authorization":[{"permission":"active","account":"inita"}],"hex_data":"000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000","code":"eos","data":{"owner":{"keys":[{"weight":1,"key":"EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 EOS","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}},"type":"newaccount"}]
+             * scope : ["vkt","inita"]
+             * messages : [{"authorization":[{"permission":"active","account":"inita"}],"hex_data":"000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000","code":"vkt","data":{"owner":{"keys":[{"weight":1,"key":"VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 VKT","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}},"type":"newaccount"}]
              * expiration : 2018-03-13T05:23:08
              * ref_block_num : 64052
              * signatures : ["203ca8360aaf4e8d8ccaa342e6525f6873edc9017c8c446ef4669affca3bc8799e7c4176dd7c9832c2907fbcb129bd05b213a917b84fd2dc93f2c7c21cfcd1885f"]
@@ -187,8 +187,8 @@ public class EosRegisterBean {
                 /**
                  * authorization : [{"permission":"active","account":"inita"}]
                  * hex_data : 000000000093dd74000000800c11beb1010000000103e63fcce8e0374bf5a0d376a37ab6d3eca461b2fb14e4f7942acff19f90221e81010000010000000102ebb3f50ec826ed2079097eb2ecac235d101ef3245dc5090fe9bcc403c0364c67010000010000000001000000000093dd7400000000a8ed32320100010000000000000004454f5300000000
-                 * code : eos
-                 * data : {"owner":{"keys":[{"weight":1,"key":"EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 EOS","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}}
+                 * code : vkt
+                 * data : {"owner":{"keys":[{"weight":1,"key":"VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]},"creator":"inita","name":"qaz1234","active":{"keys":[{"weight":1,"key":"VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]},"deposit":"0.0001 VKT","recovery":{"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}}
                  * type : newaccount
                  */
 
@@ -243,11 +243,11 @@ public class EosRegisterBean {
 
                 public static class DataBean {
                     /**
-                     * owner : {"keys":[{"weight":1,"key":"EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]}
+                     * owner : {"keys":[{"weight":1,"key":"VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}],"threshold":1,"accounts":[]}
                      * creator : inita
                      * name : qaz1234
-                     * active : {"keys":[{"weight":1,"key":"EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]}
-                     * deposit : 0.0001 EOS
+                     * active : {"keys":[{"weight":1,"key":"VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}],"threshold":1,"accounts":[]}
+                     * deposit : 0.0001 VKT
                      * recovery : {"keys":[],"threshold":1,"accounts":[{"weight":1,"permission":{"permission":"active","account":"inita"}}]}
                      */
 
@@ -308,7 +308,7 @@ public class EosRegisterBean {
 
                     public static class OwnerBean {
                         /**
-                         * keys : [{"weight":1,"key":"EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}]
+                         * keys : [{"weight":1,"key":"VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R"}]
                          * threshold : 1
                          * accounts : []
                          */
@@ -350,7 +350,7 @@ public class EosRegisterBean {
                         public static class KeysBean {
                             /**
                              * weight : 1
-                             * key : EOS8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R
+                             * key : VKT8adwKXtTvPLC5qEJ84GWHS2YQBmJPNTER2rb7fZjmVVqV9Wp1R
                              */
 
                             private int weight;
@@ -376,7 +376,7 @@ public class EosRegisterBean {
 
                     public static class ActiveBean {
                         /**
-                         * keys : [{"weight":1,"key":"EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}]
+                         * keys : [{"weight":1,"key":"VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn"}]
                          * threshold : 1
                          * accounts : []
                          */
@@ -418,7 +418,7 @@ public class EosRegisterBean {
                         public static class KeysBeanX {
                             /**
                              * weight : 1
-                             * key : EOS6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn
+                             * key : VKT6gJ4yZsmoaxWvXWG9o4a5JS4unu99JCUqetLZLPidpp6XwvKUn
                              */
 
                             private int weight;

@@ -31,7 +31,7 @@ import okhttp3.Response;
 import okhttp3.ResponseBody;
 
 /**
- * Created by pocketEos on 2018/4/2.
+ * Created by pocketVkt on 2018/4/2.
  */
 public class JsonConvert<T> implements Converter<T> {
 

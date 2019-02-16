@@ -4,7 +4,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
 /**
- * Created by pocketEos on 2017/12/4.
+ * Created by pocketVkt on 2017/12/4.
  * 箭头旋转
  */
 

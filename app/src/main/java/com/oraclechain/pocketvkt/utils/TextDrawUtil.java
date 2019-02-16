@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.widget.TextView;
 
 /**
- * Created by pocketEos on 2018/6/1.
+ * Created by pocketVkt on 2018/6/1.
  */
 
 public class TextDrawUtil {

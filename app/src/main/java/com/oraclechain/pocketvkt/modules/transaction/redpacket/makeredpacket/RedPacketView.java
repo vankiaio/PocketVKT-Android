@@ -8,7 +8,7 @@ import com.oraclechain.pocketvkt.bean.SendRedPacketBean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 public interface RedPacketView extends BaseView {
     void getCoinRateDataHttp(CoinRateBean.DataBean coinRateBean);

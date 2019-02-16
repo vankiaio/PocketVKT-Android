@@ -13,7 +13,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2018/1/18.
+ * Created by pocketVkt on 2018/1/18.
  */
 
 public class OtherLoginTypePresenter extends BasePresent<OtherLoginTypeView> {

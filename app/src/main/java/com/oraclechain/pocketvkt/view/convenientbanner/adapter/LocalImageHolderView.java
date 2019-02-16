@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.view.convenientbanner.adapter;
 
 /**
- * Created by pocketEos on 2018/1/3.
+ * Created by pocketVkt on 2018/1/3.
  */
 
 import android.content.Context;

@@ -5,7 +5,7 @@ import com.oraclechain.pocketvkt.bean.SparkLinesBean;
 import com.oraclechain.pocketvkt.bean.TransferHistoryBean;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 public interface CoinDetailsView extends BaseView {
 

@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 
 /**
- * Created by pocketEos on 2017/11/30.
+ * Created by pocketVkt on 2017/11/30.
  */
 public class SideBarView extends View {
     public static String[] b = {"@", "A", "B", "C", "D", "E", "F", "G", "H", "I",

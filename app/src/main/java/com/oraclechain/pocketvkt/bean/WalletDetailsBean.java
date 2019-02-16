@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/1/25.
+ * Created by pocketVkt on 2018/1/25.
  */
 
 public class WalletDetailsBean {
@@ -12,7 +12,7 @@ public class WalletDetailsBean {
     /**
      * code : 0
      * message : ok
-     * data : [{"eosAccountName":"1589","isMainAccount":1}]
+     * data : [{"vktAccountName":"1589","isMainAccount":1}]
      */
 
     private String code;
@@ -48,19 +48,19 @@ public class WalletDetailsBean {
 
     public static class DataBean {
         /**
-         * eosAccountName : 1589
+         * vktAccountName : 1589
          * isMainAccount : 1
          */
 
-        private String eosAccountName;
+        private String vktAccountName;
         private int isMainAccount;
 
-        public String getEosAccountName() {
-            return eosAccountName == null ? "" : eosAccountName;
+        public String getVktAccountName() {
+            return vktAccountName == null ? "" : vktAccountName;
         }
 
-        public void setEosAccountName(String eosAccountName) {
-            this.eosAccountName = eosAccountName;
+        public void setVktAccountName(String vktAccountName) {
+            this.vktAccountName = vktAccountName;
         }
 
         public int getIsMainAccount() {

@@ -37,7 +37,7 @@ import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 
 public class MyApplication extends MultiDexApplication {
@@ -138,7 +138,7 @@ public class MyApplication extends MultiDexApplication {
      */
     private void setupDatabase() {
         //创建数据库
-        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "pocketEos.db", null);
+        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "pocketVkt.db", null);
         //获取可写数据库
         SQLiteDatabase db = helper.getWritableDatabase();
         //获取数据库对象

@@ -5,7 +5,7 @@ import com.oraclechain.pocketvkt.bean.CoinRateBean;
 import com.oraclechain.pocketvkt.bean.RedPacketDetailsBean;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 public interface ContinueRedPacketView extends BaseView {
     void getCoinRateDataHttp(CoinRateBean.DataBean coinRateBean);

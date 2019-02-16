@@ -249,7 +249,7 @@ public class UserCenterActivity extends BaseAcitvity<UserCenterView, UserCenterP
                             @Override
                             public void goTakePhoto() {
                                 String pathUri = Environment
-                                        .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/Picture";
+                                        .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/Picture";
                                 if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
                                     File f = new File(pathUri);// 目录
                                     if (!f.exists()) {
@@ -353,7 +353,7 @@ public class UserCenterActivity extends BaseAcitvity<UserCenterView, UserCenterP
             mBitmap = extras.getParcelable("data");
             mBitmap = FilesUtils.toRoundBitmap(mBitmap, tempUri);
             imagePath = FilesUtils.savePhoto(mBitmap, Environment
-                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/ClipPhoto", String
+                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/ClipPhoto", String
                     .valueOf(System.currentTimeMillis()));
             if (imagePath != null) {
                 showProgress();

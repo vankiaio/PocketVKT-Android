@@ -5,7 +5,7 @@ import com.oraclechain.pocketvkt.bean.AccountDetailsBean;
 import com.oraclechain.pocketvkt.bean.TableResultBean;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 public interface ChangeMemoryView extends BaseView {
 

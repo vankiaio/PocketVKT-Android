@@ -12,7 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Created by pocketEos on 2018/1/3.
+ * Created by pocketVkt on 2018/1/3.
  * recycleview分割线
  */
 

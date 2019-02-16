@@ -2,7 +2,7 @@ package com.oraclechain.pocketvkt.utils;
 
 import com.oraclechain.pocketvkt.app.MyApplication;
 import com.oraclechain.pocketvkt.bean.AccountInfoBean;
-import com.oraclechain.pocketvkt.blockchain.cypto.ec.EosPrivateKey;
+import com.oraclechain.pocketvkt.blockchain.cypto.ec.VktPrivateKey;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/2/3.
+ * Created by pocketVkt on 2018/2/3.
  */
 
 public class PublicAndPrivateKeyUtils {
@@ -50,10 +50,10 @@ public class PublicAndPrivateKeyUtils {
         }
     }
 
-    public static EosPrivateKey[] getPrivateKey(int count) {
-        EosPrivateKey[] retKeys = new EosPrivateKey[count];
+    public static VktPrivateKey[] getPrivateKey(int count) {
+        VktPrivateKey[] retKeys = new VktPrivateKey[count];
         for (int i = 0; i < count; i++) {
-            retKeys[i] = new EosPrivateKey();
+            retKeys[i] = new VktPrivateKey();
         }
 
         return retKeys;

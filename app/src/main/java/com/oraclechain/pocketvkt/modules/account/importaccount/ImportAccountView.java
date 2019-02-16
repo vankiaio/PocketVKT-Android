@@ -4,7 +4,7 @@ import com.oraclechain.pocketvkt.base.BaseView;
 import com.oraclechain.pocketvkt.bean.BlockChainAccountInfoBean;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 public interface ImportAccountView extends BaseView {
 
@@ -14,5 +14,5 @@ public interface ImportAccountView extends BaseView {
 
     void getDataHttpFail(String msg);
 
-    void postEosAccountDataHttp();
+    void postVktAccountDataHttp();
 }

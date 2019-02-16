@@ -90,7 +90,7 @@ public class CoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetai
     private EmptyWrapper mHistoryAdapter;
     private int size = 10; //每页加载的数量
     private PostChainHistoryBean mPostChainHistoryBean = new PostChainHistoryBean();
-    private String cointype = "eos";
+    private String cointype = "vkt";
     private int page = 0;
 
     @Override
@@ -107,8 +107,8 @@ public class CoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetai
         mRecycleCoinHistory.addItemDecoration(new RecycleViewDivider(getContext(), LinearLayoutManager.HORIZONTAL, 1, getResources().getColor(R.color.line)));
 
         accountWithCoinBean = getIntent().getParcelableExtra("coin");
-        if (accountWithCoinBean.getCoinName().equals("EOS")) {
-            cointype = "eos";
+        if (accountWithCoinBean.getCoinName().equals("VKT")) {
+            cointype = "vkt";
         } else {
             cointype = "oct";
         }
@@ -125,8 +125,8 @@ public class CoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetai
         mIconNumber.setText(StringUtils.addComma(accountWithCoinBean.getCoinNumber()) + " " + accountWithCoinBean.getCoinName());
         mIconRmbNumber.setText("≈" + StringUtils.addComma(accountWithCoinBean.getCoinForCny()) + " CNY");
 
-        if (accountWithCoinBean.getCoinName().equals("EOS")) {
-            mCoinMaketCap.setText(getString(R.string.rated_24) + accountWithCoinBean.getEos_market_cap_cny() + "CNY");
+        if (accountWithCoinBean.getCoinName().equals("VKT")) {
+            mCoinMaketCap.setText(getString(R.string.rated_24) + accountWithCoinBean.getVkt_market_cap_cny() + "CNY");
         } else {
             mCoinMaketCap.setText(getString(R.string.rated_24) + accountWithCoinBean.getOct_market_cap_cny() + "CNY");
         }
@@ -168,13 +168,13 @@ public class CoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetai
         mPostChainHistoryBean.setPage(page);
         mPostChainHistoryBean.setPageSize(size);
         List<PostChainHistoryBean.SymbolsBean> symbolsBeans = new ArrayList<>();
-        PostChainHistoryBean.SymbolsBean symbolsBeanEos = new PostChainHistoryBean.SymbolsBean();
-        symbolsBeanEos.setSymbolName("EOS");
-        symbolsBeanEos.setContractName(com.oraclechain.pocketvkt.base.Constants.EOSCONTRACT);
+        PostChainHistoryBean.SymbolsBean symbolsBeanVkt = new PostChainHistoryBean.SymbolsBean();
+        symbolsBeanVkt.setSymbolName("VKT");
+        symbolsBeanVkt.setContractName(com.oraclechain.pocketvkt.base.Constants.VKTCONTRACT);
         PostChainHistoryBean.SymbolsBean symbolsBeanOCT = new PostChainHistoryBean.SymbolsBean();
         symbolsBeanOCT.setSymbolName("OCT");
         symbolsBeanOCT.setContractName(com.oraclechain.pocketvkt.base.Constants.OCTCONTRACT);
-        symbolsBeans.add(symbolsBeanEos);
+        symbolsBeans.add(symbolsBeanVkt);
         symbolsBeans.add(symbolsBeanOCT);
         mPostChainHistoryBean.setSymbols(symbolsBeans);
         presenter.getTransferHistoryData(mPostChainHistoryBean);
@@ -218,8 +218,8 @@ public class CoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetai
     public void getSparklinesData(SparkLinesBean.DataBean dataBean) {
         mSpring.onFinishFreshAndLoad();
         hideProgress();
-        if (accountWithCoinBean.getCoinName().equals("EOS")) {
-            MyApplication.getInstance().showImage(dataBean.getSparkline_eos_png(), mCoinUpanddownImg);
+        if (accountWithCoinBean.getCoinName().equals("VKT")) {
+            MyApplication.getInstance().showImage(dataBean.getSparkline_vkt_png(), mCoinUpanddownImg);
         } else {
             MyApplication.getInstance().showImage(dataBean.getSparkline_oct_png(), mCoinUpanddownImg);
         }
@@ -243,7 +243,7 @@ public class CoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetai
                 if (accountWithCoinBean.getCoinName().equals("OCT")) {
                     desc = getString(R.string.reference_price_cny) + StringUtils.addComma(accountWithCoinBean.getOct_price_cny()) + getString(R.string.toast_down_up) + accountWithCoinBean.getCoinUpsAndDowns() + getString(R.string.all_market_price)+ StringUtils.addComma(accountWithCoinBean.getOct_market_cap_cny());
                 } else {
-                    desc =  getString(R.string.reference_price_cny) + StringUtils.addComma(accountWithCoinBean.getEos_price_cny()) + getString(R.string.toast_down_up) + accountWithCoinBean.getCoinUpsAndDowns() + getString(R.string.all_market_price) + StringUtils.addComma(accountWithCoinBean.getEos_market_cap_cny());
+                    desc =  getString(R.string.reference_price_cny) + StringUtils.addComma(accountWithCoinBean.getVkt_price_cny()) + getString(R.string.toast_down_up) + accountWithCoinBean.getCoinUpsAndDowns() + getString(R.string.all_market_price) + StringUtils.addComma(accountWithCoinBean.getVkt_market_cap_cny());
                 }
                 if (dialog == null) {
                     bundle.putParcelable("coin", accountWithCoinBean);

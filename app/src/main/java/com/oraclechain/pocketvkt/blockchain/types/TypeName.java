@@ -29,7 +29,7 @@ import java.util.Arrays;
  * Created by swapnibble on 2017-09-12.
  */
 
-public class TypeName implements EosType.Packer {
+public class TypeName implements VktType.Packer {
     private static final String CHAR_MAP = ".12345abcdefghijklmnopqrstuvwxyz";
 
     private static final int MAX_NAME_IDX = 12;
@@ -95,7 +95,7 @@ public class TypeName implements EosType.Packer {
     }
 
     @Override
-    public void pack(EosType.Writer writer) {
+    public void pack(VktType.Writer writer) {
         writer.putLongLE( mValue);
     }
 

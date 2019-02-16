@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimens_40"
             android:gravity="center_vertical"
-            android:text="@string/eos_number"
+            android:text="@string/vkt_number"
             android:textColor="@color/white"
             android:textSize="@dimen/dimens_15"/>
 

@@ -30,16 +30,16 @@ import java.util.Collection;
  * Created by swapnibble on 2017-09-12.
  */
 
-public class EosByteWriter implements EosType.Writer {
+public class VktByteWriter implements VktType.Writer {
     private byte[] _buf;
     private int _index;
 
-    public EosByteWriter(int capacity) {
+    public VktByteWriter(int capacity) {
         _buf = new byte[capacity];
         _index = 0;
     }
 
-    public EosByteWriter(byte[] buf) {
+    public VktByteWriter(byte[] buf) {
         _buf = buf;
         _index = buf.length;
     }
@@ -129,7 +129,7 @@ public class EosByteWriter implements EosType.Writer {
     }
 
     @Override
-    public void putCollection(Collection<? extends EosType.Packer> collection){
+    public void putCollection(Collection<? extends VktType.Packer> collection){
         if ( null == collection){
             putVariableUInt( 0 );
             return;
@@ -138,7 +138,7 @@ public class EosByteWriter implements EosType.Writer {
         // element count 는 variable int 로 넣어야 한다.
         putVariableUInt( collection.size() );
 
-        for ( EosType.Packer type : collection) {
+        for ( VktType.Packer type : collection) {
             type.pack( this );
         }
     }

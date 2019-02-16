@@ -6,29 +6,29 @@ import java.util.Collection;
  * Created by swapnibble on 2017-09-12.
  */
 
-public interface EosType {
+public interface VktType {
     class InsufficientBytesException extends Exception {
 
         private static final long serialVersionUID = 1L;
     }
 
     interface Packer {
-        void pack(EosType.Writer writer);
+        void pack(VktType.Writer writer);
     }
 
     interface Unpacker {
-        void unpack(EosType.Reader reader) throws EosType.InsufficientBytesException;
+        void unpack(VktType.Reader reader) throws VktType.InsufficientBytesException;
     }
 
     interface Reader {
-        byte get() throws EosType.InsufficientBytesException;
-        int getShortLE() throws EosType.InsufficientBytesException;
-        int getIntLE() throws EosType.InsufficientBytesException;
-        long getLongLE() throws EosType.InsufficientBytesException;
-        byte[] getBytes(int size) throws EosType.InsufficientBytesException;
-        String getString() throws EosType.InsufficientBytesException;
+        byte get() throws VktType.InsufficientBytesException;
+        int getShortLE() throws VktType.InsufficientBytesException;
+        int getIntLE() throws VktType.InsufficientBytesException;
+        long getLongLE() throws VktType.InsufficientBytesException;
+        byte[] getBytes(int size) throws VktType.InsufficientBytesException;
+        String getString() throws VktType.InsufficientBytesException;
 
-        long getVariableUint() throws EosType.InsufficientBytesException;
+        long getVariableUint() throws VktType.InsufficientBytesException;
     }
 
     interface Writer {

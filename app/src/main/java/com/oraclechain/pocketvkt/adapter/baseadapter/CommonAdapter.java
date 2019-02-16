@@ -9,7 +9,7 @@ import com.oraclechain.pocketvkt.adapter.baseadapter.base.ViewHolder;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 public abstract class CommonAdapter<T> extends MultiItemTypeAdapter<T>
 {

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/2/6.
+ * Created by pocketVkt on 2018/2/6.
  */
 
 public class BlockChainAccountInfoBean {
@@ -15,7 +15,7 @@ public class BlockChainAccountInfoBean {
     /**
      * code : 0
      * message : ok
-     * data : {"head_block_num":1850653,"refund_request":null,"total_resources":{"owner":"oraclechain4","ram_bytes":7920,"net_weight":"0.3333 EOS","cpu_weight":"0.3333 EOS"},"head_block_time":"2018-06-21T09:12:57.500","created":"2018-06-10T13:09:52.000","ram_quota":7920,"net_limit":{"max":153653,"available":152415,"used":1238},"self_delegated_bandwidth":null,"net_weight":3333,"cpu_weight":3333,"privileged":false,"ram_usage":3310,"permissions":[{"parent":"owner","required_auth":{"waits":[],"keys":[{"weight":1,"key":"EOS67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}],"threshold":1,"accounts":[]},"perm_name":"active"},{"parent":"","required_auth":{"waits":[],"keys":[{"weight":1,"key":"EOS7KX6pa4g4bchgvW1824CuuBYWD5idLkCgDia7ZuTpx7rGEkey8"}],"threshold":1,"accounts":[]},"perm_name":"owner"}],"account_name":"oraclechain4","last_code_update":"1970-01-01T00:00:00.000","cpu_limit":{"max":29424,"available":19518,"used":9906},"voter_info":{"owner":"oraclechain4","proxy":"","last_vote_weight":"0.00000000000000000","proxied_vote_weight":"0.00000000000000000","staked":0,"is_proxy":0,"producers":["oraclegogogo"]}}
+     * data : {"head_block_num":1850653,"refund_request":null,"total_resources":{"owner":"oraclechain4","ram_bytes":7920,"net_weight":"0.3333 VKT","cpu_weight":"0.3333 VKT"},"head_block_time":"2018-06-21T09:12:57.500","created":"2018-06-10T13:09:52.000","ram_quota":7920,"net_limit":{"max":153653,"available":152415,"used":1238},"self_delegated_bandwidth":null,"net_weight":3333,"cpu_weight":3333,"privileged":false,"ram_usage":3310,"permissions":[{"parent":"owner","required_auth":{"waits":[],"keys":[{"weight":1,"key":"VKT67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}],"threshold":1,"accounts":[]},"perm_name":"active"},{"parent":"","required_auth":{"waits":[],"keys":[{"weight":1,"key":"VKT7KX6pa4g4bchgvW1824CuuBYWD5idLkCgDia7ZuTpx7rGEkey8"}],"threshold":1,"accounts":[]},"perm_name":"owner"}],"account_name":"oraclechain4","last_code_update":"1970-01-01T00:00:00.000","cpu_limit":{"max":29424,"available":19518,"used":9906},"voter_info":{"owner":"oraclechain4","proxy":"","last_vote_weight":"0.00000000000000000","proxied_vote_weight":"0.00000000000000000","staked":0,"is_proxy":0,"producers":["oraclegogogo"]}}
      */
 
     private int code;
@@ -50,7 +50,7 @@ public class BlockChainAccountInfoBean {
         /**
          * head_block_num : 1850653
          * refund_request : null
-         * total_resources : {"owner":"oraclechain4","ram_bytes":7920,"net_weight":"0.3333 EOS","cpu_weight":"0.3333 EOS"}
+         * total_resources : {"owner":"oraclechain4","ram_bytes":7920,"net_weight":"0.3333 VKT","cpu_weight":"0.3333 VKT"}
          * head_block_time : 2018-06-21T09:12:57.500
          * created : 2018-06-10T13:09:52.000
          * ram_quota : 7920
@@ -60,7 +60,7 @@ public class BlockChainAccountInfoBean {
          * cpu_weight : 3333
          * privileged : false
          * ram_usage : 3310
-         * permissions : [{"parent":"owner","required_auth":{"waits":[],"keys":[{"weight":1,"key":"EOS67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}],"threshold":1,"accounts":[]},"perm_name":"active"},{"parent":"","required_auth":{"waits":[],"keys":[{"weight":1,"key":"EOS7KX6pa4g4bchgvW1824CuuBYWD5idLkCgDia7ZuTpx7rGEkey8"}],"threshold":1,"accounts":[]},"perm_name":"owner"}]
+         * permissions : [{"parent":"owner","required_auth":{"waits":[],"keys":[{"weight":1,"key":"VKT67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}],"threshold":1,"accounts":[]},"perm_name":"active"},{"parent":"","required_auth":{"waits":[],"keys":[{"weight":1,"key":"VKT7KX6pa4g4bchgvW1824CuuBYWD5idLkCgDia7ZuTpx7rGEkey8"}],"threshold":1,"accounts":[]},"perm_name":"owner"}]
          * account_name : oraclechain4
          * last_code_update : 1970-01-01T00:00:00.000
          * cpu_limit : {"max":29424,"available":19518,"used":9906}
@@ -225,8 +225,8 @@ public class BlockChainAccountInfoBean {
             /**
              * owner : oraclechain4
              * ram_bytes : 7920
-             * net_weight : 0.3333 EOS
-             * cpu_weight : 0.3333 EOS
+             * net_weight : 0.3333 VKT
+             * cpu_weight : 0.3333 VKT
              */
 
             private String owner;
@@ -560,7 +560,7 @@ public class BlockChainAccountInfoBean {
         public static class PermissionsBean implements Parcelable {
             /**
              * parent : owner
-             * required_auth : {"waits":[],"keys":[{"weight":1,"key":"EOS67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}],"threshold":1,"accounts":[]}
+             * required_auth : {"waits":[],"keys":[{"weight":1,"key":"VKT67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}],"threshold":1,"accounts":[]}
              * perm_name : active
              */
 
@@ -595,7 +595,7 @@ public class BlockChainAccountInfoBean {
             public static class RequiredAuthBean implements Parcelable {
                 /**
                  * waits : []
-                 * keys : [{"weight":1,"key":"EOS67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}]
+                 * keys : [{"weight":1,"key":"VKT67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG"}]
                  * threshold : 1
                  * accounts : []
                  */
@@ -640,7 +640,7 @@ public class BlockChainAccountInfoBean {
                 public static class KeysBean implements Parcelable {
                     /**
                      * weight : 1
-                     * key : EOS67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG
+                     * key : VKT67pa5ex64cECp2esLp6km78QfZDyEY8mAPieBHkD7JvfxiFzTG
                      */
 
                     private int weight;

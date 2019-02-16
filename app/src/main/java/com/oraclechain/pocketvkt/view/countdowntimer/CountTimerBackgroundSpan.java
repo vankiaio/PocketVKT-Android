@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.text.style.ImageSpan;
 
 /**
- * Created by pocketEos on 2017/7/28.
+ * Created by pocketVkt on 2017/7/28.
  */
 
 public class CountTimerBackgroundSpan extends ImageSpan {

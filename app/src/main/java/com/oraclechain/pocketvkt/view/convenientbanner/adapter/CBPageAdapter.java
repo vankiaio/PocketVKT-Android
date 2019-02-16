@@ -11,7 +11,7 @@ import com.oraclechain.pocketvkt.view.convenientbanner.view.CBLoopViewPager;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/12/7.
+ * Created by pocketVkt on 2017/12/7.
  */
 public class CBPageAdapter<T> extends PagerAdapter {
     protected List<T> mDatas;

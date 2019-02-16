@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 
 /**
- * Created by pocketEos on 2018/6/8.
+ * Created by pocketVkt on 2018/6/8.
  * 上面圆角下面直角
  */
 

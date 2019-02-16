@@ -16,7 +16,7 @@ import com.oraclechain.pocketvkt.utils.ToastUtils;
 import java.io.File;
 
 /**
- * Created by pocketEos on 2018/1/18.
+ * Created by pocketVkt on 2018/1/18.
  */
 
 public class UserCenterPresenter extends BasePresent<UserCenterView> {

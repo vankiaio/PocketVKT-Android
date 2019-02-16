@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Created by pocketEos on 2018/1/29.
+ * Created by pocketVkt on 2018/1/29.
  * 规避当一个界面之中有多个TextView设置了相同属性，有且只有一个控件会滚动显示，其他TextView控件则不会滚动显示。
  */
 

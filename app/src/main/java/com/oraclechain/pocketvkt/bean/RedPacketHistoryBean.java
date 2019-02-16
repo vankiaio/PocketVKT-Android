@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/4/19.
+ * Created by pocketVkt on 2018/4/19.
  */
 
 public class RedPacketHistoryBean {
@@ -14,7 +14,7 @@ public class RedPacketHistoryBean {
     /**
      * msg : SUCCEED
      * code : 0
-     * data : [{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"EOS","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"EOS","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"EOS","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"EOS","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"EOS","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"EOS","createTime":"2018-04-16","isSend":true}]
+     * data : [{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"VKT","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"VKT","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"VKT","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"VKT","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"VKT","createTime":"2018-04-16","isSend":true},{"residueCount":0,"packetCount":10,"amount":"100.0000","type":"VKT","createTime":"2018-04-16","isSend":true}]
      */
 
     private String msg;
@@ -51,7 +51,7 @@ public class RedPacketHistoryBean {
          * residueCount : 0
          * packetCount : 10
          * amount : 100.0000
-         * type : EOS
+         * type : VKT
          * createTime : 2018-04-16
          * isSend : true
          */

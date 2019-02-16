@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/2/1.
+ * Created by pocketVkt on 2018/2/1.
  */
 
 public class PostChainPublicKeyBean {
 
     /**
-     * available_keys : ["EOS6GVnbyrtf5kbTGw5WERbLebgveLRstks5UorqBTxgBHeWBfDQ9","EOS8GA8AxZVdCTdbxL97VNK3r3irFYWf1NS3QNeZRVLZhsi1tFtKv","EOS6pnoM9Pzwn97xgwSbWRqsxDirznEYcpU8exhV1veM9n2CmyW2r","EOS5z9JTTcvzmoGPWdBGLgm8MsYnvRXmVij5yjdx8ja8MJ99qZqFg","EOS7nVGuJjRSQJ7P4LE6ejVPBVtG54Dj8g8s9Muzb1VLraWBWp6RS","EOS5oJ1oYJYcSdQaP3gkFen72mYtg6qzABysiGzGTFqPmmpdnsVsA","EOS7gKwNq28HihnkJk7GxPGXA9JN7WmKCWbg4FGZVyGYY1czoqeZ6","EOS63w825PVzNHXsBYyFwE4n8A3pG8rmyjFnAVnCx3KhYNH6WXNCL","EOS5fLHK96aGyEKQBPAWJskvpzmHAydMCFhD2rkj69hbbVemYog5J","EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"]
-     * transaction : {"expiration":"2018-02-01T08:16:16","messages":[{"authorization":[{"account":"oracle.test1","permission":"active"}],"data":"10325619a888cca520325619a888cca501000000000000001741207472616e7366657220656f7320332e3020746f2042","code":"eos","type":"transfer"}],"ref_block_num":16598,"ref_block_prefix":1771986333,"signatures":[],"scope":["oracle.test1","oracle.test2"],"read_scope":[]}
+     * available_keys : ["VKT6GVnbyrtf5kbTGw5WERbLebgveLRstks5UorqBTxgBHeWBfDQ9","VKT8GA8AxZVdCTdbxL97VNK3r3irFYWf1NS3QNeZRVLZhsi1tFtKv","VKT6pnoM9Pzwn97xgwSbWRqsxDirznEYcpU8exhV1veM9n2CmyW2r","VKT5z9JTTcvzmoGPWdBGLgm8MsYnvRXmVij5yjdx8ja8MJ99qZqFg","VKT7nVGuJjRSQJ7P4LE6ejVPBVtG54Dj8g8s9Muzb1VLraWBWp6RS","VKT5oJ1oYJYcSdQaP3gkFen72mYtg6qzABysiGzGTFqPmmpdnsVsA","VKT7gKwNq28HihnkJk7GxPGXA9JN7WmKCWbg4FGZVyGYY1czoqeZ6","VKT63w825PVzNHXsBYyFwE4n8A3pG8rmyjFnAVnCx3KhYNH6WXNCL","VKT5fLHK96aGyEKQBPAWJskvpzmHAydMCFhD2rkj69hbbVemYog5J","VKT6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"]
+     * transaction : {"expiration":"2018-02-01T08:16:16","messages":[{"authorization":[{"account":"oracle.test1","permission":"active"}],"data":"10325619a888cca520325619a888cca501000000000000001741207472616e7366657220656f7320332e3020746f2042","code":"vkt","type":"transfer"}],"ref_block_num":16598,"ref_block_prefix":1771986333,"signatures":[],"scope":["oracle.test1","oracle.test2"],"read_scope":[]}
      */
 
     private TransactionBean transaction;
@@ -40,7 +40,7 @@ public class PostChainPublicKeyBean {
     public static class TransactionBean {
         /**
          * expiration : 2018-02-01T08:16:16
-         * messages : [{"authorization":[{"account":"oracle.test1","permission":"active"}],"data":"10325619a888cca520325619a888cca501000000000000001741207472616e7366657220656f7320332e3020746f2042","code":"eos","type":"transfer"}]
+         * messages : [{"authorization":[{"account":"oracle.test1","permission":"active"}],"data":"10325619a888cca520325619a888cca501000000000000001741207472616e7366657220656f7320332e3020746f2042","code":"vkt","type":"transfer"}]
          * ref_block_num : 16598
          * ref_block_prefix : 1771986333
          * signatures : []
@@ -128,7 +128,7 @@ public class PostChainPublicKeyBean {
             /**
              * authorization : [{"account":"oracle.test1","permission":"active"}]
              * data : 10325619a888cca520325619a888cca501000000000000001741207472616e7366657220656f7320332e3020746f2042
-             * code : eos
+             * code : vkt
              * type : transfer
              */
 

@@ -4,7 +4,7 @@ import com.oraclechain.pocketvkt.base.BaseView;
 import com.oraclechain.pocketvkt.bean.SystemInfoBean;
 
 /**
- * Created by pocketEos on 2018/1/18.
+ * Created by pocketVkt on 2018/1/18.
  */
 
 public interface SystemSettingView extends BaseView {

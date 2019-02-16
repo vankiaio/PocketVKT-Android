@@ -17,7 +17,7 @@ import com.oraclechain.pocketvkt.base.BaseAcitvity;
 import com.oraclechain.pocketvkt.bean.AccountInfoBean;
 import com.oraclechain.pocketvkt.bean.BlockChainAccountInfoBean;
 import com.oraclechain.pocketvkt.bean.UserBean;
-import com.oraclechain.pocketvkt.blockchain.cypto.ec.EosPrivateKey;
+import com.oraclechain.pocketvkt.blockchain.cypto.ec.VktPrivateKey;
 import com.oraclechain.pocketvkt.gen.UserBeanDao;
 import com.oraclechain.pocketvkt.modules.blackbox.BlackBoxMainActivity;
 import com.oraclechain.pocketvkt.modules.main.MainActivity;
@@ -60,8 +60,8 @@ public class ImportAccountActivity extends BaseAcitvity<ImportAccountView, Impor
     private String mAccount_owner_private_key, mAccount_active_private_key = null;
     private String mAccount_owner_public_key, mAccount_active_public_key = null;
 
-    private EosPrivateKey mOwnerKey;
-    private EosPrivateKey mActiveKey;
+    private VktPrivateKey mOwnerKey;
+    private VktPrivateKey mActiveKey;
 
     private String userPassword = null;
     private UserBean userBean = new UserBean();
@@ -114,7 +114,7 @@ public class ImportAccountActivity extends BaseAcitvity<ImportAccountView, Impor
             }
         }
         if (mAccount_active_public_key.equals(chainAccountActiveKey) && mAccount_owner_public_key.equals(chainAccountOwnerKey)) {
-            presenter.postEosAccountData(mAccountName.getText().toString().trim(), userBean.getWallet_uid());//只是通知，不以服务端返回结果作为查询依据
+            presenter.postVktAccountData(mAccountName.getText().toString().trim(), userBean.getWallet_uid());//只是通知，不以服务端返回结果作为查询依据
             toast(getString(R.string.import_success));
             ArrayList<AccountInfoBean> accountInfoBeanArrayList = new ArrayList<>();
             if (MyApplication.getInstance().getUserBean().getAccount_info() != null) {
@@ -178,7 +178,7 @@ public class ImportAccountActivity extends BaseAcitvity<ImportAccountView, Impor
     }
 
     @Override
-    public void postEosAccountDataHttp() {
+    public void postVktAccountDataHttp() {
 
     }
 
@@ -199,8 +199,8 @@ public class ImportAccountActivity extends BaseAcitvity<ImportAccountView, Impor
                     mAccount_owner_private_key = mOwnerPrivateKey.getText().toString();
                     mAccount_active_private_key = mActivePrivateKey.getText().toString();
                     try {
-                        mActiveKey = new EosPrivateKey(mAccount_active_private_key);
-                        mOwnerKey = new EosPrivateKey(mAccount_owner_private_key);
+                        mActiveKey = new VktPrivateKey(mAccount_active_private_key);
+                        mOwnerKey = new VktPrivateKey(mAccount_owner_private_key);
                     } catch (Exception e) {
                         e.printStackTrace();
                         toast("私钥格式错误");

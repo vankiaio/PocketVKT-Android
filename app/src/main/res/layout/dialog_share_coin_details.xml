@@ -91,7 +91,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="@dimen/dimens_10"
             android:gravity="center"
-            android:text="@string/from_pocketeos"
+            android:text="@string/from_pocketvkt"
             android:textColor="@color/gray_color"
             android:textSize="@dimen/dimens_13"/>
 

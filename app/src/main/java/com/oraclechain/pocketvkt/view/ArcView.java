@@ -15,7 +15,7 @@ import android.view.View;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2017/12/7.
+ * Created by pocketVkt on 2017/12/7.
  * 弧形view
  */
 

@@ -6,7 +6,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * Created by pocketEos on 2018/1/19.
+ * Created by pocketVkt on 2018/1/19.
  * 加密工具类
  */
 public class PasswordToKeyUtils {

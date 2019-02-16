@@ -4,7 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.annotations.Expose;
 import com.oraclechain.pocketvkt.blockchain.cypto.util.HexUtils;
-import com.oraclechain.pocketvkt.blockchain.types.EosType;
+import com.oraclechain.pocketvkt.blockchain.types.VktType;
 import com.oraclechain.pocketvkt.blockchain.types.TypeAccountName;
 import com.oraclechain.pocketvkt.blockchain.types.TypeActionName;
 import com.oraclechain.pocketvkt.blockchain.types.TypePermissionLevel;
@@ -17,7 +17,7 @@ import java.util.List;
  * Created by swapnibble on 2017-09-12.
  */
 
-public class Action implements EosType.Packer {
+public class Action implements VktType.Packer {
     @Expose
     private TypeAccountName account;
 
@@ -99,7 +99,7 @@ public class Action implements EosType.Packer {
     }
 
     @Override
-    public void pack(EosType.Writer writer) {
+    public void pack(VktType.Writer writer) {
         account.pack(writer);
         name.pack(writer);
 

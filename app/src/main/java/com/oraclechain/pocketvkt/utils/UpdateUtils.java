@@ -15,7 +15,7 @@ import com.oraclechain.pocketvkt.view.dialog.updatadialog.UpdataCallback;
 import com.oraclechain.pocketvkt.view.dialog.updatadialog.UpdataDialog;
 
 /**
- * Created by pocketEos on 2018/2/10.
+ * Created by pocketVkt on 2018/2/10.
  */
 
 public class UpdateUtils {

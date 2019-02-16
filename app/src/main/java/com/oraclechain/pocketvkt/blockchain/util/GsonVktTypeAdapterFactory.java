@@ -22,7 +22,7 @@ import java.util.Map;
  * Created by swapnibble on 2017-09-12.
  */
 
-public class GsonEosTypeAdapterFactory implements TypeAdapterFactory {
+public class GsonVktTypeAdapterFactory implements TypeAdapterFactory {
 
     private Map<Class<?>, TypeAdapter<?>> adapters = new LinkedHashMap<>();
 

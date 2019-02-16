@@ -5,7 +5,7 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 
 /**
- * Created by pocketEos on 2017/12/27.
+ * Created by pocketVkt on 2017/12/27.
  *
  * @Entity：告诉GreenDao该对象为实体，只有被@Entity注释的Bean类才能被dao类操作
  * @Id：对象的Id，使用Long类型作为EntityId，否则会报错。(autoincrement = true)表示主键会自增，如果false就会使用旧值

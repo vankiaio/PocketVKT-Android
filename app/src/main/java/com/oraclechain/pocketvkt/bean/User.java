@@ -2,7 +2,7 @@ package com.oraclechain.pocketvkt.bean;
 
 
 /**
- * Created by pocketEos on 2017/11/30.
+ * Created by pocketVkt on 2017/11/30.
  */
 public class User {
     private String uid;

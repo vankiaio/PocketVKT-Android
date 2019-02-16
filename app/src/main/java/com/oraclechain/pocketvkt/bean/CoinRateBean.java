@@ -3,7 +3,7 @@ package com.oraclechain.pocketvkt.bean;
 import java.math.BigDecimal;
 
 /**
- * Created by pocketEos on 2018/2/5.
+ * Created by pocketVkt on 2018/2/5.
  * 获取资产汇率
  */
 
@@ -12,7 +12,7 @@ public class CoinRateBean {
     /**
      * code : 0
      * message : ok
-     * data : {"id":"eos","price_usd":"9.45208","price_cny":"59.586384924","percent_change_24h":"12.31"}
+     * data : {"id":"vkt","price_usd":"9.45208","price_cny":"59.586384924","percent_change_24h":"12.31"}
      */
 
     private int code;
@@ -45,7 +45,7 @@ public class CoinRateBean {
 
     public static class DataBean {
         /**
-         * id : eos
+         * id : vkt
          * price_usd : 9.45208
          * price_cny : 59.586384924
          * percent_change_24h : 12.31

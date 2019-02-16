@@ -17,7 +17,7 @@ import com.oraclechain.pocketvkt.view.webview.BaseWebView;
 import static com.lzy.okgo.utils.HttpUtils.runOnUiThread;
 
 /**
- * Created by pocketEos on 2018/4/25.
+ * Created by pocketVkt on 2018/4/25.
  */
 public class DappInterface {
 

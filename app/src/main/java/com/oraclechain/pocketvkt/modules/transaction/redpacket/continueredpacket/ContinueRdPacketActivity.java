@@ -96,8 +96,8 @@ public class ContinueRdPacketActivity extends BaseAcitvity<ContinueRedPacketView
     @Override
     protected void initData() {
         showProgress();
-        if (mDataBean.getType().equals("EOS")) {
-            presenter.getCoinRateData("eos");
+        if (mDataBean.getType().equals("VKT")) {
+            presenter.getCoinRateData("vkt");
         } else {
             presenter.getCoinRateData("oraclechain");
         }

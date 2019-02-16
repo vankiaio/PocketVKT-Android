@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class MapAccountPresenter extends BasePresent<MapAccountView> {
@@ -39,15 +39,15 @@ public class MapAccountPresenter extends BasePresent<MapAccountView> {
 
     }
 
-    public void postEosAccountData(String eosAccountName, String uid) {
+    public void postVktAccountData(String vktAccountName, String uid) {
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("uid", uid);
-        hashMap.put("eosAccountName", eosAccountName);
-        HttpUtils.postRequest(BaseUrl.HTTP_add_new_eos, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
+        hashMap.put("vktAccountName", vktAccountName);
+        HttpUtils.postRequest(BaseUrl.HTTP_add_new_vkt, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
             @Override
             public void onSuccess(Response<ResponseBean<String>> response) {
                 if (response.body().code == 0) {
-                    view.postEosAccountDataHttp();
+                    view.postVktAccountDataHttp();
                 } else {
                     view.getDataHttpFail(response.body().message);
                 }
@@ -55,11 +55,11 @@ public class MapAccountPresenter extends BasePresent<MapAccountView> {
         });
     }
 
-    public void setMianAccountData(String eosAccountName) {
+    public void setMianAccountData(String vktAccountName) {
 
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("uid", MyApplication.getInstance().getUserBean().getWallet_uid());
-        hashMap.put("eosAccountName", eosAccountName);
+        hashMap.put("vktAccountName", vktAccountName);
         HttpUtils.postRequest(BaseUrl.HTTP_set_mian_account, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
             @Override
             public void onSuccess(Response<ResponseBean<String>> response) {

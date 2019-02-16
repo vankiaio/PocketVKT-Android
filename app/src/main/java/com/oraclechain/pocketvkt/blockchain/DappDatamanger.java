@@ -8,7 +8,7 @@ import com.lzy.okgo.model.Response;
 import com.oraclechain.pocketvkt.base.BaseUrl;
 import com.oraclechain.pocketvkt.base.Constants;
 import com.oraclechain.pocketvkt.bean.ResponseBean;
-import com.oraclechain.pocketvkt.blockchain.api.EosChainInfo;
+import com.oraclechain.pocketvkt.blockchain.api.VktChainInfo;
 import com.oraclechain.pocketvkt.blockchain.bean.GetRequiredKeys;
 import com.oraclechain.pocketvkt.blockchain.bean.JsonToBeanResultBean;
 import com.oraclechain.pocketvkt.blockchain.bean.JsonToBinRequest;
@@ -17,9 +17,9 @@ import com.oraclechain.pocketvkt.blockchain.bean.RequreKeyResult;
 import com.oraclechain.pocketvkt.blockchain.chain.Action;
 import com.oraclechain.pocketvkt.blockchain.chain.PackedTransaction;
 import com.oraclechain.pocketvkt.blockchain.chain.SignedTransaction;
-import com.oraclechain.pocketvkt.blockchain.cypto.ec.EosPrivateKey;
+import com.oraclechain.pocketvkt.blockchain.cypto.ec.VktPrivateKey;
 import com.oraclechain.pocketvkt.blockchain.types.TypeChainId;
-import com.oraclechain.pocketvkt.blockchain.util.GsonEosTypeAdapterFactory;
+import com.oraclechain.pocketvkt.blockchain.util.GsonVktTypeAdapterFactory;
 import com.oraclechain.pocketvkt.net.HttpUtils;
 import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import com.oraclechain.pocketvkt.utils.JsonUtil;
@@ -32,24 +32,24 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/5/8.
+ * Created by pocketVkt on 2018/5/8.
  * Dapp合约调用
  */
 
 public class DappDatamanger {
-    public final static String EOSCONTRACT = Constants.EOSCONTRACT;
+    public final static String VKTCONTRACT = Constants.VKTCONTRACT;
     public final static String OCTCONTRACT = Constants.OCTCONTRACT;//erctoken
     public final static String ACTIONTRANSFER = Constants.ACTIONTRANSFER;
     public final static String PERMISSONION = Constants.PERMISSONION;
 
     Callback mCallback;
     Context mContext;
-    EosChainInfo mChainInfoBean = new EosChainInfo();
+    VktChainInfo mChainInfoBean = new VktChainInfo();
     JsonToBeanResultBean mJsonToBeanResultBean = new JsonToBeanResultBean();
     String[] permissions;
     SignedTransaction txnBeforeSign;
     Gson mGson = new GsonBuilder()
-            .registerTypeAdapterFactory(new GsonEosTypeAdapterFactory())
+            .registerTypeAdapterFactory(new GsonVktTypeAdapterFactory())
             .excludeFieldsWithoutExposeAnnotation().create();
 
     String contract, action, message, userpassword;
@@ -63,8 +63,8 @@ public class DappDatamanger {
     public void pushAction(String message, String permissionAccount) {
         this.message = message;
 
-        if (message.contains("EOS")) {
-            this.contract = EOSCONTRACT;
+        if (message.contains("VKT")) {
+            this.contract = VKTCONTRACT;
         } else {
             this.contract = OCTCONTRACT;
         }
@@ -78,7 +78,7 @@ public class DappDatamanger {
             @Override
             public void onSuccess(Response<ResponseBean> response) {
                 if (response.body().code == 0) {
-                    mChainInfoBean = (EosChainInfo) JsonUtil.parseStringToBean(mGson.toJson(response.body().data), EosChainInfo.class);
+                    mChainInfoBean = (VktChainInfo) JsonUtil.parseStringToBean(mGson.toJson(response.body().data), VktChainInfo.class);
                     getabi_json_to_bin();
                 } else {
                     if (ShowDialog.dialog != null) {
@@ -116,7 +116,7 @@ public class DappDatamanger {
     }
 
     private SignedTransaction createTransaction(String contract, String actionName, String dataAsHex,
-                                                String[] permissions, EosChainInfo chainInfo) {
+                                                String[] permissions, VktChainInfo chainInfo) {
 
         Action action = new Action(contract, actionName);
         action.setAuthorization(permissions);
@@ -142,8 +142,8 @@ public class DappDatamanger {
             public void onSuccess(Response<ResponseBean> response) {
                 if (response.body().code == 0) {
                     RequreKeyResult requreKeyResult = (RequreKeyResult) JsonUtil.parseStringToBean(mGson.toJson(response.body().data), RequreKeyResult.class);
-                    EosPrivateKey eosPrivateKey = new EosPrivateKey(PublicAndPrivateKeyUtils.getPrivateKey(requreKeyResult.getRequired_keys().get(0), userpassword));
-                    txnBeforeSign.sign(eosPrivateKey, new TypeChainId(mChainInfoBean.getChain_id()));
+                    VktPrivateKey vktPrivateKey = new VktPrivateKey(PublicAndPrivateKeyUtils.getPrivateKey(requreKeyResult.getRequired_keys().get(0), userpassword));
+                    txnBeforeSign.sign(vktPrivateKey, new TypeChainId(mChainInfoBean.getChain_id()));
                     pushTransactionRetJson(new PackedTransaction(txnBeforeSign));
                 } else {
                     if (ShowDialog.dialog != null) {

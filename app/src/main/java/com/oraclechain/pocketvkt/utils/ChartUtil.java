@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.utils;
 
 /**
- * Created by pocketEos on 2017/12/6.
+ * Created by pocketVkt on 2017/12/6.
  */
 
 import android.content.Context;

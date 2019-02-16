@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.bean;
 
 /**
- * Created by pocketEos on 2018/5/25.
+ * Created by pocketVkt on 2018/5/25.
  */
 
 public class AnswerMessageBean {

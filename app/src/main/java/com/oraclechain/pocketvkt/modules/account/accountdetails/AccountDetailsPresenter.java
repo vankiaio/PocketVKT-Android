@@ -13,7 +13,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2018/1/18.
+ * Created by pocketVkt on 2018/1/18.
  */
 
 public class AccountDetailsPresenter extends BasePresent<AccountDetailsView> {
@@ -23,10 +23,10 @@ public class AccountDetailsPresenter extends BasePresent<AccountDetailsView> {
         this.mContext = context;
     }
 
-    public void setMianAccountData(String eosAccountName, final int type) {//0代表直接执行设置主账号操作，1代表先删除后设置主账号
+    public void setMianAccountData(String vktAccountName, final int type) {//0代表直接执行设置主账号操作，1代表先删除后设置主账号
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("uid", MyApplication.getInstance().getUserBean().getWallet_uid());
-        hashMap.put("eosAccountName", eosAccountName);
+        hashMap.put("vktAccountName", vktAccountName);
         HttpUtils.postRequest(BaseUrl.HTTP_set_mian_account, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
             @Override
             public void onSuccess(Response<ResponseBean<String>> response) {

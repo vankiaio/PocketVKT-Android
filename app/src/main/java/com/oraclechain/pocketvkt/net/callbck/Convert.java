@@ -24,7 +24,7 @@ import com.google.gson.stream.JsonReader;
 import java.lang.reflect.Type;
 
 /**
- * Created by pocketEos on 2018/4/2.
+ * Created by pocketVkt on 2018/4/2.
  */
 
 public class Convert {

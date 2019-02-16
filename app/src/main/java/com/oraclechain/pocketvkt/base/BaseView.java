@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.base;
 
 /**
- * Created by pocketEos on 2017/7/14.
+ * Created by pocketVkt on 2017/7/14.
  */
 
 public interface BaseView {

@@ -21,7 +21,7 @@
                 style="?attr/text_one_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/be_stake_eos"
+                android:text="@string/be_stake_vkt"
                 android:textSize="@dimen/dimens_15"/>
 
             <TextView
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_32"/>
         </LinearLayout>
 
@@ -77,7 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
 
             <TextView
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
 
             <TextView
@@ -103,7 +103,7 @@
                 style="?attr/text_two_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
         </LinearLayout>
 
@@ -150,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
 
             <TextView
@@ -159,7 +159,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
 
             <TextView
@@ -168,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimens_10"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
 
             <TextView
@@ -176,7 +176,7 @@
                 style="?attr/text_two_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pocket_eos"
+                android:text="@string/pocket_vkt"
                 android:textSize="@dimen/dimens_13"/>
         </LinearLayout>
 

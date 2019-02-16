@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/6/11.
+ * Created by pocketVkt on 2018/6/11.
  */
 
 public class ResultNodeListBean {
@@ -14,7 +14,7 @@ public class ResultNodeListBean {
     /**
      * code : 0
      * msg : SUCCESS
-     * data : {"currentPage":0,"rowsPerPage":10,"totalPages":2,"totalRows":18,"data":[{"owner":"oraclegogogo","total_votes":"74145520018.94651794433593750","producer_key":"EOS5c2fvwkzAcBK57irykyeGd8cuhag43U77peqYzMU71JKvmf91R","is_active":1,"url":"https://oraclechain.io/","unpaid_blocks":0,"last_claim_time":0,"location":0,"producerUrlInfo":{"producer_account_name":"oraclegogogo","org":{"branding":{"logo_256":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle.png","logo_1024":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle_big.png","logo_svg":""},"candidate_name":"oraclechain","website":"https://oraclechain.io","email":"decai.zeng@oracleChain.io"}}}]}
+     * data : {"currentPage":0,"rowsPerPage":10,"totalPages":2,"totalRows":18,"data":[{"owner":"oraclegogogo","total_votes":"74145520018.94651794433593750","producer_key":"VKT5c2fvwkzAcBK57irykyeGd8cuhag43U77peqYzMU71JKvmf91R","is_active":1,"url":"https://oraclechain.io/","unpaid_blocks":0,"last_claim_time":0,"location":0,"producerUrlInfo":{"producer_account_name":"oraclegogogo","org":{"branding":{"logo_256":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle.png","logo_1024":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle_big.png","logo_svg":""},"candidate_name":"oraclechain","website":"https://oraclechain.io","email":"decai.zeng@oracleChain.io"}}}]}
      */
 
     private String code;
@@ -51,7 +51,7 @@ public class ResultNodeListBean {
          * rowsPerPage : 10
          * totalPages : 2
          * totalRows : 18
-         * data : [{"owner":"oraclegogogo","total_votes":"74145520018.94651794433593750","producer_key":"EOS5c2fvwkzAcBK57irykyeGd8cuhag43U77peqYzMU71JKvmf91R","is_active":1,"url":"https://oraclechain.io/","unpaid_blocks":0,"last_claim_time":0,"location":0,"producerUrlInfo":{"producer_account_name":"oraclegogogo","org":{"branding":{"logo_256":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle.png","logo_1024":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle_big.png","logo_svg":""},"candidate_name":"oraclechain","website":"https://oraclechain.io","email":"decai.zeng@oracleChain.io"}}}]
+         * data : [{"owner":"oraclegogogo","total_votes":"74145520018.94651794433593750","producer_key":"VKT5c2fvwkzAcBK57irykyeGd8cuhag43U77peqYzMU71JKvmf91R","is_active":1,"url":"https://oraclechain.io/","unpaid_blocks":0,"last_claim_time":0,"location":0,"producerUrlInfo":{"producer_account_name":"oraclegogogo","org":{"branding":{"logo_256":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle.png","logo_1024":"https://pocketvkt.oss-cn-beijing.aliyuncs.com/P1/oracle_big.png","logo_svg":""},"candidate_name":"oraclechain","website":"https://oraclechain.io","email":"decai.zeng@oracleChain.io"}}}]
          */
 
         private int currentPage;
@@ -104,7 +104,7 @@ public class ResultNodeListBean {
             /**
              * owner : oraclegogogo
              * total_votes : 74145520018.94651794433593750
-             * producer_key : EOS5c2fvwkzAcBK57irykyeGd8cuhag43U77peqYzMU71JKvmf91R
+             * producer_key : VKT5c2fvwkzAcBK57irykyeGd8cuhag43U77peqYzMU71JKvmf91R
              * is_active : 1
              * url : https://oraclechain.io/
              * unpaid_blocks : 0

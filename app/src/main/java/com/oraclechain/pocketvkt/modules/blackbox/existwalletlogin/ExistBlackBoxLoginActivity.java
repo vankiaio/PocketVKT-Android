@@ -54,8 +54,8 @@ public class ExistBlackBoxLoginActivity extends BaseAcitvity<NormalView, NormalP
     TextView mBlackBoxInfo;
 
     List<UserBean> mUserBeanList = new ArrayList<>();
-    @BindView(R.id.go_pocketeos_user)
-    TextView mGoPocketeosUser;
+    @BindView(R.id.go_pocketvkt_user)
+    TextView mGoPocketvktUser;
     private CommonAdapter mCommonAdapter;
 
     @OnClick({R.id.social_contact, R.id.black_box_sure, R.id.create_a_wallet, R.id.black_box_info})
@@ -131,11 +131,11 @@ public class ExistBlackBoxLoginActivity extends BaseAcitvity<NormalView, NormalP
 
     @Override
     public void initEvent() {
-        mGoPocketeosUser.setOnClickListener(new View.OnClickListener() {
+        mGoPocketvktUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.putString("details", FilesUtils.readAssetsTxt(ExistBlackBoxLoginActivity.this, "pocketeos_user"));
+                bundle.putString("details", FilesUtils.readAssetsTxt(ExistBlackBoxLoginActivity.this, "pocketvkt_user"));
                 bundle.putString("title", getString(R.string.setting_one));
                 ActivityUtils.next(ExistBlackBoxLoginActivity.this, RichTextActivity.class, bundle);
             }

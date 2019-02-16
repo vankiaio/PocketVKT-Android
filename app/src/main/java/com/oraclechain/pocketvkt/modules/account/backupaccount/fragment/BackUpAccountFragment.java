@@ -31,7 +31,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * Eos钱包备份fragment
+ * Vkt钱包备份fragment
  */
 public class BackUpAccountFragment extends BaseFragment<NormalView, NormalPresenter> implements NormalView {
 

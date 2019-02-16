@@ -161,10 +161,10 @@ public class NodeVoteActivity extends BaseAcitvity<NodeVoteView, NodeVotePresent
 
     @Override
     public void getAccountDetailsDataHttp(AccountDetailsBean accountDetailsBean) {
-        mAmount.setText(RegexUtil.subZeroAndDot(accountDetailsBean.getEos_balance()));
-        String stake = BigDecimalUtil.add(new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getEos_cpu_weight())),new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getEos_net_weight())))+"";
+        mAmount.setText(RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_balance()));
+        String stake = BigDecimalUtil.add(new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_cpu_weight())),new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_net_weight())))+"";
         stakedAmount = RegexUtil.subZeroAndDot(stake);
-        mVoteAccount.setText(stakedAmount+ " EOS");
+        mVoteAccount.setText(stakedAmount+ " VKT");
     }
 
     @Override

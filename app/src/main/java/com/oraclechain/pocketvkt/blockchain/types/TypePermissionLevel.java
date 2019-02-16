@@ -8,7 +8,7 @@ import com.google.gson.annotations.Expose;
  */
 
 
-public class TypePermissionLevel implements EosType.Packer {
+public class TypePermissionLevel implements VktType.Packer {
 
     @Expose
     private TypeAccountName actor;
@@ -38,7 +38,7 @@ public class TypePermissionLevel implements EosType.Packer {
     }
 
     @Override
-    public void pack(EosType.Writer writer) {
+    public void pack(VktType.Writer writer) {
 
         actor.pack(writer);
         permission.pack(writer);

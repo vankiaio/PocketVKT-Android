@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class SureNodeVotePresenter extends BasePresent<SureNodeVoteView> {

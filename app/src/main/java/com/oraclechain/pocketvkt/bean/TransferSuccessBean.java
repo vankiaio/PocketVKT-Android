@@ -3,7 +3,7 @@ package com.oraclechain.pocketvkt.bean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/4/9.
+ * Created by pocketVkt on 2018/4/9.
  */
 
 public class TransferSuccessBean {
@@ -11,7 +11,7 @@ public class TransferSuccessBean {
     /**
      * code : 0
      * message : ok
-     * data : {"transaction_id":"8fbcb99c89d60956029907ce91a8def391da9ae3208d034b5c38f099b638bd5c","processed":{"output":[{"deferred_trxs":[],"notify":[{"output":{"deferred_trxs":[],"notify":[]},"name":"qett5511"},{"output":{"deferred_trxs":[],"notify":[]},"name":"qwerasdfzxcv"}]}],"ref_block_prefix":4145737620,"scope":["qett5511","qwerasdfzxcv"],"messages":[{"authorization":[{"permission":"active","account":"qwerasdfzxcv"}],"hex_data":"b051ff2b617315b7000000219492b3b2102700000000000000","code":"eos","data":{"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"},"type":"transfer"}],"expiration":"2018-04-09T07:59:57","ref_block_num":46963,"signatures":["1f4835f67723dca7870c2bf191d6321cc32e59c1ad7dc2a72ee94f59acf21062c3296cce1bb2e8920159f56fb3abb8039ce17630a9368be9042bba673388a13d47"]}}
+     * data : {"transaction_id":"8fbcb99c89d60956029907ce91a8def391da9ae3208d034b5c38f099b638bd5c","processed":{"output":[{"deferred_trxs":[],"notify":[{"output":{"deferred_trxs":[],"notify":[]},"name":"qett5511"},{"output":{"deferred_trxs":[],"notify":[]},"name":"qwerasdfzxcv"}]}],"ref_block_prefix":4145737620,"scope":["qett5511","qwerasdfzxcv"],"messages":[{"authorization":[{"permission":"active","account":"qwerasdfzxcv"}],"hex_data":"b051ff2b617315b7000000219492b3b2102700000000000000","code":"vkt","data":{"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"},"type":"transfer"}],"expiration":"2018-04-09T07:59:57","ref_block_num":46963,"signatures":["1f4835f67723dca7870c2bf191d6321cc32e59c1ad7dc2a72ee94f59acf21062c3296cce1bb2e8920159f56fb3abb8039ce17630a9368be9042bba673388a13d47"]}}
      */
 
     private int code;
@@ -45,7 +45,7 @@ public class TransferSuccessBean {
     public static class DataBeanX {
         /**
          * transaction_id : 8fbcb99c89d60956029907ce91a8def391da9ae3208d034b5c38f099b638bd5c
-         * processed : {"output":[{"deferred_trxs":[],"notify":[{"output":{"deferred_trxs":[],"notify":[]},"name":"qett5511"},{"output":{"deferred_trxs":[],"notify":[]},"name":"qwerasdfzxcv"}]}],"ref_block_prefix":4145737620,"scope":["qett5511","qwerasdfzxcv"],"messages":[{"authorization":[{"permission":"active","account":"qwerasdfzxcv"}],"hex_data":"b051ff2b617315b7000000219492b3b2102700000000000000","code":"eos","data":{"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"},"type":"transfer"}],"expiration":"2018-04-09T07:59:57","ref_block_num":46963,"signatures":["1f4835f67723dca7870c2bf191d6321cc32e59c1ad7dc2a72ee94f59acf21062c3296cce1bb2e8920159f56fb3abb8039ce17630a9368be9042bba673388a13d47"]}
+         * processed : {"output":[{"deferred_trxs":[],"notify":[{"output":{"deferred_trxs":[],"notify":[]},"name":"qett5511"},{"output":{"deferred_trxs":[],"notify":[]},"name":"qwerasdfzxcv"}]}],"ref_block_prefix":4145737620,"scope":["qett5511","qwerasdfzxcv"],"messages":[{"authorization":[{"permission":"active","account":"qwerasdfzxcv"}],"hex_data":"b051ff2b617315b7000000219492b3b2102700000000000000","code":"vkt","data":{"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"},"type":"transfer"}],"expiration":"2018-04-09T07:59:57","ref_block_num":46963,"signatures":["1f4835f67723dca7870c2bf191d6321cc32e59c1ad7dc2a72ee94f59acf21062c3296cce1bb2e8920159f56fb3abb8039ce17630a9368be9042bba673388a13d47"]}
          */
 
         private String transaction_id;
@@ -72,7 +72,7 @@ public class TransferSuccessBean {
              * output : [{"deferred_trxs":[],"notify":[{"output":{"deferred_trxs":[],"notify":[]},"name":"qett5511"},{"output":{"deferred_trxs":[],"notify":[]},"name":"qwerasdfzxcv"}]}]
              * ref_block_prefix : 4145737620
              * scope : ["qett5511","qwerasdfzxcv"]
-             * messages : [{"authorization":[{"permission":"active","account":"qwerasdfzxcv"}],"hex_data":"b051ff2b617315b7000000219492b3b2102700000000000000","code":"eos","data":{"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"},"type":"transfer"}]
+             * messages : [{"authorization":[{"permission":"active","account":"qwerasdfzxcv"}],"hex_data":"b051ff2b617315b7000000219492b3b2102700000000000000","code":"vkt","data":{"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"},"type":"transfer"}]
              * expiration : 2018-04-09T07:59:57
              * ref_block_num : 46963
              * signatures : ["1f4835f67723dca7870c2bf191d6321cc32e59c1ad7dc2a72ee94f59acf21062c3296cce1bb2e8920159f56fb3abb8039ce17630a9368be9042bba673388a13d47"]
@@ -214,7 +214,7 @@ public class TransferSuccessBean {
                 /**
                  * authorization : [{"permission":"active","account":"qwerasdfzxcv"}]
                  * hex_data : b051ff2b617315b7000000219492b3b2102700000000000000
-                 * code : eos
+                 * code : vkt
                  * data : {"amount":10000,"memo":"","from":"qwerasdfzxcv","to":"qett5511"}
                  * type : transfer
                  */

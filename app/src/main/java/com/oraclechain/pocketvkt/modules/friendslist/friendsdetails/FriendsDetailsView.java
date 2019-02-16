@@ -7,7 +7,7 @@ import com.oraclechain.pocketvkt.bean.WalletDetailsBean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/1/18.
+ * Created by pocketVkt on 2018/1/18.
  */
 
 public interface FriendsDetailsView extends BaseView {

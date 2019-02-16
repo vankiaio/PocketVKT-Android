@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/11/30.
+ * Created by pocketVkt on 2017/11/30.
  */
 public class UserAdapter extends BaseAdapter {
     private Context mContext;

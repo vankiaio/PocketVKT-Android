@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by pocketEos on 2018/1/22.
+ * Created by pocketVkt on 2018/1/22.
  * 账号里面的代币bean
  */
 
@@ -14,12 +14,12 @@ public class AccountWithCoinBean implements Parcelable {
     private String coinNumber;
     private String coinForCny;
     private String coinUpsAndDowns;
-    private String eos_market_cap_usd;
-    private String eos_market_cap_cny;
+    private String vkt_market_cap_usd;
+    private String vkt_market_cap_cny;
     private String oct_market_cap_usd;
     private String oct_market_cap_cny;
     private String oct_price_cny;
-    private String eos_price_cny;
+    private String vkt_price_cny;
 
     public String getCoinName() {
         return coinName == null ? "" : coinName;
@@ -61,20 +61,20 @@ public class AccountWithCoinBean implements Parcelable {
         this.coinUpsAndDowns = coinUpsAndDowns;
     }
 
-    public String getEos_market_cap_usd() {
-        return eos_market_cap_usd == null ? "" : eos_market_cap_usd;
+    public String getVkt_market_cap_usd() {
+        return vkt_market_cap_usd == null ? "" : vkt_market_cap_usd;
     }
 
-    public void setEos_market_cap_usd(String eos_market_cap_usd) {
-        this.eos_market_cap_usd = eos_market_cap_usd;
+    public void setVkt_market_cap_usd(String vkt_market_cap_usd) {
+        this.vkt_market_cap_usd = vkt_market_cap_usd;
     }
 
-    public String getEos_market_cap_cny() {
-        return eos_market_cap_cny == null ? "" : eos_market_cap_cny;
+    public String getVkt_market_cap_cny() {
+        return vkt_market_cap_cny == null ? "" : vkt_market_cap_cny;
     }
 
-    public void setEos_market_cap_cny(String eos_market_cap_cny) {
-        this.eos_market_cap_cny = eos_market_cap_cny;
+    public void setVkt_market_cap_cny(String vkt_market_cap_cny) {
+        this.vkt_market_cap_cny = vkt_market_cap_cny;
     }
 
     public String getOct_market_cap_usd() {
@@ -101,12 +101,12 @@ public class AccountWithCoinBean implements Parcelable {
         this.oct_price_cny = oct_price_cny;
     }
 
-    public String getEos_price_cny() {
-        return eos_price_cny == null ? "" : eos_price_cny;
+    public String getVkt_price_cny() {
+        return vkt_price_cny == null ? "" : vkt_price_cny;
     }
 
-    public void setEos_price_cny(String eos_price_cny) {
-        this.eos_price_cny = eos_price_cny;
+    public void setVkt_price_cny(String vkt_price_cny) {
+        this.vkt_price_cny = vkt_price_cny;
     }
 
     @Override
@@ -121,12 +121,12 @@ public class AccountWithCoinBean implements Parcelable {
         dest.writeString(this.coinNumber);
         dest.writeString(this.coinForCny);
         dest.writeString(this.coinUpsAndDowns);
-        dest.writeString(this.eos_market_cap_usd);
-        dest.writeString(this.eos_market_cap_cny);
+        dest.writeString(this.vkt_market_cap_usd);
+        dest.writeString(this.vkt_market_cap_cny);
         dest.writeString(this.oct_market_cap_usd);
         dest.writeString(this.oct_market_cap_cny);
         dest.writeString(this.oct_price_cny);
-        dest.writeString(this.eos_price_cny);
+        dest.writeString(this.vkt_price_cny);
     }
 
     public AccountWithCoinBean() {
@@ -138,12 +138,12 @@ public class AccountWithCoinBean implements Parcelable {
         this.coinNumber = in.readString();
         this.coinForCny = in.readString();
         this.coinUpsAndDowns = in.readString();
-        this.eos_market_cap_usd = in.readString();
-        this.eos_market_cap_cny = in.readString();
+        this.vkt_market_cap_usd = in.readString();
+        this.vkt_market_cap_cny = in.readString();
         this.oct_market_cap_usd = in.readString();
         this.oct_market_cap_cny = in.readString();
         this.oct_price_cny = in.readString();
-        this.eos_price_cny = in.readString();
+        this.vkt_price_cny = in.readString();
     }
 
     public static final Parcelable.Creator<AccountWithCoinBean> CREATOR = new Parcelable.Creator<AccountWithCoinBean>() {

@@ -73,12 +73,12 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if (tag.equals("1")) {
                     BigDecimal bigDecimal = BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(progress), new BigDecimal(100), 2), total, 4);
-                    mNumber.setText(bigDecimal + " EOS");
+                    mNumber.setText(bigDecimal + " VKT");
                     mEstimate.setText(getString(R.string.estimate)+ BigDecimalUtil.divide(bigDecimal, price, 4) + " bytes");
                 } else {
                     BigDecimal bigDecimal = BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(progress), new BigDecimal(100), 2), useRam, 4);
                     mNumber.setText(bigDecimal + " bytes");
-                    mEstimate.setText(getString(R.string.estimate_price) + BigDecimalUtil.multiply(bigDecimal, price, 4) + " EOS");
+                    mEstimate.setText(getString(R.string.estimate_price) + BigDecimalUtil.multiply(bigDecimal, price, 4) + " VKT");
                 }
             }
 
@@ -97,12 +97,12 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
     @Override
     public void getAccountDetailsDataHttp(AccountDetailsBean accountDetailsBean) {
         hideProgress();
-        total = new BigDecimal(accountDetailsBean.getEos_balance());
+        total = new BigDecimal(accountDetailsBean.getVkt_balance());
         switch (tag) {
             case "1"://买入
                 mDesc.setText(R.string.change_buy_number_toast);
                 if (BigDecimalUtil.greaterThan(total, new BigDecimal(0))) {
-                    mNumber.setText(BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(mSeekbar.getProgress()), new BigDecimal(100), 2), total, 4) + " EOS");
+                    mNumber.setText(BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(mSeekbar.getProgress()), new BigDecimal(100), 2), total, 4) + " VKT");
                     mEstimate.setText(getString(R.string.estimate) + BigDecimalUtil.divide(BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(mSeekbar.getProgress()), new BigDecimal(100), 2), total, 4), price, 4) + " bytes");
                     mSeekbar.setEnabled(true);
                     mSeekbar.setFocusable(true);
@@ -111,7 +111,7 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
                     mSure.setClickable(true);
                     mSure.setBackgroundColor(getResources().getColor(R.color.blue_button));
                 } else {
-                    mNumber.setText("0 EOS");
+                    mNumber.setText("0 VKT");
                     mEstimate.setText(getString(R.string.estimate) + "0 bytes");
                     mSeekbar.setProgress(0);
                     mSeekbar.setEnabled(false);
@@ -126,7 +126,7 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
                 mDesc.setText(R.string.change_seal_number_toast);
                 if (BigDecimalUtil.greaterThan(useRam, new BigDecimal(0))) {
                     mNumber.setText(BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(mSeekbar.getProgress()), new BigDecimal(100), 2), useRam, 4) + " bytes");
-                    mEstimate.setText(getString(R.string.estimate_price) + BigDecimalUtil.multiply(BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(mSeekbar.getProgress()), new BigDecimal(100), 2), useRam, 4), price, 4) + " EOS");
+                    mEstimate.setText(getString(R.string.estimate_price) + BigDecimalUtil.multiply(BigDecimalUtil.multiply(BigDecimalUtil.divide(new BigDecimal(mSeekbar.getProgress()), new BigDecimal(100), 2), useRam, 4), price, 4) + " VKT");
                     mSeekbar.setEnabled(true);
                     mSeekbar.setFocusable(true);
                     mSeekbar.setFocusableInTouchMode(true);
@@ -134,7 +134,7 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
                     mSure.setClickable(true);
                     mSure.setBackgroundColor(getResources().getColor(R.color.blue_button));
                 } else {
-                    mNumber.setText("0 EOS");
+                    mNumber.setText("0 VKT");
                     mEstimate.setText(getString(R.string.estimate) + "0 bytes");
                     mSeekbar.setProgress(0);
                     mSeekbar.setEnabled(false);
@@ -190,7 +190,7 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
                                         toast(getString(R.string.buy_fail));
                                     }
                                 }
-                            }).pushAction("eosio", "buyram",
+                            }).pushAction("vktio", "buyram",
                                     new Gson().toJson(buyRamBean), getIntent().getStringExtra("account"));
                         } else {
                             toast(getResources().getString(R.string.password_error));
@@ -229,7 +229,7 @@ public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeM
                                         toast(getString(R.string.seal_fail));
                                     }
                                 }
-                            }).pushAction("eosio", "sellram",
+                            }).pushAction("vktio", "sellram",
                                     new Gson().toJson(sealRamBean), getIntent().getStringExtra("account"));
                         } else {
                             toast(getResources().getString(R.string.password_error));

@@ -15,7 +15,7 @@ import com.liaoinstan.springview.container.BaseHeader;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2017/12/7.
+ * Created by pocketVkt on 2017/12/7.
  * app默认下拉刷新效果
  */
 

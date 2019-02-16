@@ -54,7 +54,7 @@ import java.util.List;
 
 
 /**
- * Created by pocketEos on 2018/3/14.
+ * Created by pocketVkt on 2018/3/14.
  */
 public class AdapterManger {
 
@@ -88,10 +88,10 @@ public class AdapterManger {
                 holder.setText(R.id.coin_number_for_cny, "≈" + StringUtils.addComma(accountWithCoinBean.getCoinForCny()) + " CNY");
 
                 ImageView imageView = (ImageView) holder.getView(R.id.coin_img);
-                if (accountWithCoinBean.getCoinName().equals("EOS")) {
-                    imageView.setImageResource(R.mipmap.eos);
-                    holder.setText(R.id.coin_number, StringUtils.addComma(accountWithCoinBean.getCoinNumber()) + " EOS");
-                    holder.setText(R.id.coin_one_for_cny, "￥" + StringUtils.addComma(accountWithCoinBean.getEos_price_cny()));
+                if (accountWithCoinBean.getCoinName().equals("VKT")) {
+                    imageView.setImageResource(R.mipmap.vkt);
+                    holder.setText(R.id.coin_number, StringUtils.addComma(accountWithCoinBean.getCoinNumber()) + " VKT");
+                    holder.setText(R.id.coin_one_for_cny, "￥" + StringUtils.addComma(accountWithCoinBean.getVkt_price_cny()));
                 } else {
                     imageView.setImageResource(R.mipmap.oct);
                     holder.setText(R.id.coin_number, StringUtils.addComma(accountWithCoinBean.getCoinNumber()) + " OCT");

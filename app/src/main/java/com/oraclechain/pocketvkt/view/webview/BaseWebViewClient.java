@@ -11,7 +11,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 /**
- * Created by pocketEos on 2018/4/11.
+ * Created by pocketVkt on 2018/4/11.
  */
 
 public class BaseWebViewClient extends WebViewClient {

@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  * 正则验证工具类
  */
 public class RegexUtil {
@@ -119,28 +119,28 @@ public class RegexUtil {
     }
 
     /**
-     * eos账号名
+     * vkt账号名
      *
-     * @param eosName the eos name
+     * @param vktName the vkt name
      * @return boolean
      */
-    public static boolean isEosName(String eosName) {
+    public static boolean isVktName(String vktName) {
         String strPattern = "^[a-z]{1}[1-5a-z]{11}$";
         Pattern p = Pattern.compile(strPattern);
-        Matcher m = p.matcher(eosName);
+        Matcher m = p.matcher(vktName);
         return m.matches();
     }
 
     /**
      * 搜索输入框限制
      *
-     * @param eosName the eos name
+     * @param vktName the vkt name
      * @return boolean
      */
-    public static boolean seachName(String eosName) {
+    public static boolean seachName(String vktName) {
         String strPattern = "^[a-z]{1}[1-5a-z]{11}$";
         Pattern p = Pattern.compile(strPattern);
-        Matcher m = p.matcher(eosName);
+        Matcher m = p.matcher(vktName);
         return m.matches();
     }
 

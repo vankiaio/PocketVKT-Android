@@ -48,7 +48,7 @@ public class UnStakeActivity extends BaseAcitvity<UnStakeView, UnStakePresenter>
 
     @Override
     protected void initViews(Bundle savedInstanceState) {
-        setCenterTitle(getString(R.string.stake_eos));
+        setCenterTitle(getString(R.string.stake_vkt));
     }
 
     @Override
@@ -66,21 +66,21 @@ public class UnStakeActivity extends BaseAcitvity<UnStakeView, UnStakePresenter>
     @Override
     public void getAccountDetailsDataHttp(AccountDetailsBean accountDetailsBean) {
         hideProgress();
-        if (BigDecimalUtil.greaterThan(BigDecimalUtil.toBigDecimal(lowStake), new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getEos_cpu_weight())))) {//已质押的EOS数量小于最低质押数量
+        if (BigDecimalUtil.greaterThan(BigDecimalUtil.toBigDecimal(lowStake), new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_cpu_weight())))) {//已质押的VKT数量小于最低质押数量
             mGoUnstark.setClickable(false);
             mGoUnstark.setText(R.string.dont_unstake);
             mGoUnstark.setBackgroundColor(getResources().getColor(R.color.gray_color));
-            mUnstarkCpu.setText("0 EOS / " + RegexUtil.subZeroAndDot(accountDetailsBean.getEos_cpu_weight()) + " EOS ");
-            mUnstarkNet.setText("0 EOS / " + RegexUtil.subZeroAndDot(accountDetailsBean.getEos_net_weight()) + " EOS");
+            mUnstarkCpu.setText("0 VKT / " + RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_cpu_weight()) + " VKT ");
+            mUnstarkNet.setText("0 VKT / " + RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_net_weight()) + " VKT");
             return;
         } else {
             mGoUnstark.setBackgroundColor(getResources().getColor(R.color.blue_button));
             mGoUnstark.setClickable(true);
             mGoUnstark.setText(R.string.sure_stake);
-            cpu = BigDecimalUtil.minus(new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getEos_cpu_weight())), new BigDecimal(lowStake), 4) + "";
-            net = BigDecimalUtil.minus(new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getEos_net_weight())), new BigDecimal(lowStake), 4) + "";
-            mUnstarkCpu.setText(cpu + " EOS / " + RegexUtil.subZeroAndDot(accountDetailsBean.getEos_cpu_weight()) + " EOS");
-            mUnstarkNet.setText(net + " EOS / " + RegexUtil.subZeroAndDot(accountDetailsBean.getEos_net_weight()) + " EOS");
+            cpu = BigDecimalUtil.minus(new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_cpu_weight())), new BigDecimal(lowStake), 4) + "";
+            net = BigDecimalUtil.minus(new BigDecimal(RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_net_weight())), new BigDecimal(lowStake), 4) + "";
+            mUnstarkCpu.setText(cpu + " VKT / " + RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_cpu_weight()) + " VKT");
+            mUnstarkNet.setText(net + " VKT / " + RegexUtil.subZeroAndDot(accountDetailsBean.getVkt_net_weight()) + " VKT");
         }
 
     }
@@ -99,8 +99,8 @@ public class UnStakeActivity extends BaseAcitvity<UnStakeView, UnStakePresenter>
         UnstakeBean unstakeBean = new UnstakeBean();
         unstakeBean.setFrom(getIntent().getStringExtra("account"));
         unstakeBean.setReceiver(getIntent().getStringExtra("account"));
-        unstakeBean.setUnstake_cpu_quantity(StringUtils.addZero(cpu) + " EOS");
-        unstakeBean.setUnstake_net_quantity(StringUtils.addZero(net) + " EOS");
+        unstakeBean.setUnstake_cpu_quantity(StringUtils.addZero(cpu) + " VKT");
+        unstakeBean.setUnstake_net_quantity(StringUtils.addZero(net) + " VKT");
         PasswordDialog mPasswordDialog = new PasswordDialog(this, new PasswordCallback() {
             @Override
             public void sure(String password) {
@@ -116,7 +116,7 @@ public class UnStakeActivity extends BaseAcitvity<UnStakeView, UnStakePresenter>
                                 toast(getString(R.string.stake_fail));
                             }
                         }
-                    }).pushAction("eosio", "undelegatebw",
+                    }).pushAction("vktio", "undelegatebw",
                             new Gson().toJson(unstakeBean), getIntent().getStringExtra("account"));
                 } else {
                     toast(getResources().getString(R.string.password_error));

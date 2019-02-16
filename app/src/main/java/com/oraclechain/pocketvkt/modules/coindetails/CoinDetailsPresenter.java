@@ -16,7 +16,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class CoinDetailsPresenter extends BasePresent<CoinDetailsView> {

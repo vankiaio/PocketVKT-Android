@@ -7,7 +7,7 @@ import com.oraclechain.pocketvkt.bean.NewsBean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  * 获取friendslist
  */
 

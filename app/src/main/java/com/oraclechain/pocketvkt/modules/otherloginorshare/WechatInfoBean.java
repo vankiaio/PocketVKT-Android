@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by pocketEos on 2018/3/23.
+ * Created by pocketVkt on 2018/3/23.
  */
 
 public class WechatInfoBean implements Parcelable {

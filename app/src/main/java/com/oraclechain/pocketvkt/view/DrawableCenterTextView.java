@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Created by pocketEos on 2018/5/15.
+ * Created by pocketVkt on 2018/5/15.
  * 图片文字居中
  */
 

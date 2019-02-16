@@ -4,8 +4,8 @@ import com.google.gson.annotations.Expose;
 import com.oraclechain.pocketvkt.blockchain.cypto.digest.Sha256;
 import com.oraclechain.pocketvkt.blockchain.cypto.ec.EcDsa;
 import com.oraclechain.pocketvkt.blockchain.cypto.ec.EcSignature;
-import com.oraclechain.pocketvkt.blockchain.cypto.ec.EosPrivateKey;
-import com.oraclechain.pocketvkt.blockchain.types.EosByteWriter;
+import com.oraclechain.pocketvkt.blockchain.cypto.ec.VktPrivateKey;
+import com.oraclechain.pocketvkt.blockchain.types.VktByteWriter;
 import com.oraclechain.pocketvkt.blockchain.types.TypeChainId;
 
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ public class SignedTransaction extends Transaction {
 
 
     private Sha256 getDigestForSignature(TypeChainId chainId) {
-        EosByteWriter writer = new EosByteWriter(255);
+        VktByteWriter writer = new VktByteWriter(255);
 
         // data layout to sign :
         // [ {chainId}, {Transaction( parent class )}, {hash of context_free_data only when exists ]
@@ -68,7 +68,7 @@ public class SignedTransaction extends Transaction {
         return Sha256.from(writer.toBytes());
     }
 
-    public void sign(EosPrivateKey privateKey, TypeChainId chainId) {
+    public void sign(VktPrivateKey privateKey, TypeChainId chainId) {
         if ( null == this.signatures){
             this.signatures = new ArrayList<>();
         }

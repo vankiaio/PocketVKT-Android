@@ -12,7 +12,7 @@ import com.oraclechain.pocketvkt.R;
 import java.util.Locale;
 
 /**
- * Created by pocketEos on 2018/5/22.
+ * Created by pocketVkt on 2018/5/22.
  * 国际化语言设置选项
  */
 

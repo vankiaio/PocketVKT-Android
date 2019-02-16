@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by pocketEos on 2017/12/11.
+ * Created by pocketVkt on 2017/12/11.
  * 侧滑recycleview
  */
 public class SwipeMenuRecyclerView extends RecyclerView {

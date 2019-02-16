@@ -19,7 +19,7 @@ import com.oraclechain.pocketvkt.utils.Utils;
 import butterknife.ButterKnife;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 
 public abstract class BaseFragment<V, P extends BasePresent<V>> extends Fragment implements BaseView {

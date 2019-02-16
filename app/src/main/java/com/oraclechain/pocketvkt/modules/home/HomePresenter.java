@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/1/18.
+ * Created by pocketVkt on 2018/1/18.
  */
 
 public class HomePresenter extends BasePresent<HomeView> {
@@ -30,26 +30,26 @@ public class HomePresenter extends BasePresent<HomeView> {
 
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("name", name);
-        HttpUtils.postRequest(BaseUrl.HTTP_eos_get_account, mContext, hashMap, new JsonCallback<ResponseBean<AccountDetailsBean>>() {
+        HttpUtils.postRequest(BaseUrl.HTTP_vkt_get_account, mContext, hashMap, new JsonCallback<ResponseBean<AccountDetailsBean>>() {
             @Override
             public void onSuccess(Response<ResponseBean<AccountDetailsBean>> response) {
                 if (response.body().code == 0) {
                     if (response.body().data.getAccount_name().equals(name)) {
                         List<AccountWithCoinBean> accountWithCoinBeens = new ArrayList<>();
-                        AccountWithCoinBean  eos = new AccountWithCoinBean();
-                        eos.setCoinName("EOS");
-                        eos.setCoinForCny(RegexUtil.subZeroAndDot(response.body().data.getEos_balance_cny()));
-                        eos.setCoinNumber(RegexUtil.subZeroAndDot(response.body().data.getEos_balance()));
-                        eos.setCoinImg(response.body().data.getAccount_icon());
-                        eos.setEos_market_cap_usd(response.body().data.getEos_market_cap_usd());
-                        eos.setEos_market_cap_cny(response.body().data.getEos_market_cap_cny());
-                        eos.setEos_price_cny(response.body().data.getEos_price_cny());
-                        if (response.body().data.getEos_price_change_in_24h().contains("-")) {
-                            eos.setCoinUpsAndDowns(response.body().data.getEos_price_change_in_24h() + "%");
+                        AccountWithCoinBean  vkt = new AccountWithCoinBean();
+                        vkt.setCoinName("VKT");
+                        vkt.setCoinForCny(RegexUtil.subZeroAndDot(response.body().data.getVkt_balance_cny()));
+                        vkt.setCoinNumber(RegexUtil.subZeroAndDot(response.body().data.getVkt_balance()));
+                        vkt.setCoinImg(response.body().data.getAccount_icon());
+                        vkt.setVkt_market_cap_usd(response.body().data.getVkt_market_cap_usd());
+                        vkt.setVkt_market_cap_cny(response.body().data.getVkt_market_cap_cny());
+                        vkt.setVkt_price_cny(response.body().data.getVkt_price_cny());
+                        if (response.body().data.getVkt_price_change_in_24h().contains("-")) {
+                            vkt.setCoinUpsAndDowns(response.body().data.getVkt_price_change_in_24h() + "%");
                         } else {
-                            eos.setCoinUpsAndDowns("+" + response.body().data.getEos_price_change_in_24h() + "%");
+                            vkt.setCoinUpsAndDowns("+" + response.body().data.getVkt_price_change_in_24h() + "%");
                         }
-                        accountWithCoinBeens.add(eos);
+                        accountWithCoinBeens.add(vkt);
                         AccountWithCoinBean oct = new AccountWithCoinBean();
                         oct.setCoinName("OCT");
                         oct.setCoinForCny(RegexUtil.subZeroAndDot(response.body().data.getOct_balance_cny()));

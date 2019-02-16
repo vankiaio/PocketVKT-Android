@@ -15,7 +15,7 @@ import com.oraclechain.pocketvkt.R;
 
 
 /**
- * Created by PocketEos on 2017/12/10.
+ * Created by PocketVkt on 2017/12/10.
  * 加载动画
  */
 public class ShowDialog extends Dialog {

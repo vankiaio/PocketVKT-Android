@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2017/12/11.
+ * Created by pocketVkt on 2017/12/11.
  * 更换头像弹窗
  */
 

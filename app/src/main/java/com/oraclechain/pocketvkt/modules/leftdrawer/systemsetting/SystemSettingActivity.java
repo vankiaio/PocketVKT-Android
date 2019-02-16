@@ -62,13 +62,13 @@ public class SystemSettingActivity extends BaseAcitvity<SystemSettingView, Syste
                 break;
             case R.id.system_settings_one:
 //                presenter.getSystemInfo("1");
-                bundle.putString("details", FilesUtils.readAssetsTxt(this, "policy_pocketeos"));
+                bundle.putString("details", FilesUtils.readAssetsTxt(this, "policy_pocketvkt"));
                 bundle.putString("title", getString(R.string.setting_one));
                 ActivityUtils.next(SystemSettingActivity.this, RichTextActivity.class, bundle);
                 break;
             case R.id.system_settings_two:
 //                presenter.getSystemInfo("2");
-                bundle.putString("details", FilesUtils.readAssetsTxt(this, "about_pocketeos"));
+                bundle.putString("details", FilesUtils.readAssetsTxt(this, "about_pocketvkt"));
                 bundle.putString("title", getString(R.string.setting_two));
                 ActivityUtils.next(SystemSettingActivity.this, RichTextActivity.class, bundle);
                 break;

@@ -20,7 +20,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/12/11.
+ * Created by pocketVkt on 2017/12/11.
  * 1. 最多同时设置两个菜单
  * 2. 菜单必须设置layoutGravity属性. start left end right
  */

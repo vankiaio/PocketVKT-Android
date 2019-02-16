@@ -44,8 +44,8 @@ public class BindPhoneActivity extends BaseAcitvity<BindPhoneView, BindPhonePres
     String openid, type = null;
     QQUserInfoBean qqUserInfoBean;
     WechatInfoBean wechatInfoBean;
-    @BindView(R.id.go_pocketeos_user)
-    TextView mGoPocketeosUser;
+    @BindView(R.id.go_pocketvkt_user)
+    TextView mGoPocketvktUser;
 
     @Override
     protected int getLayoutId() {
@@ -92,11 +92,11 @@ public class BindPhoneActivity extends BaseAcitvity<BindPhoneView, BindPhonePres
                 }
             }
         });
-        mGoPocketeosUser.setOnClickListener(new View.OnClickListener() {
+        mGoPocketvktUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.putString("details", FilesUtils.readAssetsTxt(BindPhoneActivity.this,"pocketeos_user"));
+                bundle.putString("details", FilesUtils.readAssetsTxt(BindPhoneActivity.this,"pocketvkt_user"));
                 bundle.putString("title", getString(R.string.setting_one));
                 ActivityUtils.next(BindPhoneActivity.this, RichTextActivity.class, bundle);
             }

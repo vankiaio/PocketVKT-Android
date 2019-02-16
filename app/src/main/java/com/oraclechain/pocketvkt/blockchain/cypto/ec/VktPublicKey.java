@@ -34,8 +34,8 @@ import java.util.Arrays;
  * Created by swapnibble on 2017-09-25.
  */
 
-public class EosPublicKey {
-    private static final String LEGACY_PREFIX = "EOS";
+public class VktPublicKey {
+    private static final String LEGACY_PREFIX = "VKT";
     private static final String PREFIX = "PUB";
 
     private static final int CHECK_BYTE_LEN = 4;
@@ -44,46 +44,46 @@ public class EosPublicKey {
     private final CurveParam mCurveParam;
     private final byte[] mData;
 
-    public static class IllegalEosPubkeyFormatException extends IllegalArgumentException {
-        public IllegalEosPubkeyFormatException(String pubkeyStr) {
-            super("invalid eos public key : " + pubkeyStr);
+    public static class IllegalVktPubkeyFormatException extends IllegalArgumentException {
+        public IllegalVktPubkeyFormatException(String pubkeyStr) {
+            super("invalid vkt public key : " + pubkeyStr);
         }
     }
 
-    public EosPublicKey( byte[] data ){
+    public VktPublicKey( byte[] data ){
         this( data, EcTools.getCurveParam( CurveParam.SECP256_K1));
     }
 
-    public EosPublicKey( byte[] data, CurveParam curveParam ){
+    public VktPublicKey( byte[] data, CurveParam curveParam ){
         mData = Arrays.copyOf(data, 33);
         mCurveParam = curveParam;
 
         mCheck= BitUtils.uint32ToLong( Ripemd160.from( mData, 0, mData.length).bytes(), 0 );
     }
 
-    public EosPublicKey(String base58Str) {
+    public VktPublicKey(String base58Str) {
         RefValue<Long> checksumRef = new RefValue<>();
 
-        String[] parts = EosEcUtil.safeSplitEosCryptoString( base58Str );
+        String[] parts = VktEcUtil.safeSplitVktCryptoString( base58Str );
         if ( base58Str.startsWith(LEGACY_PREFIX) ) {
             if ( parts.length == 1 ){
                 mCurveParam = EcTools.getCurveParam( CurveParam.SECP256_K1);
-                mData = EosEcUtil.getBytesIfMatchedRipemd160( base58Str.substring( LEGACY_PREFIX.length()), null, checksumRef);
+                mData = VktEcUtil.getBytesIfMatchedRipemd160( base58Str.substring( LEGACY_PREFIX.length()), null, checksumRef);
             }
             else {
-                throw new IllegalEosPubkeyFormatException( base58Str );
+                throw new IllegalVktPubkeyFormatException( base58Str );
             }
         }
         else {
             if ( parts.length < 3 ) {
-                throw new IllegalEosPubkeyFormatException( base58Str );
+                throw new IllegalVktPubkeyFormatException( base58Str );
             }
 
             // [0]: prefix, [1]: curve type, [2]: data
-            if ( false == PREFIX.equals( parts[0]) ) throw new IllegalEosPubkeyFormatException( base58Str );
+            if ( false == PREFIX.equals( parts[0]) ) throw new IllegalVktPubkeyFormatException( base58Str );
 
-            mCurveParam = EosEcUtil.getCurveParamFrom( parts[1]);
-            mData = EosEcUtil.getBytesIfMatchedRipemd160( parts[2], parts[1], checksumRef);
+            mCurveParam = VktEcUtil.getCurveParamFrom( parts[1]);
+            mData = VktEcUtil.getBytesIfMatchedRipemd160( parts[2], parts[1], checksumRef);
         }
 
         mCheck = checksumRef.data;
@@ -99,9 +99,9 @@ public class EosPublicKey {
 
         boolean isR1 = mCurveParam.isType( CurveParam.SECP256_R1 );
 
-        return EosEcUtil.encodeEosCrypto( isR1 ? PREFIX : LEGACY_PREFIX, isR1 ? mCurveParam : null, mData );
+        return VktEcUtil.encodeVktCrypto( isR1 ? PREFIX : LEGACY_PREFIX, isR1 ? mCurveParam : null, mData );
 
-//        byte[] postfixBytes = isR1 ? EosEcUtil.PREFIX_R1.getBytes() : new byte[0] ;
+//        byte[] postfixBytes = isR1 ? VktEcUtil.PREFIX_R1.getBytes() : new byte[0] ;
 //        byte[] toDigest = new byte[mData.length + postfixBytes.length];
 //        System.arraycopy( mData, 0, toDigest, 0, mData.length);
 //
@@ -116,7 +116,7 @@ public class EosPublicKey {
 //        System.arraycopy( digest, 0, result, mData.length, CHECK_BYTE_LEN);
 //
 //        if ( isR1 ){
-//            return EosEcUtil.concatEosCryptoStr(PREFIX , EosEcUtil.PREFIX_R1, Base58.encode( result ) );
+//            return VktEcUtil.concatVktCryptoStr(PREFIX , VktEcUtil.PREFIX_R1, Base58.encode( result ) );
 //        }
 //        else {
 //            return LEGACY_PREFIX + Base58.encode( result ) ;
@@ -135,7 +135,7 @@ public class EosPublicKey {
         if ( null == other || getClass() != other.getClass())
             return false;
 
-        return BitUtils.areEqual( this.mData, ((EosPublicKey)other).mData);
+        return BitUtils.areEqual( this.mData, ((VktPublicKey)other).mData);
     }
 
     public boolean isCurveParamK1() {

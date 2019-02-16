@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.blockchain.cypto.util;
 
 /**
- * Created by pocketEos on 2018/4/26.
+ * Created by pocketVkt on 2018/4/26.
  * Utilities for going to and from ASCII-HEX representation.
  */
 

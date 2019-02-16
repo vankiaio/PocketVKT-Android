@@ -74,7 +74,7 @@ public class SeachActivity extends BaseAcitvity<SeachView, SeachPresenter> imple
                         showProgress();
                         presenter.getAccountInfoData(mEdtSeach.getText().toString());
                     } else {
-                        toast(getString(R.string.eos_register_toast));
+                        toast(getString(R.string.vkt_register_toast));
                     }
                 }
                 return false;

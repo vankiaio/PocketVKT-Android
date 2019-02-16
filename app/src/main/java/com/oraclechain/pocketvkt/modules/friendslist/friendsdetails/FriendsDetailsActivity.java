@@ -171,10 +171,10 @@ public class FriendsDetailsActivity extends BaseAcitvity<FriendsDetailsView, Fri
         mFriendsTitle1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!mFriendsAccountNumber.getText().toString().equals(getString(R.string.no_account)) && !mFriendsAccountNumber.getText().toString().equals("PocketEos")) {
+                if (!mFriendsAccountNumber.getText().toString().equals(getString(R.string.no_account)) && !mFriendsAccountNumber.getText().toString().equals("PocketVkt")) {
                     Bundle bundle = new Bundle();
                     bundle.putString("account", mFriendsAccountNumber.getText().toString().trim().toString());
-                    bundle.putString("coin", "EOS");
+                    bundle.putString("coin", "VKT");
                     bundle.putString("from", "frienddetails");
                     ActivityUtils.next(FriendsDetailsActivity.this, TransferAccountsActivity.class, bundle);
                 } else {
@@ -204,13 +204,13 @@ public class FriendsDetailsActivity extends BaseAcitvity<FriendsDetailsView, Fri
             mTransferAccounts.setClickable(false);
             mFriendsTitle1.setClickable(false);
         } else {
-            mFriendsAccountNumber.setText(walletDetailsBean.get(0).getEosAccountName());
-            presenter.getAccountDetailsData(walletDetailsBean.get(0).getEosAccountName());
+            mFriendsAccountNumber.setText(walletDetailsBean.get(0).getVktAccountName());
+            presenter.getAccountDetailsData(walletDetailsBean.get(0).getVktAccountName());
             mTransferAccounts.setClickable(true);
             mFriendsTitle1.setClickable(true);
             for (int i = 0; i < walletDetailsBean.size(); i++) {
                 AccountInfoBean accountInfoBean = new AccountInfoBean();
-                accountInfoBean.setAccount_name(walletDetailsBean.get(i).getEosAccountName());
+                accountInfoBean.setAccount_name(walletDetailsBean.get(i).getVktAccountName());
                 mAccountInfoBeanList.add(accountInfoBean);
             }
         }
@@ -224,9 +224,9 @@ public class FriendsDetailsActivity extends BaseAcitvity<FriendsDetailsView, Fri
             for (AccountWithCoinBean accountWithCoinBean : accountWithCoinBeens) {
                 mAccountWithCoinBeen.add(accountWithCoinBean);
             }
-            BigDecimal eosToCny = BigDecimal.valueOf(Double.parseDouble(accountWithCoinBeens.get(0).getCoinForCny()));
+            BigDecimal vktToCny = BigDecimal.valueOf(Double.parseDouble(accountWithCoinBeens.get(0).getCoinForCny()));
             BigDecimal octToCny = BigDecimal.valueOf(Double.parseDouble(accountWithCoinBeens.get(1).getCoinForCny()));
-            mFriendsAllProperty.setText("≈" + StringUtils.addComma(BigDecimalUtil.add(eosToCny, octToCny) + ""));
+            mFriendsAllProperty.setText("≈" + StringUtils.addComma(BigDecimalUtil.add(vktToCny, octToCny) + ""));
             mCoinAdapter.notifyDataSetChanged();
         }
     }
@@ -345,10 +345,10 @@ public class FriendsDetailsActivity extends BaseAcitvity<FriendsDetailsView, Fri
                 ActivityUtils.next(FriendsDetailsActivity.this, SwitchUserNumberActivity.class, bundle, 100);
                 break;
             case R.id.transfer_accounts:
-                if (!mFriendsAccountNumber.getText().toString().equals(getString(R.string.no_account)) && !mFriendsAccountNumber.getText().toString().equals("PocketEos")) {
+                if (!mFriendsAccountNumber.getText().toString().equals(getString(R.string.no_account)) && !mFriendsAccountNumber.getText().toString().equals("PocketVkt")) {
                     bundle.putString("getmoneyperson", mFriendsAccountNumber.getText().toString().trim().toString());
                     bundle.putString("account", MyApplication.getInstance().getUserBean().getWallet_main_account());
-                    bundle.putString("coin", "EOS");
+                    bundle.putString("coin", "VKT");
                     bundle.putString("from", "frienddetails");
                     ActivityUtils.next(this, TransferAccountsActivity.class, bundle);
                 } else {

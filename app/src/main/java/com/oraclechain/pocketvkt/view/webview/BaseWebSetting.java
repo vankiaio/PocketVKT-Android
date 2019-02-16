@@ -5,7 +5,7 @@ import android.os.Build;
 import android.webkit.WebSettings;
 
 /**
- * Created by pocketEos on 2018/4/11.
+ * Created by pocketVkt on 2018/4/11.
  */
 
 public class BaseWebSetting {

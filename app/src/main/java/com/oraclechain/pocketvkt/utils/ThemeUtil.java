@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2018/5/16.
+ * Created by pocketVkt on 2018/5/16.
  */
 
 public class ThemeUtil {

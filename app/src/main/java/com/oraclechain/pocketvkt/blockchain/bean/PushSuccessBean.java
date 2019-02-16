@@ -11,7 +11,7 @@ public class PushSuccessBean {
     /**
      * code : 0
      * message : ok
-     * data : {"transaction_id":"989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e","processed":{"packed_trx_digest":"8dcc39cbb942184ea5a52cf4dd5a384d01975baf62624710a534e56310e8f661","_profiling_us":663,"deferred_transaction_requests":[],"read_locks":[{"scope":"........ehbo5","account":"eosio.token"}],"region_id":0,"action_traces":[{"context_free":false,"console":"transfer","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"},"receiver":"eosio.token","_profiling_us":600,"cpu_usage":12017,"data_access":[{"sequence":43,"code":"eosio.token","scope":"eosio.token","type":"write"},{"sequence":5,"code":"eosio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"eosio.token","scope":"........ehbo5","type":"read"}]},{"context_free":false,"console":"","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"},"receiver":"lucan222","_profiling_us":2,"cpu_usage":0,"data_access":[]}],"net_usage":280,"cycle_index":1,"kcpu_usage":112,"net_usage_words":35,"id":"989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e","_setup_profiling_us":143,"write_locks":[{"scope":"eosio.token","account":"eosio.token"},{"scope":"lucan222","account":"eosio.token"}],"cpu_usage":114688,"shard_index":0,"status":"executed"}}
+     * data : {"transaction_id":"989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e","processed":{"packed_trx_digest":"8dcc39cbb942184ea5a52cf4dd5a384d01975baf62624710a534e56310e8f661","_profiling_us":663,"deferred_transaction_requests":[],"read_locks":[{"scope":"........ehbo5","account":"vktio.token"}],"region_id":0,"action_traces":[{"context_free":false,"console":"transfer","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"},"receiver":"vktio.token","_profiling_us":600,"cpu_usage":12017,"data_access":[{"sequence":43,"code":"vktio.token","scope":"vktio.token","type":"write"},{"sequence":5,"code":"vktio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"vktio.token","scope":"........ehbo5","type":"read"}]},{"context_free":false,"console":"","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"},"receiver":"lucan222","_profiling_us":2,"cpu_usage":0,"data_access":[]}],"net_usage":280,"cycle_index":1,"kcpu_usage":112,"net_usage_words":35,"id":"989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e","_setup_profiling_us":143,"write_locks":[{"scope":"vktio.token","account":"vktio.token"},{"scope":"lucan222","account":"vktio.token"}],"cpu_usage":114688,"shard_index":0,"status":"executed"}}
      */
 
     private int code;
@@ -45,7 +45,7 @@ public class PushSuccessBean {
     public static class DataBeanX {
         /**
          * transaction_id : 989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e
-         * processed : {"packed_trx_digest":"8dcc39cbb942184ea5a52cf4dd5a384d01975baf62624710a534e56310e8f661","_profiling_us":663,"deferred_transaction_requests":[],"read_locks":[{"scope":"........ehbo5","account":"eosio.token"}],"region_id":0,"action_traces":[{"context_free":false,"console":"transfer","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"},"receiver":"eosio.token","_profiling_us":600,"cpu_usage":12017,"data_access":[{"sequence":43,"code":"eosio.token","scope":"eosio.token","type":"write"},{"sequence":5,"code":"eosio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"eosio.token","scope":"........ehbo5","type":"read"}]},{"context_free":false,"console":"","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"},"receiver":"lucan222","_profiling_us":2,"cpu_usage":0,"data_access":[]}],"net_usage":280,"cycle_index":1,"kcpu_usage":112,"net_usage_words":35,"id":"989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e","_setup_profiling_us":143,"write_locks":[{"scope":"eosio.token","account":"eosio.token"},{"scope":"lucan222","account":"eosio.token"}],"cpu_usage":114688,"shard_index":0,"status":"executed"}
+         * processed : {"packed_trx_digest":"8dcc39cbb942184ea5a52cf4dd5a384d01975baf62624710a534e56310e8f661","_profiling_us":663,"deferred_transaction_requests":[],"read_locks":[{"scope":"........ehbo5","account":"vktio.token"}],"region_id":0,"action_traces":[{"context_free":false,"console":"transfer","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"},"receiver":"vktio.token","_profiling_us":600,"cpu_usage":12017,"data_access":[{"sequence":43,"code":"vktio.token","scope":"vktio.token","type":"write"},{"sequence":5,"code":"vktio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"vktio.token","scope":"........ehbo5","type":"read"}]},{"context_free":false,"console":"","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"},"receiver":"lucan222","_profiling_us":2,"cpu_usage":0,"data_access":[]}],"net_usage":280,"cycle_index":1,"kcpu_usage":112,"net_usage_words":35,"id":"989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e","_setup_profiling_us":143,"write_locks":[{"scope":"vktio.token","account":"vktio.token"},{"scope":"lucan222","account":"vktio.token"}],"cpu_usage":114688,"shard_index":0,"status":"executed"}
          */
 
         private String transaction_id;
@@ -72,16 +72,16 @@ public class PushSuccessBean {
              * packed_trx_digest : 8dcc39cbb942184ea5a52cf4dd5a384d01975baf62624710a534e56310e8f661
              * _profiling_us : 663
              * deferred_transaction_requests : []
-             * read_locks : [{"scope":"........ehbo5","account":"eosio.token"}]
+             * read_locks : [{"scope":"........ehbo5","account":"vktio.token"}]
              * region_id : 0
-             * action_traces : [{"context_free":false,"console":"transfer","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"},"receiver":"eosio.token","_profiling_us":600,"cpu_usage":12017,"data_access":[{"sequence":43,"code":"eosio.token","scope":"eosio.token","type":"write"},{"sequence":5,"code":"eosio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"eosio.token","scope":"........ehbo5","type":"read"}]},{"context_free":false,"console":"","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"},"receiver":"lucan222","_profiling_us":2,"cpu_usage":0,"data_access":[]}]
+             * action_traces : [{"context_free":false,"console":"transfer","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"},"receiver":"vktio.token","_profiling_us":600,"cpu_usage":12017,"data_access":[{"sequence":43,"code":"vktio.token","scope":"vktio.token","type":"write"},{"sequence":5,"code":"vktio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"vktio.token","scope":"........ehbo5","type":"read"}]},{"context_free":false,"console":"","act":{"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"},"receiver":"lucan222","_profiling_us":2,"cpu_usage":0,"data_access":[]}]
              * net_usage : 280
              * cycle_index : 1
              * kcpu_usage : 112
              * net_usage_words : 35
              * id : 989af986dae459ad11574f7620bf246fafeb7fe9f9979545c3dc9cfe4aaff43e
              * _setup_profiling_us : 143
-             * write_locks : [{"scope":"eosio.token","account":"eosio.token"},{"scope":"lucan222","account":"eosio.token"}]
+             * write_locks : [{"scope":"vktio.token","account":"vktio.token"},{"scope":"lucan222","account":"vktio.token"}]
              * cpu_usage : 114688
              * shard_index : 0
              * status : executed
@@ -235,7 +235,7 @@ public class PushSuccessBean {
             public static class ReadLocksBean {
                 /**
                  * scope : ........ehbo5
-                 * account : eosio.token
+                 * account : vktio.token
                  */
 
                 private String scope;
@@ -262,11 +262,11 @@ public class PushSuccessBean {
                 /**
                  * context_free : false
                  * console : transfer
-                 * act : {"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"},"name":"transfer","account":"eosio.token"}
-                 * receiver : eosio.token
+                 * act : {"authorization":[{"actor":"lucan222","permission":"active"}],"hex_data":"000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9","data":{"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"},"name":"transfer","account":"vktio.token"}
+                 * receiver : vktio.token
                  * _profiling_us : 600
                  * cpu_usage : 12017
-                 * data_access : [{"sequence":43,"code":"eosio.token","scope":"eosio.token","type":"write"},{"sequence":5,"code":"eosio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"eosio.token","scope":"........ehbo5","type":"read"}]
+                 * data_access : [{"sequence":43,"code":"vktio.token","scope":"vktio.token","type":"write"},{"sequence":5,"code":"vktio.token","scope":"lucan222","type":"write"},{"sequence":2,"code":"vktio.token","scope":"........ehbo5","type":"read"}]
                  */
 
                 private boolean context_free;
@@ -337,9 +337,9 @@ public class PushSuccessBean {
                     /**
                      * authorization : [{"actor":"lucan222","permission":"active"}]
                      * hex_data : 000000428869908e00a6823403ea305560ea00000000000004454f530000000019e681ade5969ce58f91e8b4a22ce5a4a7e59089e5a4a7e588a9
-                     * data : {"quantity":"6.0000 EOS","memo":"恭喜发财,大吉大利","from":"lucan222","to":"eosio.token"}
+                     * data : {"quantity":"6.0000 VKT","memo":"恭喜发财,大吉大利","from":"lucan222","to":"vktio.token"}
                      * name : transfer
-                     * account : eosio.token
+                     * account : vktio.token
                      */
 
                     private String hex_data;
@@ -390,10 +390,10 @@ public class PushSuccessBean {
 
                     public static class DataBean {
                         /**
-                         * quantity : 6.0000 EOS
+                         * quantity : 6.0000 VKT
                          * memo : 恭喜发财,大吉大利
                          * from : lucan222
-                         * to : eosio.token
+                         * to : vktio.token
                          */
 
                         private String quantity;
@@ -464,8 +464,8 @@ public class PushSuccessBean {
                 public static class DataAccessBean {
                     /**
                      * sequence : 43
-                     * code : eosio.token
-                     * scope : eosio.token
+                     * code : vktio.token
+                     * scope : vktio.token
                      * type : write
                      */
 
@@ -510,8 +510,8 @@ public class PushSuccessBean {
 
             public static class WriteLocksBean {
                 /**
-                 * scope : eosio.token
-                 * account : eosio.token
+                 * scope : vktio.token
+                 * account : vktio.token
                  */
 
                 private String scope;

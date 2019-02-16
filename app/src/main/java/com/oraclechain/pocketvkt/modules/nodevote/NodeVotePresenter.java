@@ -16,7 +16,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class NodeVotePresenter extends BasePresent<NodeVoteView> {
@@ -39,7 +39,7 @@ public class NodeVotePresenter extends BasePresent<NodeVoteView> {
 
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("name", account);
-        HttpUtils.postRequest(BaseUrl.HTTP_eos_get_account, mContext, hashMap, new JsonCallback<ResponseBean<AccountDetailsBean>>() {
+        HttpUtils.postRequest(BaseUrl.HTTP_vkt_get_account, mContext, hashMap, new JsonCallback<ResponseBean<AccountDetailsBean>>() {
             @Override
             public void onSuccess(Response<ResponseBean<AccountDetailsBean>> response) {
                 if (response.body().code == 0) {

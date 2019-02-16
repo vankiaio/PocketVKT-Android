@@ -26,7 +26,7 @@ import com.zhy.autolayout.AutoLayoutActivity;
 import butterknife.ButterKnife;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 
 public abstract class BaseAcitvity<V, P extends BasePresent<V>> extends AutoLayoutActivity implements BaseView {

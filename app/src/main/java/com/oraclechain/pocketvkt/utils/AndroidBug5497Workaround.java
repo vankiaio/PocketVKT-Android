@@ -7,7 +7,7 @@ import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 
 /**
- * Created by pocketEos on 2018/5/11.
+ * Created by pocketVkt on 2018/5/11.
  * 解决软键盘遮挡布局问题
  */
 

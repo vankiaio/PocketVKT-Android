@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/1/27.
+ * Created by pocketVkt on 2018/1/27.
  */
 
 public class GetRequiredKeysBean {
@@ -13,7 +13,7 @@ public class GetRequiredKeysBean {
     /**
      * code : 0
      * message : ok
-     * data : {"required_keys":["EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"]}
+     * data : {"required_keys":["VKT6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"]}
      */
 
     private int code;

@@ -19,7 +19,7 @@ import org.apache.commons.lang.StringUtils;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class TransferAccountsPresenter extends BasePresent<TransferAccountsView> {
@@ -32,7 +32,7 @@ public class TransferAccountsPresenter extends BasePresent<TransferAccountsView>
     public void getCoinRateData(String coinmarket_id) {//获取token汇率
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("coinmarket_id", coinmarket_id);
-        HttpUtils.postRequest(BaseUrl.HTTP_eos_get_coin_rate, mContext, hashMap, new JsonCallback<ResponseBean<CoinRateBean.DataBean>>() {
+        HttpUtils.postRequest(BaseUrl.HTTP_vkt_get_coin_rate, mContext, hashMap, new JsonCallback<ResponseBean<CoinRateBean.DataBean>>() {
             @Override
             public void onSuccess(Response<ResponseBean<CoinRateBean.DataBean>> response) {
                 if (response.body().code == 0) {
@@ -47,7 +47,7 @@ public class TransferAccountsPresenter extends BasePresent<TransferAccountsView>
     public void getAccountDetailsData(final String name) {//动态获取账号资产信息
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("name", name);
-        HttpUtils.postRequest(BaseUrl.HTTP_eos_get_account, mContext, hashMap, new JsonCallback<ResponseBean<AccountDetailsBean>>() {
+        HttpUtils.postRequest(BaseUrl.HTTP_vkt_get_account, mContext, hashMap, new JsonCallback<ResponseBean<AccountDetailsBean>>() {
             @Override
             public void onSuccess(Response<ResponseBean<AccountDetailsBean>> response) {
                 if (response.body().code == 0) {

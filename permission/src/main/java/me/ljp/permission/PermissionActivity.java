@@ -25,7 +25,7 @@ import java.util.ListIterator;
 
 
 /**
- * Created by pocketEos on 2017/5/10 0010.
+ * Created by pocketVkt on 2017/5/10 0010.
  */
 
 public class PermissionActivity extends AppCompatActivity {

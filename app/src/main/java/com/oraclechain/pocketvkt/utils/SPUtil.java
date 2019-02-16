@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import java.util.Locale;
 
 /**
- * Created by pocketEos on 2018/5/23.
+ * Created by pocketVkt on 2018/5/23.
  */
 
 public class SPUtil {

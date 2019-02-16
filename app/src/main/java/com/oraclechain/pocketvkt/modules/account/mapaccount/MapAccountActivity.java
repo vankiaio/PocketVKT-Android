@@ -13,7 +13,7 @@ import com.oraclechain.pocketvkt.base.BaseAcitvity;
 import com.oraclechain.pocketvkt.bean.AccountInfoBean;
 import com.oraclechain.pocketvkt.bean.GetAccountsBean;
 import com.oraclechain.pocketvkt.bean.UserBean;
-import com.oraclechain.pocketvkt.blockchain.cypto.ec.EosPrivateKey;
+import com.oraclechain.pocketvkt.blockchain.cypto.ec.VktPrivateKey;
 import com.oraclechain.pocketvkt.gen.UserBeanDao;
 import com.oraclechain.pocketvkt.modules.blackbox.BlackBoxMainActivity;
 import com.oraclechain.pocketvkt.modules.main.MainActivity;
@@ -45,7 +45,7 @@ public class MapAccountActivity extends BaseAcitvity<MapAccountView, MapAccountP
     private String userPassword, accountName = null;
     private UserBean userBean = new UserBean();
 
-    private EosPrivateKey mActiveKey;
+    private VktPrivateKey mActiveKey;
 
     @Override
     protected int getLayoutId() {
@@ -84,7 +84,7 @@ public class MapAccountActivity extends BaseAcitvity<MapAccountView, MapAccountP
             if (userBean != null && MyApplication.getInstance().getUserBean().getAccount_info() != null && MyApplication.getInstance().getUserBean().getAccount_info().contains(accountName)) {
                 toast(getString(R.string.import_two_account));
             } else {
-                presenter.postEosAccountData(accountName, userBean.getWallet_uid());//只是通知，不以服务端返回结果作为查询依据
+                presenter.postVktAccountData(accountName, userBean.getWallet_uid());//只是通知，不以服务端返回结果作为查询依据
                 toast(getString(R.string.map_account_success));
                 ArrayList<AccountInfoBean> accountInfoBeanArrayList = new ArrayList<>();
                 if (MyApplication.getInstance().getUserBean().getAccount_info() != null) {
@@ -145,7 +145,7 @@ public class MapAccountActivity extends BaseAcitvity<MapAccountView, MapAccountP
     }
 
     @Override
-    public void postEosAccountDataHttp() {
+    public void postVktAccountDataHttp() {
 
     }
 
@@ -161,7 +161,7 @@ public class MapAccountActivity extends BaseAcitvity<MapAccountView, MapAccountP
                         showProgress();
 
                         try {
-                            mActiveKey = new EosPrivateKey(mOwnerPrivateKey.getText().toString().trim());
+                            mActiveKey = new VktPrivateKey(mOwnerPrivateKey.getText().toString().trim());
                             mAccount_owner_public_key = mActiveKey.getPublicKey().toString();
                             mAccount_active_public_key = mActiveKey.getPublicKey().toString();
                             mAccount_active_private_key = mActiveKey.toString();

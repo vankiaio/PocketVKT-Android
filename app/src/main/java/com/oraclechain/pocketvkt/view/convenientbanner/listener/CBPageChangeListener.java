@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 
 /**
- * Created by pocketEos on 2017/12/7.
+ * Created by pocketVkt on 2017/12/7.
  * 翻页指示器适配器
  */
 public class CBPageChangeListener implements ViewPager.OnPageChangeListener {

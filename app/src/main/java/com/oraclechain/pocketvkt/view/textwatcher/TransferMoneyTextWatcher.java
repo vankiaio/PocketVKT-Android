@@ -13,7 +13,7 @@ import com.oraclechain.pocketvkt.utils.StringUtils;
 import java.math.BigDecimal;
 
 /**
- * Created by pocketEos on 2018/2/3.
+ * Created by pocketVkt on 2018/2/3.
  * 监听edittext文本框输入限制小数点后面四位
  * 1.首位输入.的时候,补全为0.
  * <p>

@@ -7,7 +7,7 @@ import android.content.Context;
 import java.util.Stack;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  * 应用程序Activity管理类：用于Activity管理和应用程序退出
  */
 public class AppManager {

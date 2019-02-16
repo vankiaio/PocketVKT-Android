@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2017/5/10 0010.
+ * Created by pocketVkt on 2017/5/10 0010.
  */
 
 public class PermissionAdapter extends BaseAdapter {

@@ -5,7 +5,7 @@
     <strong><span style="font-size:24px;line-height:204%">1</span></strong><strong><span style="font-size:24px;line-height:204%;font-family:宋体">、总则</span></strong>
 </p>
 <p style="line-height:204%">
-    1.1<span style="font-family:宋体">、本协议是在您（以下称作</span>“<span style="font-family:宋体">您</span>”<span style="font-family:宋体">或者</span>“<span style="font-family:宋体">用户</span>”<span style="font-family:宋体">）在自觉自愿的基础上，为规范</span>Pocket VKT<span style="font-family:宋体">的使用及可能出现的问题，与北京万加物联科技有限公司（以下称作</span>“<span style="font-family:宋体">万加物联</span>”<span style="font-family:宋体">或</span>“<span style="font-family:宋体">我们</span>”<span style="font-family:宋体">）达成的一致性意见。</span>Pocket VKT<span style="font-family:宋体">（以下称作</span>“Pocket VKT”<span style="font-family:宋体">或</span>“<span style="font-family:宋体">本软件</span>”<span style="font-family:宋体">）是万加物联开发并提供的一款基于</span>EOS<span style="font-family: 宋体">区块链的移动端应用程序，包括区块链钱包工具和基于区块链的去中心化应用（简称</span>“Dapp”<span style="font-family:宋体">，但不包括第三方在本软件中提供的</span>Dapp<span style="font-family:宋体">）。以任何方式使用</span>Pocket VKT<span style="font-family:宋体">都代表您同意本协议。</span>
+    1.1<span style="font-family:宋体">、本协议是在您（以下称作</span>“<span style="font-family:宋体">您</span>”<span style="font-family:宋体">或者</span>“<span style="font-family:宋体">用户</span>”<span style="font-family:宋体">）在自觉自愿的基础上，为规范</span>Pocket VKT<span style="font-family:宋体">的使用及可能出现的问题，与北京万加物联科技有限公司（以下称作</span>“<span style="font-family:宋体">万加物联</span>”<span style="font-family:宋体">或</span>“<span style="font-family:宋体">我们</span>”<span style="font-family:宋体">）达成的一致性意见。</span>Pocket VKT<span style="font-family:宋体">（以下称作</span>“Pocket VKT”<span style="font-family:宋体">或</span>“<span style="font-family:宋体">本软件</span>”<span style="font-family:宋体">）是万加物联开发并提供的一款基于</span>VKT<span style="font-family: 宋体">区块链的移动端应用程序，包括区块链钱包工具和基于区块链的去中心化应用（简称</span>“Dapp”<span style="font-family:宋体">，但不包括第三方在本软件中提供的</span>Dapp<span style="font-family:宋体">）。以任何方式使用</span>Pocket VKT<span style="font-family:宋体">都代表您同意本协议。</span>
 </p>
 <p style="line-height:204%">
     1.2<span style="font-family:宋体">、在开始使用</span>Pocket VKT<span style="font-family:宋体">之前，您有义务仔细阅读本协议，并在使用过程中接受其中条款的约束。当您下载</span>Pocket VKT<span style="font-family:宋体">并成功创</span> <span style="font-family:宋体">建钱包时，即视为您已经充分阅读并接受本协议全部条款，本协议立即生效，对双方具有约束力。</span>
@@ -14,10 +14,10 @@
     <strong><span style="font-size:24px;line-height:204%">2</span></strong><strong><span style="font-size:24px;line-height:204%;font-family:宋体">、服务内容</span></strong>
 </p>
 <p style="line-height:204%">
-    2.1 Pocket VKT<span style="font-family:宋体">允许用户管理</span>EOS<span style="font-family:宋体">区块链网络中的一些加密资产，包括但不仅限于</span>EOS<span style="font-family:宋体">和</span>OCT<span style="font-family:宋体">，并在</span>EOS<span style="font-family:宋体">网络中使用或转移这些资产。只有在具备相关知识、熟悉区块链技术及加密资产的性质的前提下，您才被允许使用</span>Pocket VKT<span style="font-family:宋体">。如果您符合上述条件，并准备使用</span>Pocket VKT<span style="font-family:宋体">，万加物联强烈建议您首先了解相关加密资产的应用场景和价值基础。您必须理解的信息包括（但不仅限于）以下内容：</span>
+    2.1 Pocket VKT<span style="font-family:宋体">允许用户管理</span>VKT<span style="font-family:宋体">区块链网络中的一些加密资产，包括但不仅限于</span>VKT<span style="font-family:宋体">和</span>OCT<span style="font-family:宋体">，并在</span>VKT<span style="font-family:宋体">网络中使用或转移这些资产。只有在具备相关知识、熟悉区块链技术及加密资产的性质的前提下，您才被允许使用</span>Pocket VKT<span style="font-family:宋体">。如果您符合上述条件，并准备使用</span>Pocket VKT<span style="font-family:宋体">，万加物联强烈建议您首先了解相关加密资产的应用场景和价值基础。您必须理解的信息包括（但不仅限于）以下内容：</span>
 </p>
 <p style="line-height:204%">
-    <strong>2.1.1</strong><strong><span style="font-family:宋体">、您的</span>EOS</strong><strong><span style="font-family:宋体">账户存在于区块链网络中，而不是</span>Pocket VKT</strong><strong><span style="font-family:宋体">的服务器上</span></strong>
+    <strong>2.1.1</strong><strong><span style="font-family:宋体">、您的</span>VKT</strong><strong><span style="font-family:宋体">账户存在于区块链网络中，而不是</span>Pocket VKT</strong><strong><span style="font-family:宋体">的服务器上</span></strong>
 </p>
 <p style="line-height:204%">
     <span style="font-family:宋体">由于区块链网络的去中心化性质，您的账户和账户中的资产都存在于区块链网络中。</span>Pocket VKT<span style="font-family:宋体">仅提供与区块链网络进行交互的工具，您对账户的所有操作都在区块链网络而非</span>Pocket VKT<span style="font-family:宋体">的服务器上完成并被记录。</span>
@@ -26,7 +26,7 @@
     <span style="font-family:宋体">另一方面，您在本软件中的账户权限信息（包括账户私钥、钱包文件及钱包密码）都保存在本地，并只在本地进行验证和运算。其中，账户私钥是您在区块链网络中拥有某一账户的身份证明，钱包文件和钱包密码是在本地（您的移动设备上）保存账户私钥并进行加密的手段。</span>Pocket VKT<span style="font-family:宋体">不会将这些信息上传到任何网络中，无论是万加物联控制的服务器或第三方服务器。</span>
 </p>
 <p style="line-height:204%">
-    Pocket VKT<span style="font-family:宋体">要求用户进行手机验证，这仅是标识用户身份、方便用户使用的一种方式，与您</span> <span style="font-family:宋体">的</span>EOS<span style="font-family:宋体">账户完全无关。您可以随时变更用户身份和</span>EOS<span style="font-family:宋体">账户之间的对应关系，或者使用销毁钱包功能彻底删除用户身份信息。但由于区块链网络的去中心化特质，您无法删除</span>EOS<span style="font-family:宋体">账户。</span>
+    Pocket VKT<span style="font-family:宋体">要求用户进行手机验证，这仅是标识用户身份、方便用户使用的一种方式，与您</span> <span style="font-family:宋体">的</span>VKT<span style="font-family:宋体">账户完全无关。您可以随时变更用户身份和</span>VKT<span style="font-family:宋体">账户之间的对应关系，或者使用销毁钱包功能彻底删除用户身份信息。但由于区块链网络的去中心化特质，您无法删除</span>VKT<span style="font-family:宋体">账户。</span>
 </p>
 <p style="line-height:204%">
     <strong><span style="font-size:16px;line-height:204%">2.1.2</span></strong><strong><span style="font-size:16px;line-height:204%;font-family:宋体">、</span></strong><strong> </strong><strong><span style="font-size:16px;line-height: 204%;font-family:宋体">您独立保管自己的账户权限信息</span></strong>
@@ -41,13 +41,13 @@
     <strong><span style="font-size:16px;line-height:204%">2.1.3</span></strong><strong><span style="font-size:16px;line-height:204%;font-family:宋体">、交易</span></strong>
 </p>
 <p style="line-height:204%">
-    <span style="font-family:宋体">只有</span>EOS<span style="font-family:宋体">区块链网络能提供权威的加密资产交易记录。</span>Pocket VKT<span style="font-family:宋体">只是提供了一组功能界面，并允许您通过这些界面向</span>EOS<span style="font-family:宋体">网络中发送交易指令。您必须保证，您的交易符合</span>EOS<span style="font-family:宋体">网络的现行规则，否则您将自行承担由此而造成的损失。即使您严格遵守这些规则，万加物联也无法保证，您通过</span>Pocket VKT<span style="font-family:宋体">执行的交易操作一定会被</span>EOS<span style="font-family:宋体">网络记录。</span>
+    <span style="font-family:宋体">只有</span>VKT<span style="font-family:宋体">区块链网络能提供权威的加密资产交易记录。</span>Pocket VKT<span style="font-family:宋体">只是提供了一组功能界面，并允许您通过这些界面向</span>VKT<span style="font-family:宋体">网络中发送交易指令。您必须保证，您的交易符合</span>VKT<span style="font-family:宋体">网络的现行规则，否则您将自行承担由此而造成的损失。即使您严格遵守这些规则，万加物联也无法保证，您通过</span>Pocket VKT<span style="font-family:宋体">执行的交易操作一定会被</span>VKT<span style="font-family:宋体">网络记录。</span>
 </p>
 <p style="line-height:204%">
     <strong><span style="font-size:16px;line-height:204%">2.1.4</span></strong><strong><span style="font-size:16px;line-height:204%;font-family:宋体">、无法控制区块链网络</span></strong><strong> </strong>
 </p>
 <p style="line-height:204%">
-    <span style="font-family:宋体">尽管</span>Pocket VKT<span style="font-family:宋体">允许您管理一些加密资产，但万加物联对这些资产及它们所依赖的</span>EOS<span style="font-family:宋体">区块链网络都不具有控制权。</span>
+    <span style="font-family:宋体">尽管</span>Pocket VKT<span style="font-family:宋体">允许您管理一些加密资产，但万加物联对这些资产及它们所依赖的</span>VKT<span style="font-family:宋体">区块链网络都不具有控制权。</span>
 </p>
 <p style="line-height:204%">
     2.2 Pocket VKT<span style="font-family:宋体">提供以下功能。您应该在充分理解某一功能并接受万加物联设置的功能逻辑和功能限制的基础上使用这些功能。万加物联不承当任何因您对这些功能的误解而造成的损失，并有权要求您对误用这些功能而引起的不当后果进行赔偿。您在</span>Pocket VKT<span style="font-family:宋体">中进行相关操作即视为您同意与该功能相关的条款，接受该功能中的限制，并已经在可预见的范围内知悉使用该功能将带来的后果。</span>
@@ -56,7 +56,7 @@
     ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">创建钱包</span> </strong><strong><span style="font-family:宋体">。</span></strong><span style="font-family:宋体">您可以使用您的手机号、微信账号、</span>QQ<span style="font-family:宋体">账号或其他</span>Pocket VKT<span style="font-family: 宋体">支持的第三方账号来创建钱包。每一账号只能创建一个的钱包。如果您希望用该账号创建新的钱包，您应该首先<strong>销毁原有钱包</strong>。</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
-    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">创建或导入</span>EOS</strong><strong><span style="font-family:宋体">账户。</span></strong><span style="font-family:宋体">您在本软件中可以使用生成新的</span>EOS<span style="font-family:宋体">账户或导入相关区块链系统的其它钱包工具生成的</span>EOS<span style="font-family:宋体">账户。这些账户将与您的钱包关联。每一钱包可以关联多个</span>EOS<span style="font-family:宋体">账户。</span>
+    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">创建或导入</span>VKT</strong><strong><span style="font-family:宋体">账户。</span></strong><span style="font-family:宋体">您在本软件中可以使用生成新的</span>VKT<span style="font-family:宋体">账户或导入相关区块链系统的其它钱包工具生成的</span>VKT<span style="font-family:宋体">账户。这些账户将与您的钱包关联。每一钱包可以关联多个</span>VKT<span style="font-family:宋体">账户。</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
     ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">绑定或解绑第三方账号。</span></strong><span style="font-family:宋体">本软件允许您将您的钱包和微信账号、</span>QQ<span style="font-family:宋体">账号及其他支持的第三方账号进行绑定，以方便您的使用。每一个钱包只能绑定一个同种类的第三方账号，每一第三方账号也只能对应唯一的钱包。绑定过的账号无法用于创建新钱包。除了</span>Pocket VKT<span style="font-family:宋体">的相关条款，绑定第三方账号后您也需要遵守该第三方有关账号授权和信息管理的条款。您可以随时解除这种绑定关系。</span>
@@ -71,10 +71,10 @@
     ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">价格估算。</span></strong><span style="font-family:宋体">本软件提供相关数字资产的估算价格。但您应理解，</span>Pocket VKT<span style="font-family:宋体">只是抓取了相应的外部数据并进行展示。这些数字资产的真实价格并不由万加物联所决定，本软件中展示的价格也不代表您出卖该资产能够获得的实际价格。</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
-    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">浏览并使用</span>Dapp</strong><strong><span style="font-family:宋体">。</span></strong>Pocket VKT<span style="font-family:宋体">将为用户提供一些</span>Dapp<span style="font-family:宋体">（包括万加物联自研和第三方开发的</span>DApp<span style="font-family:宋体">），支持用户更方便、更有效地使用数字资产。在使用任何</span>Dapp<span style="font-family:宋体">前，您都应该阅读相关文档，充分理解该</span>Dapp<span style="font-family:宋体">的功能和运作方式。您可以使用本软件创建或导入到钱包中的</span>EOS<span style="font-family:宋体">账户来使用这些</span>Dapp<span style="font-family:宋体">，但由于</span>EOS<span style="font-family:宋体">账户是独立于本软件中的，在</span>Dapp<span style="font-family:宋体">中对这些账户及账户中资产的操作也本软件无关。某些第三方</span>Dapp<span style="font-family:宋体">可能要求在其他应用程序中完成操作。</span>Pocket VKT<span style="font-family:宋体">只提供相关的链接，不对这些</span>Dapp<span style="font-family:宋体">的功能、技术完备性或安全性做任何担保。您应该根据自己的需求和判断，选择并使用合适的</span>Dapp<span style="font-family:宋体">。</span>
+    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">浏览并使用</span>Dapp</strong><strong><span style="font-family:宋体">。</span></strong>Pocket VKT<span style="font-family:宋体">将为用户提供一些</span>Dapp<span style="font-family:宋体">（包括万加物联自研和第三方开发的</span>DApp<span style="font-family:宋体">），支持用户更方便、更有效地使用数字资产。在使用任何</span>Dapp<span style="font-family:宋体">前，您都应该阅读相关文档，充分理解该</span>Dapp<span style="font-family:宋体">的功能和运作方式。您可以使用本软件创建或导入到钱包中的</span>VKT<span style="font-family:宋体">账户来使用这些</span>Dapp<span style="font-family:宋体">，但由于</span>VKT<span style="font-family:宋体">账户是独立于本软件中的，在</span>Dapp<span style="font-family:宋体">中对这些账户及账户中资产的操作也本软件无关。某些第三方</span>Dapp<span style="font-family:宋体">可能要求在其他应用程序中完成操作。</span>Pocket VKT<span style="font-family:宋体">只提供相关的链接，不对这些</span>Dapp<span style="font-family:宋体">的功能、技术完备性或安全性做任何担保。您应该根据自己的需求和判断，选择并使用合适的</span>Dapp<span style="font-family:宋体">。</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
-    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">销毁钱包。</span></strong><span style="font-family:宋体">您可以随时销毁您的钱包。销毁钱包后，您的用户信息及第三方账号的绑定信息都将被从</span>Pocket VKT<span style="font-family:宋体">的服务器上删除。这一操作是不可逆的。您可以重新用您的手机号或其他账号创建钱包，但该新钱包与被销毁的旧钱包之间不存在任何关系。另外，您应了解，由于区块链网络的性质，您无法删除您的</span>EOS<span style="font-family:宋体">账户。销毁钱包并不能将与该钱包关联的</span>EOS<span style="font-family:宋体">账户关闭或销毁。这些账户将依然存在于区块链网络中，只是不与任何</span>Pocket VKT<span style="font-family:宋体">钱包相关联。您可以将这些账户重新导入其他钱包，从而建立新的关联。</span>
+    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family:宋体">销毁钱包。</span></strong><span style="font-family:宋体">您可以随时销毁您的钱包。销毁钱包后，您的用户信息及第三方账号的绑定信息都将被从</span>Pocket VKT<span style="font-family:宋体">的服务器上删除。这一操作是不可逆的。您可以重新用您的手机号或其他账号创建钱包，但该新钱包与被销毁的旧钱包之间不存在任何关系。另外，您应了解，由于区块链网络的性质，您无法删除您的</span>VKT<span style="font-family:宋体">账户。销毁钱包并不能将与该钱包关联的</span>VKT<span style="font-family:宋体">账户关闭或销毁。这些账户将依然存在于区块链网络中，只是不与任何</span>Pocket VKT<span style="font-family:宋体">钱包相关联。您可以将这些账户重新导入其他钱包，从而建立新的关联。</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
     ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&nbsp;<span style="font-family:宋体">其他万加物联认为有必要提供的服务。</span>
@@ -86,7 +86,7 @@
     ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:宋体">找回用户的钱包密码、钱包文件、账户私钥；</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
-    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:宋体">冻结、挂失或恢复</span>EOS<span style="font-family:宋体">账户；</span>
+    ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:宋体">冻结、挂失或恢复</span>VKT<span style="font-family:宋体">账户；</span>
 </p>
 <p style="margin-left:48px;line-height: 204%">
     ●<span style="font:9px &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:宋体">交易回滚；当您使用本软件进行转账或收款时功能时，您必须自行承担因您操作失误而导致的后果。</span>

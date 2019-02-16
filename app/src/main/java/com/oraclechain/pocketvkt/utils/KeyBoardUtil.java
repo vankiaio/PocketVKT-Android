@@ -8,7 +8,7 @@ import android.view.inputmethod.InputMethodManager;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 public class KeyBoardUtil {
     private static KeyBoardUtil instance;

@@ -14,7 +14,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class ImportAccountPresenter extends BasePresent<ImportAccountView> {
@@ -41,15 +41,15 @@ public class ImportAccountPresenter extends BasePresent<ImportAccountView> {
 
     }
 
-    public void postEosAccountData(String eosAccountName, String uid) {
+    public void postVktAccountData(String vktAccountName, String uid) {
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("uid", uid);
-        hashMap.put("eosAccountName", eosAccountName);
-        HttpUtils.postRequest(BaseUrl.HTTP_add_new_eos, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
+        hashMap.put("vktAccountName", vktAccountName);
+        HttpUtils.postRequest(BaseUrl.HTTP_add_new_vkt, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
             @Override
             public void onSuccess(Response<ResponseBean<String>> response) {
                 if (response.body().code == 0) {
-                    view.postEosAccountDataHttp();
+                    view.postVktAccountDataHttp();
                 } else {
                     view.getDataHttpFail(response.body().message);
                 }
@@ -57,11 +57,11 @@ public class ImportAccountPresenter extends BasePresent<ImportAccountView> {
         });
     }
 
-    public void setMianAccountData(String eosAccountName) {//0代表直接执行设置主账号操作，1代表先删除后设置主账号
+    public void setMianAccountData(String vktAccountName) {//0代表直接执行设置主账号操作，1代表先删除后设置主账号
 
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("uid", MyApplication.getInstance().getUserBean().getWallet_uid());
-        hashMap.put("eosAccountName", eosAccountName);
+        hashMap.put("vktAccountName", vktAccountName);
         HttpUtils.postRequest(BaseUrl.HTTP_set_mian_account, mContext, hashMap, new JsonCallback<ResponseBean<String>>() {
             @Override
             public void onSuccess(Response<ResponseBean<String>> response) {

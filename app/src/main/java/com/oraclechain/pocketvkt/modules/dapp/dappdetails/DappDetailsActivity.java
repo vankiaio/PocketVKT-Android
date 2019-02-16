@@ -53,7 +53,7 @@ public class DappDetailsActivity extends BaseAcitvity<NormalView, NormalPresente
         // 开启辅助功能崩溃
         mWebDappDetails.disableAccessibility(this);
         new BaseWebSetting(mWebDappDetails, DappDetailsActivity.this, false);//设置webseeting
-        mWebDappDetails.getSettings().setUserAgentString("PocketEosAndroid");
+        mWebDappDetails.getSettings().setUserAgentString("PocketVktAndroid");
         mWebDappDetails.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
@@ -72,7 +72,7 @@ public class DappDetailsActivity extends BaseAcitvity<NormalView, NormalPresente
             public void onProgressChanged(WebView view, int progress) {
                 if (progress == 100) {
                     mProgressBar.setVisibility(View.GONE);//加载完网页进度条消失
-                    mWebDappDetails.loadUrl("javascript:getEosAccount('" + account + "')");
+                    mWebDappDetails.loadUrl("javascript:getVktAccount('" + account + "')");
                 } else {
                     mProgressBar.setVisibility(View.VISIBLE);//开始加载网页时显示进度条
                     mProgressBar.setProgress(progress);//设置进度值

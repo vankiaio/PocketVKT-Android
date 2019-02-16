@@ -39,30 +39,30 @@ import java.util.regex.PatternSyntaxException;
  * Created by swapnibble on 2018-02-02.
  */
 
-public class EosEcUtil {
+public class VktEcUtil {
 
     public static final String PREFIX_K1 = "K1";
     public static final String PREFIX_R1 = "R1";
 
-//    public static byte[] decodeEosCrypto(String base58Data, RefValue<CurveParam> curveParamRef, RefValue<Long> checksumRef ){
+//    public static byte[] decodeVktCrypto(String base58Data, RefValue<CurveParam> curveParamRef, RefValue<Long> checksumRef ){
 //
 //        final byte[] retKeyData;
 //
 //        final String typePrefix;
-//        if ( base58Data.startsWith( EOS_PREFIX ) ) {
+//        if ( base58Data.startsWith( VKT_PREFIX ) ) {
 //
-//            if ( base58Data.startsWith( PREFIX_K1, EOS_PREFIX.length())) {
+//            if ( base58Data.startsWith( PREFIX_K1, VKT_PREFIX.length())) {
 //                typePrefix = PREFIX_K1;
 //            }
 //            else
-//            if ( base58Data.startsWith( PREFIX_R1, EOS_PREFIX.length())) {
+//            if ( base58Data.startsWith( PREFIX_R1, VKT_PREFIX.length())) {
 //                typePrefix = PREFIX_R1;
 //            }
 //            else {
 //                typePrefix = null;
 //            }
 //
-//            retKeyData = getBytesIfMatchedRipemd160( base58Data.substring( EOS_PREFIX.length() ), typePrefix, checksumRef);
+//            retKeyData = getBytesIfMatchedRipemd160( base58Data.substring( VKT_PREFIX.length() ), typePrefix, checksumRef);
 //        }
 //        else{
 //            typePrefix = null;
@@ -152,7 +152,7 @@ public class EosEcUtil {
         }
     }
 
-//    public static String encodeEosCrypto(byte[] data, CurveParam curveParam ) {
+//    public static String encodeVktCrypto(byte[] data, CurveParam curveParam ) {
 //        boolean isR1 = ( null != curveParam ) && curveParam.isType( CurveParam.SECP256_R1);
 //
 //        byte[] toHashData = new byte[ data.length + (isR1 ? PREFIX_R1.length() : 0) ];
@@ -169,10 +169,10 @@ public class EosEcUtil {
 //        System.arraycopy( data, 0, result, 0, data.length); // copy source data
 //        System.arraycopy( checksumBytes, 0, result, data.length, 4); // copy checksum data
 //
-//        return EOS_PREFIX + ( isR1 ? PREFIX_R1 : "") + Base58.encode( result );
+//        return VKT_PREFIX + ( isR1 ? PREFIX_R1 : "") + Base58.encode( result );
 //    }
 
-    public static String encodeEosCrypto(String prefix, CurveParam curveParam, byte[] data ) {
+    public static String encodeVktCrypto(String prefix, CurveParam curveParam, byte[] data ) {
         String typePart = "";
         if ( curveParam != null ) {
             if ( curveParam.isType( CurveParam.SECP256_K1)) {
@@ -204,7 +204,7 @@ public class EosEcUtil {
             result = prefix;
         }
         else {
-            result = prefix + EOS_CRYPTO_STR_SPLITTER + typePart + EOS_CRYPTO_STR_SPLITTER;
+            result = prefix + VKT_CRYPTO_STR_SPLITTER + typePart + VKT_CRYPTO_STR_SPLITTER;
         }
 
         return result + Base58.encode( dataToEncodeBase58 );
@@ -213,14 +213,14 @@ public class EosEcUtil {
 
 
 
-    private static final String EOS_CRYPTO_STR_SPLITTER = "_";
-    public static String[] safeSplitEosCryptoString( String cryptoStr ) {
+    private static final String VKT_CRYPTO_STR_SPLITTER = "_";
+    public static String[] safeSplitVktCryptoString( String cryptoStr ) {
         if ( StringUtils.isEmpty( cryptoStr)) {
             return new String[]{ cryptoStr };
         }
 
         try {
-            return cryptoStr.split( EOS_CRYPTO_STR_SPLITTER );
+            return cryptoStr.split( VKT_CRYPTO_STR_SPLITTER );
         }
         catch (PatternSyntaxException e){
             e.printStackTrace();
@@ -228,12 +228,12 @@ public class EosEcUtil {
         }
     }
 
-    public static String concatEosCryptoStr( String... strData ) {
+    public static String concatVktCryptoStr( String... strData ) {
 
         String result="";
 
         for ( int i = 0; i < strData.length; i++) {
-            result += strData[i] + ( i < strData.length -1 ? EOS_CRYPTO_STR_SPLITTER : "");
+            result += strData[i] + ( i < strData.length -1 ? VKT_CRYPTO_STR_SPLITTER : "");
         }
         return result;
     }
@@ -243,20 +243,20 @@ public class EosEcUtil {
     }
 
 
-//    public static EosCryptoProperty getEosCryptoProperty( String cryptoStr ) {
+//    public static VktCryptoProperty getVktCryptoProperty( String cryptoStr ) {
 //        if ( StringUtils.isEmpty( cryptoStr)) {
-//            return new EosCryptoProperty( cryptoStr );
+//            return new VktCryptoProperty( cryptoStr );
 //        }
 //
 //        String[] splitted = null;
 //        try {
-//            splitted = cryptoStr.split(EOS_CRYPTO_STR_SPLITTER);
+//            splitted = cryptoStr.split(VKT_CRYPTO_STR_SPLITTER);
 //
 //            if ( splitted == null || splitted.length <= 1) {
-//                return new EosCryptoProperty( cryptoStr );
+//                return new VktCryptoProperty( cryptoStr );
 //            }
 //
-//            return new EosCryptoProperty( splitted[0], null, splitted[1]);
+//            return new VktCryptoProperty( splitted[0], null, splitted[1]);
 //        }
 //    }
 }

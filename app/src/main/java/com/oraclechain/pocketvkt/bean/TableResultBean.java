@@ -3,7 +3,7 @@ package com.oraclechain.pocketvkt.bean;
 import java.util.List;
 
 /**
- * Created by pocketEos on 2018/6/22.
+ * Created by pocketVkt on 2018/6/22.
  */
 
 public class TableResultBean {
@@ -11,7 +11,7 @@ public class TableResultBean {
     /**
      * code : 0
      * message : ok
-     * data : {"more":false,"rows":[{"quote":{"balance":"1251817.7221 EOS","weight":"0.50000000000000000"},"supply":"10000000000.0000 RAMCORE","base":{"balance":"54895975262 RAM","weight":"0.50000000000000000"}}]}
+     * data : {"more":false,"rows":[{"quote":{"balance":"1251817.7221 VKT","weight":"0.50000000000000000"},"supply":"10000000000.0000 RAMCORE","base":{"balance":"54895975262 RAM","weight":"0.50000000000000000"}}]}
      */
 
     private int code;
@@ -45,7 +45,7 @@ public class TableResultBean {
     public static class DataBean {
         /**
          * more : false
-         * rows : [{"quote":{"balance":"1251817.7221 EOS","weight":"0.50000000000000000"},"supply":"10000000000.0000 RAMCORE","base":{"balance":"54895975262 RAM","weight":"0.50000000000000000"}}]
+         * rows : [{"quote":{"balance":"1251817.7221 VKT","weight":"0.50000000000000000"},"supply":"10000000000.0000 RAMCORE","base":{"balance":"54895975262 RAM","weight":"0.50000000000000000"}}]
          */
 
         private boolean more;
@@ -69,7 +69,7 @@ public class TableResultBean {
 
         public static class RowsBean {
             /**
-             * quote : {"balance":"1251817.7221 EOS","weight":"0.50000000000000000"}
+             * quote : {"balance":"1251817.7221 VKT","weight":"0.50000000000000000"}
              * supply : 10000000000.0000 RAMCORE
              * base : {"balance":"54895975262 RAM","weight":"0.50000000000000000"}
              */
@@ -104,7 +104,7 @@ public class TableResultBean {
 
             public static class QuoteBean {
                 /**
-                 * balance : 1251817.7221 EOS
+                 * balance : 1251817.7221 VKT
                  * weight : 0.50000000000000000
                  */
 

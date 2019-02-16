@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.view.View;
 
 /**
- * Created by pocketEos on 2018/4/18.
+ * Created by pocketVkt on 2018/4/18.
  */
 public class ViewToImageUtils {
 

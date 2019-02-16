@@ -16,7 +16,7 @@ import com.oraclechain.pocketvkt.bean.AccountWithCoinBean;
 import com.oraclechain.pocketvkt.utils.StringUtils;
 
 /**
- * Created by pocketEos on 2017/12/5.
+ * Created by pocketVkt on 2017/12/5.
  * 分享token弹窗
  */
 
@@ -80,8 +80,8 @@ public class ShareCoinDetailsDialog extends Dialog implements View.OnClickListen
             coin_one_price.setText("￥" + StringUtils.addComma(accountWithCoinBean.getOct_price_cny()));
             coin_maket_total_price.setText("￥" + StringUtils.addComma(accountWithCoinBean.getOct_market_cap_cny()));
         } else {
-            coin_one_price.setText("￥" + StringUtils.addComma(accountWithCoinBean.getEos_price_cny()));
-            coin_maket_total_price.setText("￥" + StringUtils.addComma(accountWithCoinBean.getEos_market_cap_cny()));
+            coin_one_price.setText("￥" + StringUtils.addComma(accountWithCoinBean.getVkt_price_cny()));
+            coin_maket_total_price.setText("￥" + StringUtils.addComma(accountWithCoinBean.getVkt_market_cap_cny()));
         }
         return this;
     }

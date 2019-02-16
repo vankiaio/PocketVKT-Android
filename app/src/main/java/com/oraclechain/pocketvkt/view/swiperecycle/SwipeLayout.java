@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2017/12/11.
+ * Created by pocketVkt on 2017/12/11.
  * 通过layout_gravity属性指定各个View的功能, 并且最多只能存在一个Content， 一个LeftMenu，一个RightMenu。
  * <p>
  * Content : 不设置layout_gravity属性

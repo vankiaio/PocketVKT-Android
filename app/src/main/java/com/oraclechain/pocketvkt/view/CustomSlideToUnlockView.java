@@ -19,7 +19,7 @@ import com.oraclechain.pocketvkt.R;
 import com.oraclechain.pocketvkt.utils.DensityUtil;
 
 /**
- * Created by pocketEos on 2017/12/14.'
+ * Created by pocketVkt on 2017/12/14.'
  * 滑动销毁
  */
 

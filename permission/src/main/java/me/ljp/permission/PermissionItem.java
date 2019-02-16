@@ -3,7 +3,7 @@ package me.ljp.permission;
 import java.io.Serializable;
 
 /**
- * Created by pocketEos on 2017/5/10 0010.
+ * Created by pocketVkt on 2017/5/10 0010.
  */
 
 public class PermissionItem implements Serializable {

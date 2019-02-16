@@ -36,16 +36,16 @@ import java.security.SecureRandom;
  * Created by swapnibble on 2017-09-25.
  *
  * 참고:
- * https://github.com/EOSIO/eosjs-ecc
- * https://github.com/EOSIO/eosjs-ecc/blob/master/src/ecdsa.js
+ * https://github.com/VKTIO/vktjs-ecc
+ * https://github.com/VKTIO/vktjs-ecc/blob/master/src/ecdsa.js
  */
 
-public class EosPrivateKey {
+public class VktPrivateKey {
 
     private static final String PREFIX = "PVT";
 
     private final BigInteger mPrivateKey;
-    private final EosPublicKey mPublicKey;
+    private final VktPublicKey mPublicKey;
 
     private final CurveParam mCurveParam;
 
@@ -59,32 +59,32 @@ public class EosPrivateKey {
         return mSecRandom;
     }
 
-    public EosPrivateKey(){
+    public VktPrivateKey(){
         this( CurveParam.SECP256_K1);
     }
 
-    public EosPrivateKey( int curveParamType){
+    public VktPrivateKey( int curveParamType){
         mCurveParam = EcTools.getCurveParam(curveParamType);
 
         mPrivateKey = getOrCreatePrivKeyBigInteger( null );
-        mPublicKey = new EosPublicKey(findPubKey( mPrivateKey ), mCurveParam);
+        mPublicKey = new VktPublicKey(findPubKey( mPrivateKey ), mCurveParam);
     }
 
-    public EosPrivateKey( String base58Str ) {
-        String[] split = EosEcUtil.safeSplitEosCryptoString( base58Str );
+    public VktPrivateKey( String base58Str ) {
+        String[] split = VktEcUtil.safeSplitVktCryptoString( base58Str );
         byte[] keyBytes;
 
         if ( split.length == 1 ){
             mCurveParam = EcTools.getCurveParam( CurveParam.SECP256_K1);
-            keyBytes = EosEcUtil.getBytesIfMatchedSha256( base58Str, null);
+            keyBytes = VktEcUtil.getBytesIfMatchedSha256( base58Str, null);
         }
         else {
             if ( split.length < 3 ) {
                 throw new IllegalArgumentException("Invalid private key format: " + base58Str);
             }
 
-            mCurveParam = EosEcUtil.getCurveParamFrom( split[1]);
-            keyBytes = EosEcUtil.getBytesIfMatchedRipemd160( split[2], split[1], null);
+            mCurveParam = VktEcUtil.getCurveParamFrom( split[1]);
+            keyBytes = VktEcUtil.getBytesIfMatchedRipemd160( split[2], split[1], null);
         }
 
 
@@ -93,7 +93,7 @@ public class EosPrivateKey {
         }
 
         mPrivateKey = getOrCreatePrivKeyBigInteger( keyBytes );
-        mPublicKey = new EosPublicKey(findPubKey( mPrivateKey ), mCurveParam);
+        mPublicKey = new VktPublicKey(findPubKey( mPrivateKey ), mCurveParam);
     }
 
 
@@ -111,7 +111,7 @@ public class EosPrivateKey {
         return Q.getEncoded();
     }
 
-    public EosPublicKey getPublicKey() {
+    public VktPublicKey getPublicKey() {
         return mPublicKey;
     }
 
@@ -143,7 +143,7 @@ public class EosPrivateKey {
             return toWif();
         }
 
-        return EosEcUtil.encodeEosCrypto( PREFIX, mCurveParam , getBytes());
+        return VktEcUtil.encodeVktCrypto( PREFIX, mCurveParam , getBytes());
     }
 
     public BigInteger getAsBigInteger() {

@@ -17,7 +17,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 /**
- * Created by pocketEos on 2017/5/11 0011.
+ * Created by pocketVkt on 2017/5/11 0011.
  */
 
 public class PermissionView extends FrameLayout {

@@ -20,7 +20,7 @@ import android.widget.ImageView;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2018/3/12.
+ * Created by pocketVkt on 2018/3/12.
  */
 
 public class RoundImageView extends ImageView {

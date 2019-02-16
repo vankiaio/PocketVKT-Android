@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.bean;
 
 /**
- * Created by pocketEos on 2018/2/1.
+ * Created by pocketVkt on 2018/2/1.
  */
 
 public class QrCodeAccountBean {

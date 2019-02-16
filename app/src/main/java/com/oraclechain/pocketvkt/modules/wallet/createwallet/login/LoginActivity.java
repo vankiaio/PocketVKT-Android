@@ -58,8 +58,8 @@ public class LoginActivity extends BaseAcitvity<LoginView, LoginPresenter> imple
     TextView mBlackBox;
     @BindView(R.id.other_login_txt)
     TextView mOtherLoginTxt;
-    @BindView(R.id.go_pocketeos_user)
-    TextView mGoPocketeosUser;
+    @BindView(R.id.go_pocketvkt_user)
+    TextView mGoPocketvktUser;
 
 
     @Override
@@ -110,11 +110,11 @@ public class LoginActivity extends BaseAcitvity<LoginView, LoginPresenter> imple
                 }
             }
         });
-        mGoPocketeosUser.setOnClickListener(new View.OnClickListener() {
+        mGoPocketvktUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.putString("details", FilesUtils.readAssetsTxt(LoginActivity.this, "pocketeos_user"));
+                bundle.putString("details", FilesUtils.readAssetsTxt(LoginActivity.this, "pocketvkt_user"));
                 bundle.putString("title", getString(R.string.setting_one));
                 ActivityUtils.next(LoginActivity.this, RichTextActivity.class, bundle);
             }

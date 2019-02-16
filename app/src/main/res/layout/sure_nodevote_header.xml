@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens_10"
-            android:text="@string/vote_eos_amount"
+            android:text="@string/vote_vkt_amount"
             android:textColor="@color/white"
             android:textSize="@dimen/dimens_14"/>
 
@@ -61,7 +61,7 @@
             android:layout_marginTop="@dimen/dimens_20">
 
             <EditText
-                android:id="@+id/vote_eos_amount"
+                android:id="@+id/vote_vkt_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -79,10 +79,10 @@
                 android:id="@+id/input_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/vote_eos_amount"
+                android:layout_toRightOf="@+id/vote_vkt_amount"
                 android:clickable="true"
                 android:gravity="center"
-                android:text="  EOS"
+                android:text="  VKT"
                 android:textColor="@color/white"
                 android:textSize="@dimen/dimens_14"/>
 

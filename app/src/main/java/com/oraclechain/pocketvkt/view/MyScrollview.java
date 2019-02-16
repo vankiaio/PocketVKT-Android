@@ -7,7 +7,7 @@ import android.view.ViewConfiguration;
 import android.widget.ScrollView;
 
 /**
- * Created by pocketEos on 2017/9/13.
+ * Created by pocketVkt on 2017/9/13.
  * 屏蔽嵌套的recycleview在4.x系统上好用，能显示滑动也流畅，但是在5.x上虽然显示正常，但是滑动的时候好像被粘住了，没有惯性效果。。。。
  * 暴力屏蔽。。。。5以上的事件直接传递给了内层的recyclerview
  * 同时开放监听scrollview的滑动距离

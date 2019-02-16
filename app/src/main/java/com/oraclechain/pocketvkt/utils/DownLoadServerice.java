@@ -26,7 +26,7 @@ import me.ljp.permission.PermissionCallback;
 import me.ljp.permission.PermissionItem;
 
 /**
- * Created by pocketEos on 2018/2/10.
+ * Created by pocketVkt on 2018/2/10.
  */
 
 public class DownLoadServerice extends Service {
@@ -84,8 +84,8 @@ public class DownLoadServerice extends Service {
                     @Override
                     public void onFinish() {
                         //请求成功 先进行删除操作
-                        if (new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/pocketEos/App/")!=null){
-                            FilesUtils.deleteAllFiles(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/pocketEos/App/"));
+                        if (new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/pocketVkt/App/")!=null){
+                            FilesUtils.deleteAllFiles(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/pocketVkt/App/"));
                         }
                         startDownload(downloadUrl);
                     }
@@ -107,8 +107,8 @@ public class DownLoadServerice extends Service {
     public static void install(Context context) {
 
         File file = new File(
-                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/pocketEos/App"
-                , "pocketEos" + versionName + ".apk");
+                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/pocketVkt/App"
+                , "pocketVkt" + versionName + ".apk");
         Intent intent = new Intent(Intent.ACTION_VIEW);
         // 由于没有在Activity环境下启动Activity,设置下面的标签
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -143,10 +143,10 @@ public class DownLoadServerice extends Service {
         //设置下载文件的类型
         request.setMimeType("application/vnd.android.package-archive");
         //设置下载存放的文件夹和文件名字
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS + "/pocketEos/App", "pocketEos" + versionName + ".apk");
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS + "/pocketVkt/App", "pocketVkt" + versionName + ".apk");
         //设置下载时或者下载完成时，通知栏是否显示
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        request.setTitle("下载pocketEos新版本");
+        request.setTitle("下载pocketVkt新版本");
         //执行下载，并返回任务唯一id
         enqueue = dm.enqueue(request);
     }

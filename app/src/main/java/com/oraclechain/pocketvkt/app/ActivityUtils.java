@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.oraclechain.pocketvkt.R;
 
 /**
- * Created by pocketEos on 2017/11/23.
+ * Created by pocketVkt on 2017/11/23.
  */
 
 public class ActivityUtils {

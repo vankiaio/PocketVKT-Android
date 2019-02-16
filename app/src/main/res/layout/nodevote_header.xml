@@ -40,7 +40,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/balance_eos"
+                    android:text="@string/balance_vkt"
                     android:gravity="center_vertical"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_13"/>
@@ -54,7 +54,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EOS"
+                    android:text="VKT"
                     android:gravity="center_vertical"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_13"/>

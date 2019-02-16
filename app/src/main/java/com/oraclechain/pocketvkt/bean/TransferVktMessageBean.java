@@ -1,10 +1,10 @@
 package com.oraclechain.pocketvkt.bean;
 
 /**
- * Created by pocketEos on 2018/5/3.
+ * Created by pocketVkt on 2018/5/3.
  */
 
-public class TransferEosMessageBean {
+public class TransferVktMessageBean {
 
     /**
      * memo :
@@ -18,7 +18,7 @@ public class TransferEosMessageBean {
     private String quantity;
     private String from;
 
-    public TransferEosMessageBean(String memo, String to, String quantity, String from) {
+    public TransferVktMessageBean(String memo, String to, String quantity, String from) {
         this.memo = memo;
         this.to = to;
         this.quantity = quantity;

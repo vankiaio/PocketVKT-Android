@@ -151,9 +151,9 @@ public class AccountDetailsActivity extends BaseAcitvity<AccountDetailsView, Acc
                             Bundle params = new Bundle();
                             params.putInt(QQShare.SHARE_TO_QQ_KEY_TYPE, QQShare.SHARE_TO_QQ_TYPE_IMAGE);
                             params.putString(QQShare.SHARE_TO_QQ_IMAGE_LOCAL_URL, FilesUtils.savePhoto(ViewToImageUtils.loadBitmapFromView(mRel), Environment
-                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/accountCode", String
+                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/accountCode", String
                                     .valueOf(System.currentTimeMillis())));
-                            params.putString(QQShare.SHARE_TO_QQ_APP_NAME, "pocketEos");
+                            params.putString(QQShare.SHARE_TO_QQ_APP_NAME, "pocketVkt");
                             params.putInt(QQShare.SHARE_TO_QQ_EXT_INT, QQShare.SHARE_TO_QQ_FLAG_QZONE_ITEM_HIDE);
                             MyApplication.getInstance().getTencent().shareToQQ(AccountDetailsActivity.this, params, new BaseUIListener(AccountDetailsActivity.this, true));
                         }
@@ -164,7 +164,7 @@ public class AccountDetailsActivity extends BaseAcitvity<AccountDetailsView, Acc
                             params.putInt(QzonePublish.PUBLISH_TO_QZONE_KEY_TYPE, QzonePublish.PUBLISH_TO_QZONE_TYPE_PUBLISHMOOD);
                             ArrayList<String> imgUrlList = new ArrayList<>();
                             imgUrlList.add(FilesUtils.savePhoto(ViewToImageUtils.loadBitmapFromView(mRel), Environment
-                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketEos/accountCode", String
+                                    .getExternalStorageDirectory().getAbsolutePath() + "/pocketVkt/accountCode", String
                                     .valueOf(System.currentTimeMillis())));// 图片地址
                             params.putStringArrayList(QzonePublish.PUBLISH_TO_QZONE_IMAGE_URL,
                                     imgUrlList);// 图片地址ArrayList

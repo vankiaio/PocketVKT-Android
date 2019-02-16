@@ -4,7 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 
 /**
- * Created by pocketEos on 2018/1/17.
+ * Created by pocketVkt on 2018/1/17.
  */
 
 public class Base58 {

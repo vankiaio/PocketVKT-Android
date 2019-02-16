@@ -1,7 +1,7 @@
 package com.oraclechain.pocketvkt.bean;
 
 /**
- * Created by pocketEos on 2017/12/27.
+ * Created by pocketVkt on 2017/12/27.
  * 关注列表Bean
  */
 

@@ -14,7 +14,7 @@ import com.oraclechain.pocketvkt.net.callbck.JsonCallback;
 import java.util.HashMap;
 
 /**
- * Created by pocketEos on 2017/12/26.
+ * Created by pocketVkt on 2017/12/26.
  */
 
 public class ContinueRedpacketPresenter extends BasePresent<ContinueRedPacketView> {
@@ -27,7 +27,7 @@ public class ContinueRedpacketPresenter extends BasePresent<ContinueRedPacketVie
     public void getCoinRateData(String coinmarket_id) {
         HashMap<String, String> hashMap = new HashMap<String, String>();
         hashMap.put("coinmarket_id", coinmarket_id);
-        HttpUtils.postRequest(BaseUrl.HTTP_eos_get_coin_rate, mContext, hashMap, new JsonCallback<ResponseBean<CoinRateBean.DataBean>>() {
+        HttpUtils.postRequest(BaseUrl.HTTP_vkt_get_coin_rate, mContext, hashMap, new JsonCallback<ResponseBean<CoinRateBean.DataBean>>() {
             @Override
             public void onSuccess(Response<ResponseBean<CoinRateBean.DataBean>> response) {
                 if (response.body().code == 0) {
