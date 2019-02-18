@@ -64,7 +64,7 @@
 
     </RelativeLayout>
 
-    <com.oraclechain.pocketvkt.view.MyScrollview
+    <com.vankiachain.pocketvkt.view.MyScrollview
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
@@ -185,5 +185,5 @@
                     android:textSize="@dimen/dimens_13"/>
             </RelativeLayout>
         </LinearLayout>
-    </com.oraclechain.pocketvkt.view.MyScrollview>
+    </com.vankiachain.pocketvkt.view.MyScrollview>
 </LinearLayout>

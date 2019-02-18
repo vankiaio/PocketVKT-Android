@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.oraclechain.pocketvkt.view.MyScrollview
+        <com.vankiachain.pocketvkt.view.MyScrollview
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none">
@@ -148,7 +148,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.oraclechain.pocketvkt.view.DrawableCenterTextView
+                    <com.vankiachain.pocketvkt.view.DrawableCenterTextView
                         android:id="@+id/go_transfer_accounts"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -161,7 +161,7 @@
                         android:textColor="@color/txt_color"
                         android:textSize="@dimen/dimens_14"/>
 
-                    <com.oraclechain.pocketvkt.view.DrawableCenterTextView
+                    <com.vankiachain.pocketvkt.view.DrawableCenterTextView
                         android:id="@+id/go_make_collections"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -174,7 +174,7 @@
                         android:textColor="@color/txt_color"
                         android:textSize="@dimen/dimens_14"/>
 
-                    <com.oraclechain.pocketvkt.view.DrawableCenterTextView
+                    <com.vankiachain.pocketvkt.view.DrawableCenterTextView
                         android:id="@+id/go_red_packet"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -223,6 +223,6 @@
                         android:scrollbars="none"/>
                 </RelativeLayout>
             </LinearLayout>
-        </com.oraclechain.pocketvkt.view.MyScrollview>
+        </com.vankiachain.pocketvkt.view.MyScrollview>
     </com.liaoinstan.springview.widget.SpringView>
 </LinearLayout>

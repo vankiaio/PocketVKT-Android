@@ -141,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.oraclechain.pocketvkt.view.CustomSlideToUnlockView
+                    <com.vankiachain.pocketvkt.view.CustomSlideToUnlockView
                         android:id="@+id/slide_to_unlock"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"

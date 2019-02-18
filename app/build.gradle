@@ -3,14 +3,22 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 
 android {
+    signingConfigs {
+        config {
+            keyPassword 'vankia123!'
+            storeFile file('C:/eos/wallet/backup/android-keystore/vkt.jks')
+            storePassword 'vankia123!'
+            keyAlias 'key0'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion '28.0.2'
     defaultConfig {
-        applicationId "com.oraclechain.pocketvkt"
+        applicationId "com.vankiachain.pocketvkt"
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 131
-        versionName "1.3.1"
+        versionCode 90
+        versionName '0.9.0'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
         javaCompileOptions {
@@ -19,36 +27,36 @@ android {
             }
         }
     }
-
     dexOptions {
         jumboMode = true
         preDexLibraries = false
     }
-
     /*关闭编译运行时检测*/
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
     }
-
     //greendao配置
     greendao {
         //版本号，升级时可配置
         schemaVersion 1
-        daoPackage 'com.oraclechain.pocketvkt.gen'
+        daoPackage 'com.vankiachain.pocketvkt.gen'
         targetGenDir 'src/main/java'
     }
-
     buildTypes {
-
         release {
-            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
+    }
+    productFlavors {
     }
 }
 
@@ -98,9 +106,7 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.0.0'
     //微信登陆分享
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
-
     //xrecycleview
     compile 'com.jcodecraeer:xrecyclerview:1.5.9'
-
     compile 'io.github.novacrypto:BIP32:0.0.8'
 }

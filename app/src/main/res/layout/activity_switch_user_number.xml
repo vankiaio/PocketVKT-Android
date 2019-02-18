@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.switchusernumber.SwitchUserNumberActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.switchusernumber.SwitchUserNumberActivity">
 
     <include layout="@layout/title_project"/>
 

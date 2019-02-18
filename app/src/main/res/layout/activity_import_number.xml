@@ -80,7 +80,7 @@
                     android:text="@string/account"
                     android:textSize="@dimen/dimens_15"/>
 
-                <com.oraclechain.pocketvkt.view.ClearEditText
+                <com.vankiachain.pocketvkt.view.ClearEditText
                     android:id="@+id/account_name"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_40"
@@ -129,7 +129,7 @@
                     android:text="@string/private_key"
                     android:textSize="@dimen/dimens_15"/>
 
-                <com.oraclechain.pocketvkt.view.ClearEditText
+                <com.vankiachain.pocketvkt.view.ClearEditText
                     android:id="@+id/owner_private_key"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_40"
@@ -179,7 +179,7 @@
                     android:text="@string/private_key"
                     android:textSize="@dimen/dimens_15"/>
 
-                <com.oraclechain.pocketvkt.view.ClearEditText
+                <com.vankiachain.pocketvkt.view.ClearEditText
                     android:id="@+id/active_private_key"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_40"

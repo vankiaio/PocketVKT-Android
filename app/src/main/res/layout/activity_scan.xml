@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.oraclechain.pocketvkt.modules.scancode.ScanCodeActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.scancode.ScanCodeActivity">
 
     <RelativeLayout
         android:id="@+id/ll"

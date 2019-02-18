@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <com.oraclechain.pocketvkt.view.convenientbanner.view.CBLoopViewPager
+        <com.vankiachain.pocketvkt.view.convenientbanner.view.CBLoopViewPager
             android:id="@+id/cbLoopViewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

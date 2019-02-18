@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.oraclechain.pocketvkt">
+          package="com.vankiachain.pocketvkt">
 
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -79,7 +79,7 @@
         <!-- 通知系统图库更新了 -->
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.oraclechain.pocketvkt.fileprovider"
+            android:authorities="com.vankiachain.pocketvkt.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

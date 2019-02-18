@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/black_box_color"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.blackbox.existwalletlogin.BlackBoxCreatWalletActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.blackbox.existwalletlogin.BlackBoxCreatWalletActivity">
 
     <include layout="@layout/title_project_black"/>
 
@@ -20,7 +20,7 @@
         android:textColor="@color/txt_color"
         android:textSize="@dimen/dimens_14"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/black_box_wallet_name"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_40"
@@ -52,7 +52,7 @@
         android:textColor="@color/txt_color"
         android:textSize="@dimen/dimens_14"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/black_box_wallet_pwd"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_40"
@@ -84,7 +84,7 @@
         android:textColor="@color/txt_color"
         android:textSize="@dimen/dimens_14"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/black_box_two_pwd"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_40"

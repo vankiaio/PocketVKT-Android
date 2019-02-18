@@ -15,7 +15,7 @@
         style="?attr/text_two_style"
         android:textSize="@dimen/dimens_13"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/answer_details"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_50"

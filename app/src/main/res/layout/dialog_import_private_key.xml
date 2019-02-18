@@ -20,7 +20,7 @@
         android:textSize="@dimen/dimens_13"/>
 
 
-    <com.oraclechain.pocketvkt.view.ScrollText
+    <com.vankiachain.pocketvkt.view.ScrollText
         android:id="@+id/owner_private_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
         android:textColor="@color/title_color"
         android:textSize="@dimen/dimens_13"/>
 
-    <com.oraclechain.pocketvkt.view.ScrollText
+    <com.vankiachain.pocketvkt.view.ScrollText
         android:id="@+id/active_private_key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

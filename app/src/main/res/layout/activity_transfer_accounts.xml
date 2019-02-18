@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.oraclechain.pocketvkt.view.MyScrollview
+        <com.vankiachain.pocketvkt.view.MyScrollview
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
@@ -107,7 +107,7 @@
                         style="?attr/text_one_style"
                         android:textSize="@dimen/dimens_15"/>
 
-                    <com.oraclechain.pocketvkt.view.ClearEditText
+                    <com.vankiachain.pocketvkt.view.ClearEditText
                         android:id="@+id/property_person"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -153,7 +153,7 @@
                         android:text="@string/take_property_number"
                         android:textSize="@dimen/dimens_15"/>
 
-                    <com.oraclechain.pocketvkt.view.ClearEditText
+                    <com.vankiachain.pocketvkt.view.ClearEditText
                         android:id="@+id/take_property_number"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -212,7 +212,7 @@
                     android:textColor="@color/gray_color"
                     android:textSize="@dimen/dimens_16"/>
 
-                <com.oraclechain.pocketvkt.view.ClearEditText
+                <com.vankiachain.pocketvkt.view.ClearEditText
                     android:id="@+id/leave_message"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_75"
@@ -281,6 +281,6 @@
                         android:scrollbars="none"/>
                 </RelativeLayout>
             </LinearLayout>
-        </com.oraclechain.pocketvkt.view.MyScrollview>
+        </com.vankiachain.pocketvkt.view.MyScrollview>
     </com.liaoinstan.springview.widget.SpringView>
 </LinearLayout>

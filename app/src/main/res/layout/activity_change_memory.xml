@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="?attr/color_bg_main"
     android:fitsSystemWindows="true"
-    tools:context="com.oraclechain.pocketvkt.modules.resourcemanager.changememory.ChangeMemoryActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.resourcemanager.changememory.ChangeMemoryActivity">
     <include layout="@layout/title_project"/>
 
     <View

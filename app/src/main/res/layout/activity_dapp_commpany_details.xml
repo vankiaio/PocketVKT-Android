@@ -8,12 +8,12 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.dapp.dappcommpany.DappCommpanyDetailsActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.dapp.dappcommpany.DappCommpanyDetailsActivity">
 
     <include
         layout="@layout/title_project"/>
 
-    <com.oraclechain.pocketvkt.view.MyScrollview
+    <com.vankiachain.pocketvkt.view.MyScrollview
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none">
@@ -130,5 +130,5 @@
                     android:scrollbars="none"/>
             </RelativeLayout>
         </LinearLayout>
-    </com.oraclechain.pocketvkt.view.MyScrollview>
+    </com.vankiachain.pocketvkt.view.MyScrollview>
 </LinearLayout>

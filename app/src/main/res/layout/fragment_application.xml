@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="?attr/color_bg_main"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.dapp.DappFragment">
+    tools:context="com.vankiachain.pocketvkt.modules.dapp.DappFragment">
 
     <TextView
         android:id="@+id/title"
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.oraclechain.pocketvkt.view.MyScrollview
+        <com.vankiachain.pocketvkt.view.MyScrollview
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none">
@@ -33,7 +33,7 @@
                 android:orientation="vertical">
 
 
-                <com.oraclechain.pocketvkt.view.convenientbanner.ConvenientBanner
+                <com.vankiachain.pocketvkt.view.convenientbanner.ConvenientBanner
                     android:id="@+id/banner"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dimens_150"
@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:padding="@dimen/dimens_20">
 
-                    <com.oraclechain.pocketvkt.view.RoundImageView
+                    <com.vankiachain.pocketvkt.view.RoundImageView
                         android:id="@+id/hot_application_img"
                         android:layout_width="@dimen/dimens_46"
                         android:layout_height="@dimen/dimens_46"
@@ -141,6 +141,6 @@
                 </RelativeLayout>
 
             </LinearLayout>
-        </com.oraclechain.pocketvkt.view.MyScrollview>
+        </com.vankiachain.pocketvkt.view.MyScrollview>
     </com.liaoinstan.springview.widget.SpringView>
 </LinearLayout>

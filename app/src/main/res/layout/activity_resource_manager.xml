@@ -8,7 +8,7 @@
     android:background="?attr/color_bg_main"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules..resourcemanager.resourcehome.activity.ResourceManagerActivity">
+    tools:context="com.vankiachain.pocketvkt.modules..resourcemanager.resourcehome.activity.ResourceManagerActivity">
 
     <include layout="@layout/title_project"/>
 

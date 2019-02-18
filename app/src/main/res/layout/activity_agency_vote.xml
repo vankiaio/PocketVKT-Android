@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.nodevote.agencyvote.AgencyVoteActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.nodevote.agencyvote.AgencyVoteActivity">
 
     <include layout="@layout/title_project_black"/>
 
@@ -38,7 +38,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/dimens_15"/>
 
-        <com.oraclechain.pocketvkt.view.ClearEditText
+        <com.vankiachain.pocketvkt.view.ClearEditText
             android:id="@+id/account_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimens_40"
@@ -87,7 +87,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/dimens_15"/>
 
-        <com.oraclechain.pocketvkt.view.ClearEditText
+        <com.vankiachain.pocketvkt.view.ClearEditText
             android:id="@+id/agency_amount"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimens_40"

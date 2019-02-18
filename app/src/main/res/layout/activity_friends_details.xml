@@ -97,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.oraclechain.pocketvkt.view.MyScrollview
+            <com.vankiachain.pocketvkt.view.MyScrollview
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -116,7 +116,7 @@
                         android:layout_height="@dimen/dimens_204"
                         android:background="@mipmap/friend_top">
 
-                        <com.oraclechain.pocketvkt.view.RoundImageView
+                        <com.vankiachain.pocketvkt.view.RoundImageView
                             android:id="@+id/friends_img"
                             android:layout_width="@dimen/dimens_46"
                             android:layout_height="@dimen/dimens_46"
@@ -311,7 +311,7 @@
                             android:textSize="@dimen/dimens_10"/>
                     </RelativeLayout>
                 </LinearLayout>
-            </com.oraclechain.pocketvkt.view.MyScrollview>
+            </com.vankiachain.pocketvkt.view.MyScrollview>
         </com.liaoinstan.springview.widget.SpringView>
     </LinearLayout>
 </FrameLayout>

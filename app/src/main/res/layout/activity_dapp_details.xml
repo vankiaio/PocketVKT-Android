@@ -10,7 +10,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.news.newsdetails.WebNewsDetailsActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.news.newsdetails.WebNewsDetailsActivity">
 
     <include layout="@layout/title_project"/>
 
@@ -21,7 +21,7 @@
         android:layout_height="@dimen/dimens_2"
         android:progressDrawable="@drawable/progressbay_bg"
         android:visibility="gone"/>
-    <com.oraclechain.pocketvkt.view.webview.BaseWebView
+    <com.vankiachain.pocketvkt.view.webview.BaseWebView
         android:id="@+id/web_dapp_details"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

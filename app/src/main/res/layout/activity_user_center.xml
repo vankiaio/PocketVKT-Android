@@ -26,7 +26,7 @@
             android:textColor="@color/title_color"
             android:textSize="@dimen/dimens_15"/>
 
-        <com.oraclechain.pocketvkt.view.RoundImageView
+        <com.vankiachain.pocketvkt.view.RoundImageView
             android:id="@+id/user_img"
             android:layout_width="@dimen/dimens_52"
             android:layout_height="@dimen/dimens_52"
@@ -181,7 +181,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
-            <com.oraclechain.pocketvkt.view.CustomSlideToUnlockView
+            <com.vankiachain.pocketvkt.view.CustomSlideToUnlockView
                 android:id="@+id/slide_to_unlock"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"

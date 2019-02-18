@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.oraclechain.pocketvkt.view.RoundImageView
+    <com.vankiachain.pocketvkt.view.RoundImageView
         android:id="@+id/application_img"
         android:layout_width="@dimen/dimens_45"
         android:layout_height="@dimen/dimens_45"

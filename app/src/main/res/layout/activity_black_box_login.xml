@@ -72,7 +72,7 @@
         android:textColor="@color/txt_color"
         android:textSize="@dimen/dimens_14"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/black_box_wallet_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
         android:textColor="@color/txt_color"
         android:textSize="@dimen/dimens_14"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/black_box_wallet_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
         android:textColor="@color/txt_color"
         android:textSize="@dimen/dimens_14"/>
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/black_box_two_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

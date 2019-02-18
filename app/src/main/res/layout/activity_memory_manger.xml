@@ -8,7 +8,7 @@
     android:background="?attr/color_bg_main"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.resourcemanager.changenet.ChangeNetActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.resourcemanager.changenet.ChangeNetActivity">
 
     <include layout="@layout/title_project"/>
 

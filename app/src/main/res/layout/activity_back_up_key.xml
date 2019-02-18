@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="?attr/color_bg_main"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.account.backupaccount.BackUpKeyActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.account.backupaccount.BackUpKeyActivity">
 
     <include layout="@layout/title_project"/>
 

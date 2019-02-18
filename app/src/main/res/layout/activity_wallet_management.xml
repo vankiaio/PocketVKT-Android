@@ -10,7 +10,7 @@
 
     <include layout="@layout/title_project"/>
 
-    <com.oraclechain.pocketvkt.view.swiperecycle.SwipeMenuRecyclerView
+    <com.vankiachain.pocketvkt.view.swiperecycle.SwipeMenuRecyclerView
         android:id="@+id/user_account_number"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

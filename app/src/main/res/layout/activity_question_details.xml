@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="?attr/color_bg_main"
-    tools:context="com.oraclechain.pocketvkt.modules.dapp.paidanswer.questiondetails.QuestionDetailsActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.dapp.paidanswer.questiondetails.QuestionDetailsActivity">
 
     <include layout="@layout/title_project"/>
     <ProgressBar

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="?attr/color_bg_main"
     android:orientation="vertical"
-    tools:context="com.oraclechain.pocketvkt.modules.blackbox.blackboxaccount.BlackBoxCreatAccountActivity">
+    tools:context="com.vankiachain.pocketvkt.modules.blackbox.blackboxaccount.BlackBoxCreatAccountActivity">
 
     <include layout="@layout/title_project_black"/>
 
@@ -21,7 +21,7 @@
         android:textSize="@dimen/dimens_13"/>
 
 
-    <com.oraclechain.pocketvkt.view.ClearEditText
+    <com.vankiachain.pocketvkt.view.ClearEditText
         android:id="@+id/account_name"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimens_40"
