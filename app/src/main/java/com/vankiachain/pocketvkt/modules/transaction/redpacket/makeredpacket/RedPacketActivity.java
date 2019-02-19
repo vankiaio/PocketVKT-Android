@@ -20,7 +20,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.MultiItemTypeAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.CoinRateBean;
 import com.vankiachain.pocketvkt.bean.RedPacketHistoryBean;
@@ -49,7 +49,7 @@ import butterknife.OnClick;
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
 //发红包
-public class RedPacketActivity extends BaseAcitvity<RedPacketView, RedPacketPresenter> implements RedPacketView {
+public class RedPacketActivity extends BaseActivity<RedPacketView, RedPacketPresenter> implements RedPacketView {
 
     @BindView(R.id.switch_number)
     TextView mSwitchNumber;

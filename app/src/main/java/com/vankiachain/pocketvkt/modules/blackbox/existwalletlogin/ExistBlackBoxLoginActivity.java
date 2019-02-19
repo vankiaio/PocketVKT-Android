@@ -15,7 +15,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.modules.account.createaccount.CreateAccountActivity;
 import com.vankiachain.pocketvkt.modules.blackbox.BlackBoxMainActivity;
@@ -37,7 +37,7 @@ import butterknife.OnClick;
 
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
-public class ExistBlackBoxLoginActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class ExistBlackBoxLoginActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.social_contact)

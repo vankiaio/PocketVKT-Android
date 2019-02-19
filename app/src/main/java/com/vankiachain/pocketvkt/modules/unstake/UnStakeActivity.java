@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountDetailsBean;
 import com.vankiachain.pocketvkt.bean.UnstakeBean;
 import com.vankiachain.pocketvkt.blockchain.PushDatamanger;
@@ -24,7 +24,7 @@ import java.math.BigDecimal;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class UnStakeActivity extends BaseAcitvity<UnStakeView, UnStakePresenter> implements UnStakeView {
+public class UnStakeActivity extends BaseActivity<UnStakeView, UnStakePresenter> implements UnStakeView {
 
 
     @BindView(R.id.unstark_cpu)

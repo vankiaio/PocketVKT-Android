@@ -15,7 +15,7 @@ import com.lzy.okgo.utils.OkLogger;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.SuggestionBean;
 import com.vankiachain.pocketvkt.view.ClearEditText;
 import com.vankiachain.pocketvkt.view.RecycleViewDivider;
@@ -27,7 +27,7 @@ import butterknife.BindView;
 
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
-public class SuggestionFeedbackActivity extends BaseAcitvity<SuggestionFeedbackView, SuggestionFeedbackPresenter> implements SuggestionFeedbackView {
+public class SuggestionFeedbackActivity extends BaseActivity<SuggestionFeedbackView, SuggestionFeedbackPresenter> implements SuggestionFeedbackView {
 
 
     @BindView(R.id.iv_back)

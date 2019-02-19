@@ -13,7 +13,7 @@ import android.widget.ProgressBar;
 import com.google.gson.Gson;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AnswerMessageBean;
 import com.vankiachain.pocketvkt.bean.QuestionListBean;
 import com.vankiachain.pocketvkt.blockchain.AskansDatamanger;
@@ -25,7 +25,7 @@ import com.vankiachain.pocketvkt.view.dialog.passworddialog.PasswordDialog;
 
 import butterknife.BindView;
 
-public class QuestionDetailsActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class QuestionDetailsActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.webview)

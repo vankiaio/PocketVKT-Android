@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.gyf.barlibrary.ImmersionBar;
 import com.lzy.okgo.model.Response;
 import com.vankiachain.pocketvkt.R;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.base.BaseUrl;
 import com.vankiachain.pocketvkt.bean.ResponseBean;
 import com.vankiachain.pocketvkt.bean.UpdateAppBean;
@@ -28,7 +28,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class AppUpdateActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class AppUpdateActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
     @BindView(R.id.app_version)
     TextView mAppVersion;

@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.vankiachain.pocketvkt.R;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
 import com.vankiachain.pocketvkt.view.webview.BaseWebChromeClient;
@@ -17,7 +17,7 @@ import com.vankiachain.pocketvkt.view.webview.BaseWebViewClient;
 
 import butterknife.BindView;
 
-public class NodeVoteDetailsActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class NodeVoteDetailsActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.progressBar)

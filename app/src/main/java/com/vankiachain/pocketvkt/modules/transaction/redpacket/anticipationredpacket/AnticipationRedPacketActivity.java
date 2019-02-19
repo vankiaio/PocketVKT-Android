@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AuthRedPacketBean;
 import com.vankiachain.pocketvkt.bean.SendRedPacketBean;
 import com.vankiachain.pocketvkt.modules.otherloginorshare.BaseUIListener;
@@ -31,7 +31,7 @@ import butterknife.OnClick;
  * The type Anticipation red packet activity.
  * 红包已封好页面
  */
-public class AnticipationRedPacketActivity extends BaseAcitvity<AnticipationRedPacketView, AnticipationRedPacketPresenter> implements AnticipationRedPacketView {
+public class AnticipationRedPacketActivity extends BaseActivity<AnticipationRedPacketView, AnticipationRedPacketPresenter> implements AnticipationRedPacketView {
 
 
     @BindView(R.id.iv_back)

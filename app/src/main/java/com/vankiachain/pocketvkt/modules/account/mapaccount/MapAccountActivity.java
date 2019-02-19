@@ -9,7 +9,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.GetAccountsBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MapAccountActivity extends BaseAcitvity<MapAccountView, MapAccountPresenter> implements MapAccountView {
+public class MapAccountActivity extends BaseActivity<MapAccountView, MapAccountPresenter> implements MapAccountView {
 
 
     @BindView(R.id.owner_private_key)

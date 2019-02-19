@@ -7,7 +7,7 @@ import android.view.WindowManager;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.baseadapter.BackUpAccount_tab_Adapter;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.modules.account.backupaccount.fragment.BackUpAccountFragment;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
@@ -21,7 +21,7 @@ import butterknife.BindView;
 /**
  * 备份vkt账号
  */
-public class BackUpAccountActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class BackUpAccountActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.tabs)

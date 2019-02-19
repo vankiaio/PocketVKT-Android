@@ -24,7 +24,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.MultiItemTypeAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountDetailsBean;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.AccountWithCoinBean;
@@ -62,7 +62,7 @@ import me.ljp.permission.PermissionItem;
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
 //资产转账页面
-public class TransferAccountsActivity extends BaseAcitvity<TransferAccountsView, TransferAccountsPresenter> implements TransferAccountsView {
+public class TransferAccountsActivity extends BaseActivity<TransferAccountsView, TransferAccountsPresenter> implements TransferAccountsView {
 
 
     @BindView(R.id.title)

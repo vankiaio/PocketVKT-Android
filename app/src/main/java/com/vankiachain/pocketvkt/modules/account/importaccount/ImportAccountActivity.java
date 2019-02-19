@@ -13,7 +13,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.BlockChainAccountInfoBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
@@ -40,7 +40,7 @@ import butterknife.OnClick;
 import me.ljp.permission.PermissionItem;
 
 //导入账号
-public class ImportAccountActivity extends BaseAcitvity<ImportAccountView, ImportAccountPresenter> implements ImportAccountView {
+public class ImportAccountActivity extends BaseActivity<ImportAccountView, ImportAccountPresenter> implements ImportAccountView {
 
 
     @BindView(R.id.go_scan_code)

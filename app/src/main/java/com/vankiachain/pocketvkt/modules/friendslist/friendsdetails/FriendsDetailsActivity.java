@@ -20,7 +20,7 @@ import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.AccountWithCoinBean;
 import com.vankiachain.pocketvkt.bean.WalletDetailsBean;
@@ -41,7 +41,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 //朋友详情页面
-public class FriendsDetailsActivity extends BaseAcitvity<FriendsDetailsView, FriendsDetailsPresenter> implements FriendsDetailsView, MyScrollview.ScrollViewListener {
+public class FriendsDetailsActivity extends BaseActivity<FriendsDetailsView, FriendsDetailsPresenter> implements FriendsDetailsView, MyScrollview.ScrollViewListener {
 
 
     @BindView(R.id.friends_title1)

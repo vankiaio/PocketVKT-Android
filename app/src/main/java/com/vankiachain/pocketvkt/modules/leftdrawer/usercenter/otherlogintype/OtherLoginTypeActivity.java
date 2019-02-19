@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
 import com.vankiachain.pocketvkt.modules.otherloginorshare.BaseUIListener;
@@ -22,7 +22,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 //三方平台登录管理页面 QQ 微信等绑定与解绑
-public class OtherLoginTypeActivity extends BaseAcitvity<OtherLoginTypeView, OtherLoginTypePresenter> implements OtherLoginTypeView {
+public class OtherLoginTypeActivity extends BaseActivity<OtherLoginTypeView, OtherLoginTypePresenter> implements OtherLoginTypeView {
 
     @BindView(R.id.other_login_img)
     ImageView mOtherLoginImg;

@@ -16,7 +16,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.base.ViewHolder;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.ResultNodeListBean;
 import com.vankiachain.pocketvkt.modules.leftdrawer.systemsetting.RichTextActivity;
 import com.vankiachain.pocketvkt.modules.nodevote.NodeVoteDetailsActivity;
@@ -37,7 +37,7 @@ import butterknife.OnClick;
  * The type Go node vote activity.
  * 获取参投的投票列表
  */
-public class GoNodeVoteActivity extends BaseAcitvity<GoNodeVoteView, GoNodeVotePresenter> implements GoNodeVoteView {
+public class GoNodeVoteActivity extends BaseActivity<GoNodeVoteView, GoNodeVotePresenter> implements GoNodeVoteView {
 
 
     @BindView(R.id.tv_right_text)

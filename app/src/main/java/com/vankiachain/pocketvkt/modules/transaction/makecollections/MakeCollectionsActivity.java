@@ -23,7 +23,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.MultiItemTypeAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.CoinRateBean;
 import com.vankiachain.pocketvkt.bean.PostChainHistoryBean;
@@ -60,7 +60,7 @@ import butterknife.OnClick;
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
 //收款
-public class MakeCollectionsActivity extends BaseAcitvity<MakeCollectionsView, MakeCollectionsPresenter> implements MakeCollectionsView {
+public class MakeCollectionsActivity extends BaseActivity<MakeCollectionsView, MakeCollectionsPresenter> implements MakeCollectionsView {
 
     @BindView(R.id.img_right)
     ImageView mImgRight;

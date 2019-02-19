@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.dapp.paidanswer.chooseaccountwithcoin.ChooseAccountWithCoinActivity;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
@@ -24,7 +24,7 @@ import com.vankiachain.pocketvkt.view.webview.BaseWebView;
 
 import butterknife.BindView;
 
-public class DappDetailsActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class DappDetailsActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.web_dapp_details)

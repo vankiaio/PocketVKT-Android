@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.CodeAuthBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
@@ -39,7 +39,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 //登录页面
-public class LoginActivity extends BaseAcitvity<LoginView, LoginPresenter> implements LoginView {
+public class LoginActivity extends BaseActivity<LoginView, LoginPresenter> implements LoginView {
     @BindView(R.id.title)
     RelativeLayout mTitle;
     @BindView(R.id.mobile_phone)

@@ -16,7 +16,7 @@ import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountWithCoinBean;
 import com.vankiachain.pocketvkt.bean.PostChainHistoryBean;
 import com.vankiachain.pocketvkt.bean.SparkLinesBean;
@@ -42,7 +42,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class BlackBoxCoinDetailsActivity extends BaseAcitvity<CoinDetailsView, CoinDetailsPresenter> implements CoinDetailsView {
+public class BlackBoxCoinDetailsActivity extends BaseActivity<CoinDetailsView, CoinDetailsPresenter> implements CoinDetailsView {
 
     @BindView(R.id.icon_total_number)
     TextView mIconTotalNumber;

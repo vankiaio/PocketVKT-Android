@@ -16,7 +16,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.base.ViewHolder;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AnswerBean;
 import com.vankiachain.pocketvkt.bean.ApproveMessageBean;
 import com.vankiachain.pocketvkt.bean.AskMessageBean;
@@ -53,7 +53,7 @@ import butterknife.OnClick;
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
 //提问页面
-public class MakeQuestionActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class MakeQuestionActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     public static String[] option = {"C", "D", "E", "F"};//最多6个选项

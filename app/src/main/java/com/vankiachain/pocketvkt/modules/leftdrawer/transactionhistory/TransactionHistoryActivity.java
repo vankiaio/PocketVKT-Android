@@ -17,7 +17,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.MultiItemTypeAdapter;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.base.Constants;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.PostChainHistoryBean;
@@ -35,7 +35,7 @@ import butterknife.BindView;
 
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
-public class TransactionHistoryActivity extends BaseAcitvity<TransactionHistoryView, TransactionHistoryPresenter> implements TransactionHistoryView {
+public class TransactionHistoryActivity extends BaseActivity<TransactionHistoryView, TransactionHistoryPresenter> implements TransactionHistoryView {
 
 
     @BindView(R.id.recycle_transferaccounts_history)

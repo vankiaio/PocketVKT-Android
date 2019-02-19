@@ -21,7 +21,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.UpdataPhotoBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
@@ -51,7 +51,7 @@ import butterknife.OnClick;
 import me.ljp.permission.PermissionItem;
 
 //用户中心
-public class UserCenterActivity extends BaseAcitvity<UserCenterView, UserCenterPresenter> implements UserCenterView {
+public class UserCenterActivity extends BaseActivity<UserCenterView, UserCenterPresenter> implements UserCenterView {
 
     private static final int CHOOSE_PICTURE = 0;
     private static final int TAKE_PICTURE = 1;

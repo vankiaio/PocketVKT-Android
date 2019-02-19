@@ -12,7 +12,7 @@ import com.lzy.okgo.utils.OkLogger;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.blockchain.cypto.ec.VktPrivateKey;
@@ -40,7 +40,7 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 //创建账号
-public class CreateAccountActivity extends BaseAcitvity<CreateAccountView, CreateAccountPresenter> implements CreateAccountView {
+public class CreateAccountActivity extends BaseActivity<CreateAccountView, CreateAccountPresenter> implements CreateAccountView {
 
     @BindView(R.id.account_name)
     ClearEditText mAccountName;

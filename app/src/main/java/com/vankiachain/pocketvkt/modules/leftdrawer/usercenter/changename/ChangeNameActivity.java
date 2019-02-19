@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
 import com.vankiachain.pocketvkt.utils.KeyBoardUtil;
@@ -16,7 +16,7 @@ import com.vankiachain.pocketvkt.view.ClearEditText;
 import butterknife.BindView;
 
 //修改名字
-public class ChangeNameActivity extends BaseAcitvity<ChangeNameView, ChangeNamePresenter> implements ChangeNameView {
+public class ChangeNameActivity extends BaseActivity<ChangeNameView, ChangeNamePresenter> implements ChangeNameView {
 
 
     @BindView(R.id.tv_right_text)

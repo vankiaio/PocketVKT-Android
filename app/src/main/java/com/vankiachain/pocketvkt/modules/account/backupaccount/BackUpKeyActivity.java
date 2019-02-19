@@ -12,7 +12,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.modules.blackbox.BlackBoxMainActivity;
 import com.vankiachain.pocketvkt.modules.main.MainActivity;
@@ -30,7 +30,7 @@ import java.security.spec.InvalidKeySpecException;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class BackUpKeyActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class BackUpKeyActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.switch_view)

@@ -8,7 +8,7 @@ import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.PelistBean;
 import com.vankiachain.pocketvkt.view.RecycleViewDivider;
 
@@ -20,7 +20,7 @@ import butterknife.BindView;
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
 //PE富豪榜
-public class PelistActivity extends BaseAcitvity<PelistView, PelistPresenter> implements PelistView {
+public class PelistActivity extends BaseActivity<PelistView, PelistPresenter> implements PelistView {
 
 
     @BindView(R.id.recycle)

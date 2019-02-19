@@ -8,7 +8,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
@@ -22,7 +22,7 @@ import butterknife.BindView;
 
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
-public class SwitchUserNumberActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class SwitchUserNumberActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.recycle_user_number)

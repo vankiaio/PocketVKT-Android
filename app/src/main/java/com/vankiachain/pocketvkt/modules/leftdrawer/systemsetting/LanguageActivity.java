@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.main.MainActivity;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
@@ -16,7 +16,7 @@ import com.vankiachain.pocketvkt.utils.LocalManageUtil;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class LanguageActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class LanguageActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
     @BindView(R.id.language_cn)
     RelativeLayout mLanguageCn;

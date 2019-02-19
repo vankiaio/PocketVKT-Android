@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.SystemInfoBean;
 import com.vankiachain.pocketvkt.modules.leftdrawer.suggestionfeedback.SuggestionFeedbackActivity;
 import com.vankiachain.pocketvkt.utils.CacheDataManager;
@@ -20,7 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class SystemSettingActivity extends BaseAcitvity<SystemSettingView, SystemSettingPresenter> implements SystemSettingView {
+public class SystemSettingActivity extends BaseActivity<SystemSettingView, SystemSettingPresenter> implements SystemSettingView {
 
 
     @BindView(R.id.system_settings_one)

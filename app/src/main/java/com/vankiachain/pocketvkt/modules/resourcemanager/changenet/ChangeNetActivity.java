@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountDetailsBean;
 import com.vankiachain.pocketvkt.bean.StakeBean;
 import com.vankiachain.pocketvkt.bean.UnstakeBean;
@@ -30,7 +30,7 @@ import butterknife.OnClick;
 /**
  * 存储买卖管理
  */
-public class ChangeNetActivity extends BaseAcitvity<ChangeNetView, ChangeNetPresenter> implements ChangeNetView {
+public class ChangeNetActivity extends BaseActivity<ChangeNetView, ChangeNetPresenter> implements ChangeNetView {
 
 
     @BindView(R.id.seekbar)

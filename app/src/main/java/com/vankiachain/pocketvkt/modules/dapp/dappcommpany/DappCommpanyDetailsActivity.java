@@ -13,7 +13,7 @@ import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.DappBean;
 import com.vankiachain.pocketvkt.bean.DappCommpanyBean;
 import com.vankiachain.pocketvkt.modules.dapp.dappdetails.DappDetailsActivity;
@@ -29,7 +29,7 @@ import butterknife.OnClick;
 
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
-public class DappCommpanyDetailsActivity extends BaseAcitvity<DappCommpanyDetailsView, DappCommpanyDetailsPresenter> implements DappCommpanyDetailsView {
+public class DappCommpanyDetailsActivity extends BaseActivity<DappCommpanyDetailsView, DappCommpanyDetailsPresenter> implements DappCommpanyDetailsView {
 
 
     @BindView(R.id.commpany_img)

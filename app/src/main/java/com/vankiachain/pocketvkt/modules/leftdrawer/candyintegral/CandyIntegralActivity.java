@@ -11,7 +11,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.CandyScoreBean;
 import com.vankiachain.pocketvkt.bean.CandyUserTaskBean;
 import com.vankiachain.pocketvkt.bean.HotEquitiesBean;
@@ -27,7 +27,7 @@ import butterknife.OnClick;
 /**
  * 糖果积分系统
  */
-public class CandyIntegralActivity extends BaseAcitvity<CandyIntegralView, CandyIntegralPresenter> implements CandyIntegralView {
+public class CandyIntegralActivity extends BaseActivity<CandyIntegralView, CandyIntegralPresenter> implements CandyIntegralView {
 
 
     @BindView(R.id.back)

@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.gyf.barlibrary.ImmersionBar;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.BlockChainAccountInfoBean;
 import com.vankiachain.pocketvkt.modules.friendslist.friendsdetails.FriendsDetailsActivity;
 import com.vankiachain.pocketvkt.utils.KeyBoardUtil;
@@ -23,7 +23,7 @@ import java.util.TimerTask;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class SeachActivity extends BaseAcitvity<SeachView, SeachPresenter> implements SeachView {
+public class SeachActivity extends BaseActivity<SeachView, SeachPresenter> implements SeachView {
 
 
     @BindView(R.id.edt_seach)

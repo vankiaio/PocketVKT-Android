@@ -8,7 +8,7 @@ import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.MessageCenterBean;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class MessageCenterActivity extends BaseAcitvity<MessageCenterView, MessageCenterPresenter> implements MessageCenterView {
+public class MessageCenterActivity extends BaseActivity<MessageCenterView, MessageCenterPresenter> implements MessageCenterView {
 
     @BindView(R.id.recycle_message)
     XRecyclerView mRecycleMessage;

@@ -8,7 +8,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
 import com.vankiachain.pocketvkt.view.webview.BaseWebChromeClient;
@@ -18,7 +18,7 @@ import com.vankiachain.pocketvkt.view.webview.BaseWebViewClient;
 
 import butterknife.BindView;
 
-public class WebNewsDetailsActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class WebNewsDetailsActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.web_news_details)

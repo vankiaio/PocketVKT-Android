@@ -21,7 +21,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.QrCodeWalletBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
 import com.vankiachain.pocketvkt.modules.dapp.DappFragment;
@@ -61,7 +61,7 @@ import butterknife.OnClick;
 
 import static com.vankiachain.pocketvkt.R.id.drawer;
 
-public class MainActivity extends BaseAcitvity<NormalView, NormalPresenter> implements View.OnClickListener, NormalView, HomeFragment.Openleft {
+public class MainActivity extends BaseActivity<NormalView, NormalPresenter> implements View.OnClickListener, NormalView, HomeFragment.Openleft {
 
     FrameLayout mContent;
     LinearLayout mLlHome;

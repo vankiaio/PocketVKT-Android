@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
 import com.vankiachain.pocketvkt.modules.account.createaccount.CreateAccountActivity;
@@ -25,7 +25,7 @@ import com.vankiachain.pocketvkt.view.ClearEditText;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class CreateWalletActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class CreateWalletActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.iv_back)

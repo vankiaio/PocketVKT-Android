@@ -7,7 +7,7 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountDetailsBean;
 import com.vankiachain.pocketvkt.bean.BuyRamBean;
 import com.vankiachain.pocketvkt.bean.SealRamBean;
@@ -23,7 +23,7 @@ import java.math.BigDecimal;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class ChangeMemoryActivity extends BaseAcitvity<ChangeMemoryView, ChangeMemoryPresenter> implements ChangeMemoryView {
+public class ChangeMemoryActivity extends BaseActivity<ChangeMemoryView, ChangeMemoryPresenter> implements ChangeMemoryView {
 
 
     @BindView(R.id.desc)

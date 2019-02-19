@@ -19,7 +19,7 @@ import com.gyf.barlibrary.ImmersionBar;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.Find_tab_Adapter;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.dapp.paidanswer.chooseaccountwithcoin.ChooseAccountWithCoinActivity;
 import com.vankiachain.pocketvkt.modules.dapp.paidanswer.makequestion.MakeQuestionActivity;
 import com.vankiachain.pocketvkt.modules.dapp.paidanswer.paidanswerhome.fragment.PaidAnswerFragment;
@@ -36,7 +36,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 //有问币答
-public class PaidAnswerActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class PaidAnswerActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.go_back)

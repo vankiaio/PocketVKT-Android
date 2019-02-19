@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.Find_tab_Adapter;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
 import com.vankiachain.pocketvkt.modules.resourcemanager.resourcehome.fragment.memory.MemoryFragment;
@@ -26,7 +26,7 @@ import butterknife.BindView;
 /**
  * 资源管理首页
  */
-public class ResourceManagerActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class ResourceManagerActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.tabs)

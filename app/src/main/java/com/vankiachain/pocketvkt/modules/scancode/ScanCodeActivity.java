@@ -18,7 +18,7 @@ import com.mylhyl.zxing.scanner.decode.QRDecode;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.QrCodeAccountBean;
 import com.vankiachain.pocketvkt.bean.QrCodeAccountPrivateKeyBean;
 import com.vankiachain.pocketvkt.bean.QrCodeMakeCollectionBean;
@@ -42,7 +42,7 @@ import java.util.List;
 import butterknife.BindView;
 import me.ljp.permission.PermissionItem;
 
-public class ScanCodeActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class ScanCodeActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
     @BindView(R.id.scanner_view)
     ScannerView mScannerView;

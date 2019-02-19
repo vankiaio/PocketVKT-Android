@@ -22,7 +22,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.QrCodeAccountBean;
 import com.vankiachain.pocketvkt.bean.QrCodeAccountPrivateKeyBean;
@@ -62,7 +62,7 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class AccountDetailsActivity extends BaseAcitvity<AccountDetailsView, AccountDetailsPresenter> implements AccountDetailsView {
+public class AccountDetailsActivity extends BaseActivity<AccountDetailsView, AccountDetailsPresenter> implements AccountDetailsView {
 
 
     @BindView(R.id.img_right)

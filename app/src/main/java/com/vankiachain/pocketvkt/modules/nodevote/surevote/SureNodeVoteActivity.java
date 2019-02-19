@@ -18,7 +18,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.CommonAdapter;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountVoteHistoryBean;
 import com.vankiachain.pocketvkt.bean.DelegatebwMessageBean;
 import com.vankiachain.pocketvkt.bean.RegproxyMessageBean;
@@ -53,7 +53,7 @@ import butterknife.OnClick;
 /**
  * The type Sure vote activity.
  */
-public class SureNodeVoteActivity extends BaseAcitvity<SureNodeVoteView, SureNodeVotePresenter> implements SureNodeVoteView {
+public class SureNodeVoteActivity extends BaseActivity<SureNodeVoteView, SureNodeVotePresenter> implements SureNodeVoteView {
 
     SeekBar mMseekbar;
     EditText mVoteVktAmount;

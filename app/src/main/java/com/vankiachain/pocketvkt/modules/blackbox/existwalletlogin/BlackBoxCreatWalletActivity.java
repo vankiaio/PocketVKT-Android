@@ -7,7 +7,7 @@ import android.widget.Button;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
 import com.vankiachain.pocketvkt.modules.account.createaccount.CreateAccountActivity;
@@ -22,7 +22,7 @@ import com.vankiachain.pocketvkt.view.ClearEditText;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class BlackBoxCreatWalletActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class BlackBoxCreatWalletActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
 
     @BindView(R.id.black_box_wallet_name)

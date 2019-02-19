@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.vankiachain.pocketvkt.R;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalPresenter;
 import com.vankiachain.pocketvkt.modules.normalvp.NormalView;
 import com.zzhoujay.richtext.ImageHolder;
@@ -12,7 +12,7 @@ import com.zzhoujay.richtext.RichText;
 
 import butterknife.BindView;
 
-public class RichTextActivity extends BaseAcitvity<NormalView, NormalPresenter> implements NormalView {
+public class RichTextActivity extends BaseActivity<NormalView, NormalPresenter> implements NormalView {
 
     @BindView(R.id.details)
     TextView mDetails;

@@ -13,7 +13,7 @@ import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountDetailsBean;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.AccountVoteHistoryBean;
@@ -32,7 +32,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class NodeVoteActivity extends BaseAcitvity<NodeVoteView, NodeVotePresenter> implements NodeVoteView {
+public class NodeVoteActivity extends BaseActivity<NodeVoteView, NodeVotePresenter> implements NodeVoteView {
 
 
     TextView mAccount;

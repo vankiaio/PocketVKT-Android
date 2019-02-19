@@ -14,7 +14,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.CoinRateBean;
 import com.vankiachain.pocketvkt.bean.RedPacketDetailsBean;
 import com.vankiachain.pocketvkt.bean.RedPacketHistoryBean;
@@ -39,7 +39,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class ContinueRdPacketActivity extends BaseAcitvity<ContinueRedPacketView, ContinueRedpacketPresenter> implements ContinueRedPacketView {
+public class ContinueRdPacketActivity extends BaseActivity<ContinueRedPacketView, ContinueRedpacketPresenter> implements ContinueRedPacketView {
 
 
     @BindView(R.id.iv_back)

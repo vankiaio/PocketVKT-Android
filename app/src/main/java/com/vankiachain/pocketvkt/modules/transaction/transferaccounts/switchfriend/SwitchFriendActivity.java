@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.adapter.AdapterManger;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.EmptyWrapper;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.FriendsListInfoBean;
 import com.vankiachain.pocketvkt.utils.Utils;
 import com.vankiachain.pocketvkt.view.RecycleViewDivider;
@@ -19,7 +19,7 @@ import butterknife.BindView;
 
 import static com.vankiachain.pocketvkt.utils.Utils.getContext;
 
-public class SwitchFriendActivity extends BaseAcitvity<SwitchFriendView, SwitchFriendPresenter> implements SwitchFriendView {
+public class SwitchFriendActivity extends BaseActivity<SwitchFriendView, SwitchFriendPresenter> implements SwitchFriendView {
 
     @BindView(R.id.recycle)
     RecyclerView mRecycle;

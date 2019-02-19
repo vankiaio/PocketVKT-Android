@@ -17,7 +17,7 @@ import com.vankiachain.pocketvkt.adapter.baseadapter.base.ViewHolder;
 import com.vankiachain.pocketvkt.adapter.baseadapter.wrapper.HeaderAndFooterWrapper;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.AccountInfoBean;
 import com.vankiachain.pocketvkt.bean.BaseBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
@@ -46,7 +46,7 @@ import butterknife.BindView;
 import me.ljp.permission.PermissionItem;
 
 //钱包管理页面
-public class WalletManagementActivity extends BaseAcitvity<WalletManagementView, WalletManagementPresenter> implements WalletManagementView {
+public class WalletManagementActivity extends BaseActivity<WalletManagementView, WalletManagementPresenter> implements WalletManagementView {
 
 
     @BindView(R.id.user_account_number)

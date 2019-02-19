@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.bean.CodeAuthBean;
 import com.vankiachain.pocketvkt.bean.UserBean;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
@@ -28,7 +28,7 @@ import com.vankiachain.pocketvkt.view.countdowntimer.CountDownTimerUtils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class BindPhoneActivity extends BaseAcitvity<BindPhoneView, BindPhonePresenter> implements BindPhoneView {
+public class BindPhoneActivity extends BaseActivity<BindPhoneView, BindPhonePresenter> implements BindPhoneView {
 
 
     @BindView(R.id.iv_back)

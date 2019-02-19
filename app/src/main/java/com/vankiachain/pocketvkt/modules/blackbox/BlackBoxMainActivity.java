@@ -15,7 +15,7 @@ import com.vankiachain.pocketvkt.R;
 import com.vankiachain.pocketvkt.app.ActivityUtils;
 import com.vankiachain.pocketvkt.app.AppManager;
 import com.vankiachain.pocketvkt.app.MyApplication;
-import com.vankiachain.pocketvkt.base.BaseAcitvity;
+import com.vankiachain.pocketvkt.base.BaseActivity;
 import com.vankiachain.pocketvkt.gen.UserBeanDao;
 import com.vankiachain.pocketvkt.modules.blackbox.blackhome.BlackHomeFragment;
 import com.vankiachain.pocketvkt.modules.dapp.DappFragment;
@@ -36,7 +36,7 @@ import com.vankiachain.pocketvkt.utils.Utils;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class BlackBoxMainActivity extends BaseAcitvity<NormalView, NormalPresenter> implements View.OnClickListener, NormalView, BlackHomeFragment.Openleft {
+public class BlackBoxMainActivity extends BaseActivity<NormalView, NormalPresenter> implements View.OnClickListener, NormalView, BlackHomeFragment.Openleft {
 
     @BindView(R.id.content)
     FrameLayout mContent;
