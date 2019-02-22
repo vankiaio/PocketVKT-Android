@@ -4,8 +4,8 @@ package com.vankiachain.pocketvkt.base;
  */
 
 public class Constants {
-    public static final String WX_AppID = "wxde396b6e74029855";
-    public static final String WX_AppSecret = "c5f714b7e139cbf035ade615a070215c";
+    public static final String WX_AppID = "wx54d2b8e4b2e42792";
+    public static final String WX_AppSecret = "0a89c304b8f356662297278bf2873e1f";
     public static String VKTCONTRACT = "eosio.token";
     public static String OCTCONTRACT = "octtothemoon";//erctoken
     public static String ACTIONTRANSFER = "transfer";
